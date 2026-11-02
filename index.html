@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pitcher Inputs · LBPRC</title>
+  <link rel="stylesheet" href="css/app.css?v=1">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
+</head>
+<body>
+  <header class="top">
+    <div>
+      <h1>Pitcher Inputs</h1>
+      <p class="sub">Stream Synergy clips to fill Time-to-Home / notes on Santurce. No video stored here — HLS only.</p>
+    </div>
+    <div id="meta" class="meta">Loading catalog…</div>
+  </header>
+
+  <nav class="team-tabs" id="team-tabs" role="tablist" aria-label="Teams"></nav>
+
+  <div class="layout">
+    <aside class="rail">
+      <div class="rail-seg">
+        <h2>Pitchers <span class="muted">A–Z · R1 FB + OS</span></h2>
+        <div id="pitcher-list" class="player-list"></div>
+      </div>
+      <div class="rail-seg">
+        <h2>Catchers <span class="muted">SB / CS 2B throws</span></h2>
+        <div id="catcher-list" class="player-list"></div>
+      </div>
+    </aside>
+
+    <main class="stage">
+      <div id="empty" class="empty">Pick a team, then a pitcher or catcher.</div>
+      <div id="player-panel" class="player-panel" hidden>
+        <header class="player-head">
+          <h2 id="player-name"></h2>
+          <p id="player-sub" class="sub"></p>
+        </header>
+        <div id="clip-grid" class="clip-grid"></div>
+      </div>
+    </main>
+  </div>
+
+  <div class="player-dock" id="dock" hidden>
+    <div class="dock-meta">
+      <strong id="dock-title">Clip</strong>
+      <span id="dock-detail" class="muted"></span>
+    </div>
+    <video id="video" controls playsinline></video>
+    <button type="button" class="btn" id="dock-close">Close</button>
+  </div>
+
+  <script src="js/app.js?v=1"></script>
+</body>
+</html>
