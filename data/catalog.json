@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-02T17:30:39Z",
-  "note": "HLS URLs from Synergy CDN only \u2014 no local video files.",
+  "updated": "2026-11-02T19:26:03Z",
+  "note": "Short Synergy clip URLs only (signed /clip/.../clip.mp4) \u2014 not full-game HLS.",
   "teams": [
     {
       "abbrev": "CAG",
@@ -15,7 +15,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc112e2",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e011981d-67d5-425e-a316-d11e216a197f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e011981d-67d5-425e-a316-d11e216a197f/ZXBqVHBSS0s1cUxTY0ZyRzNqbS9nRlZQWWhWN0I1S3pJZ0dDUkltbWc0VT0/clip.mp4",
               "asset_id": "e011981d-67d5-425e-a316-d11e216a197f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -23,11 +23,12 @@
               "league": "WBSCBB",
               "event_id": "6a822f9b4d16b70397d4ec4f",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e011981d-67d5-425e-a316-d11e216a197f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e011981d-67d5-425e-a316-d11e216a197f/dGFjQjFOdVFndFVjbFkxcnA3M2JUMGRFb3NUQlVFVzRZS1hyMElITm5ucz0/clip.mp4",
               "asset_id": "e011981d-67d5-425e-a316-d11e216a197f",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -35,6 +36,7 @@
               "league": "WBSCBB",
               "event_id": "6a822fe64d16b70397d4ec82",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -48,7 +50,7 @@
           "synergy_id": "5d0d76e94b8b4e352c29c0a8",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/42eed5e5-8ab0-4a6b-9031-bb57308c1944/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/42eed5e5-8ab0-4a6b-9031-bb57308c1944/aGpwb1BPa3VQSWZ6ZUZjMVFWM3IxcWlKUGVHeWs5OE9yclBhRWE0eFNhTT0/clip.mp4",
               "asset_id": "42eed5e5-8ab0-4a6b-9031-bb57308c1944",
               "angle": "LowHome",
               "pitch_type": "SINKER",
@@ -56,11 +58,12 @@
               "league": "LBPRC",
               "event_id": "692209c99f2da57af81b1b1e",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/42eed5e5-8ab0-4a6b-9031-bb57308c1944/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/42eed5e5-8ab0-4a6b-9031-bb57308c1944/RzYvcWhRcVBaZDJETW9oZFhsSEtRbkpVdmlVRm85OENhNUswMlF0VnZwbz0/clip.mp4",
               "asset_id": "42eed5e5-8ab0-4a6b-9031-bb57308c1944",
               "angle": "LowHome",
               "pitch_type": "SLIDER",
@@ -68,6 +71,7 @@
               "league": "LBPRC",
               "event_id": "692209719f2da57af81b1b10",
               "result": "HitByPitch",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -81,7 +85,7 @@
           "synergy_id": "5f48363d5f9a94d568e0b1d7",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/8609faf1-735b-46df-893d-85e840707373/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/8609faf1-735b-46df-893d-85e840707373/eW5OdCt2QjEwdDY1MVZ2N0VZMFNhTk9ybENPV1pBQkxVeTlwUnpwTFpyOD0/clip.mp4",
               "asset_id": "8609faf1-735b-46df-893d-85e840707373",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -89,11 +93,12 @@
               "league": "MILB",
               "event_id": "6aa3e891d53714f65585eeb6",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/8609faf1-735b-46df-893d-85e840707373/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/8609faf1-735b-46df-893d-85e840707373/ckdidCthZUFVQm5JQVdJbVpGMGlKQ2FabWhtNFdPdTZnNkVwS0hzQ2JzTT0/clip.mp4",
               "asset_id": "8609faf1-735b-46df-893d-85e840707373",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -101,6 +106,7 @@
               "league": "MILB",
               "event_id": "6aa3e898d53714f65585eec1",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -114,7 +120,7 @@
           "synergy_id": "5834aaa835be47a9276386f9",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/b739181e-116b-46fe-8e18-d94b0e532e2d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/b739181e-116b-46fe-8e18-d94b0e532e2d/N0dkblY2Znc1SFhUSVh6cEhENDhDMWhFVVFyN2tZYUpnei9UK25UdlNyYz0/clip.mp4",
               "asset_id": "b739181e-116b-46fe-8e18-d94b0e532e2d",
               "angle": "LowHome",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -122,11 +128,12 @@
               "league": "LIDOM",
               "event_id": "6ad99f6c7e60051cca752a2a",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/dfef553b-9912-4123-b357-802a821edf42/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/dfef553b-9912-4123-b357-802a821edf42/WGlwRSszU2QwUzNJYW5oUncwNzJMUmJ4OGlhUjYxSWJwbHdHb3E1elF1Yz0/clip.mp4",
               "asset_id": "dfef553b-9912-4123-b357-802a821edf42",
               "angle": "LowHome",
               "pitch_type": "CHANGEUP",
@@ -134,6 +141,7 @@
               "league": "LIDOM",
               "event_id": "6ad99f637e60051cca752a25",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -147,7 +155,7 @@
           "synergy_id": "5dd5dec14b8b4e95c8bbde6a",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/7156dc3e-032d-49c9-9076-8029ae49c4d5/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7156dc3e-032d-49c9-9076-8029ae49c4d5/aDNHL2RpcENUMWZJTTRnYk4zODVzNkgydVBtTjB2TkpGdXNLMHdXYVhFZz0/clip.mp4",
               "asset_id": "7156dc3e-032d-49c9-9076-8029ae49c4d5",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -155,11 +163,12 @@
               "league": "LBPRC",
               "event_id": "694a55f3ea2b7580bb1b2ef7",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/7156dc3e-032d-49c9-9076-8029ae49c4d5/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7156dc3e-032d-49c9-9076-8029ae49c4d5/MGJCZlhkcFNhVTJFSWFGVUJJUzdkcHZTblpURklXM2VicGlZNldwN3R0Zz0/clip.mp4",
               "asset_id": "7156dc3e-032d-49c9-9076-8029ae49c4d5",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -167,6 +176,7 @@
               "league": "LBPRC",
               "event_id": "694a55ec8254eb8900150502",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -180,7 +190,7 @@
           "synergy_id": "5834ab0935be47a927638df7",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/25ecda93-5a32-4afc-bfee-689f32d2e5a4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/25ecda93-5a32-4afc-bfee-689f32d2e5a4/VklHNXpsRlo2MkkrbFVIenR3TGFPOW5HUnNyN0ZYd1BBMzJkWmZtN3ZJVT0/clip.mp4",
               "asset_id": "25ecda93-5a32-4afc-bfee-689f32d2e5a4",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -188,11 +198,12 @@
               "league": "LBPRC",
               "event_id": "69511fce3d2e33e0c8ae4fc4",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/25ecda93-5a32-4afc-bfee-689f32d2e5a4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/25ecda93-5a32-4afc-bfee-689f32d2e5a4/QkRXREJlN01maS9jbmpBaE8xOTdWMnU0bUd3aERYbEQxcFF2Qi9oczZZMD0/clip.mp4",
               "asset_id": "25ecda93-5a32-4afc-bfee-689f32d2e5a4",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -200,6 +211,7 @@
               "league": "LBPRC",
               "event_id": "69511fe43d2e33e0c8ae4fc8",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -213,7 +225,7 @@
           "synergy_id": "573d7590080cc2cbe8c2cb4e",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/7872d616-2605-424e-9fd6-05c25dbeeb8f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7872d616-2605-424e-9fd6-05c25dbeeb8f/QW5SK0NLOENmaElSM05ZZmdWdk5qeWJBY1VUdHJReldtTGxoUmpZdDZqcz0/clip.mp4",
               "asset_id": "7872d616-2605-424e-9fd6-05c25dbeeb8f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -221,11 +233,12 @@
               "league": "ALPB",
               "event_id": "6a416371a4353235b8cdefa5",
               "result": "HomeRun",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/7872d616-2605-424e-9fd6-05c25dbeeb8f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7872d616-2605-424e-9fd6-05c25dbeeb8f/RERGaWdvZ1MydTU2cEFDdUNSdFBDbW5jYXdXSzdhSG1rZDhKVXIxWDg3az0/clip.mp4",
               "asset_id": "7872d616-2605-424e-9fd6-05c25dbeeb8f",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -233,6 +246,7 @@
               "league": "ALPB",
               "event_id": "6a416364a4353235b8cdef9c",
               "result": "HomeRun",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -246,7 +260,7 @@
           "synergy_id": "57ceee025762021398ca545a",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/92afe186-8061-4d96-bf00-793e29ff44e9/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/92afe186-8061-4d96-bf00-793e29ff44e9/NmsxclJKdzlWc0dUWjJMVXFvRWRPeG1Ib0k0OEk5aHVxZ2dIM0xVOWFDWT0/clip.mp4",
               "asset_id": "92afe186-8061-4d96-bf00-793e29ff44e9",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -254,11 +268,12 @@
               "league": "WBC",
               "event_id": "69b0ef4bb56f80820408379c",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/92afe186-8061-4d96-bf00-793e29ff44e9/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/92afe186-8061-4d96-bf00-793e29ff44e9/dGJtcmIrMXFIeGs2OVZWZ0RwRVhQaUE0d25XdndER0ZCOXVzamtMdnpmVT0/clip.mp4",
               "asset_id": "92afe186-8061-4d96-bf00-793e29ff44e9",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -266,6 +281,7 @@
               "league": "WBC",
               "event_id": "69b0ef8b3f3a8106de69ed16",
               "result": "HitByPitch",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -279,7 +295,7 @@
           "synergy_id": "590d4c864b8b5624b0640042",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/154121bb-059d-436b-b83c-453df8ee7ab2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/154121bb-059d-436b-b83c-453df8ee7ab2/MnRkMjFsZkFmR21GS0h0ZU53QUl5dGRIRmovczVEcXd1alZ0LzErQldqYz0/clip.mp4",
               "asset_id": "154121bb-059d-436b-b83c-453df8ee7ab2",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -287,11 +303,12 @@
               "league": "LMB",
               "event_id": "6a747148645d54a78beba686",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/154121bb-059d-436b-b83c-453df8ee7ab2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/154121bb-059d-436b-b83c-453df8ee7ab2/b1NFblNLYmpxVGcwL1NKOGp3THloWllIVDdIZjdiWlptUmpIa2t4UHkrcz0/clip.mp4",
               "asset_id": "154121bb-059d-436b-b83c-453df8ee7ab2",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -299,6 +316,7 @@
               "league": "LMB",
               "event_id": "6a74712a384e716fd7e1431e",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -312,7 +330,7 @@
           "synergy_id": "58a74e3d35268c61b0b845e1",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/0e9e7911-c77d-4285-a83d-14ddc99491c1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/0e9e7911-c77d-4285-a83d-14ddc99491c1/VC8yM0RFZG5tM0xXanVtL3c2SVJuczAyREM4bGkrZnpsWkt3NTRSU3hTaz0/clip.mp4",
               "asset_id": "0e9e7911-c77d-4285-a83d-14ddc99491c1",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -320,11 +338,12 @@
               "league": "AAPB",
               "event_id": "6a9e51f1300caff1d71789d0",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/0e9e7911-c77d-4285-a83d-14ddc99491c1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/0e9e7911-c77d-4285-a83d-14ddc99491c1/Ynp0eHlXaWQzVHhST2lXYnhBLzY2T1hSTlRpL0JxaTFYNkR0QTlzZU5COD0/clip.mp4",
               "asset_id": "0e9e7911-c77d-4285-a83d-14ddc99491c1",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -332,6 +351,7 @@
               "league": "AAPB",
               "event_id": "6a9e5210300caff1d71789f0",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -345,7 +365,7 @@
           "synergy_id": "58e997e44b8b534848f38de0",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/dba490b3-268d-4668-9b33-12a3f3f37411/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/dba490b3-268d-4668-9b33-12a3f3f37411/QXZ6eVplS1JIdkdteDZ1ODd0UkR2bWlrNGM0YXpYN09sL2FNa3pxMCtXOD0/clip.mp4",
               "asset_id": "dba490b3-268d-4668-9b33-12a3f3f37411",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -353,11 +373,12 @@
               "league": "AAPB",
               "event_id": "6ab5ef86312a8d6f300c37e2",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/9a0b1b46-8c74-400b-a17f-880b5109e6ce/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/9a0b1b46-8c74-400b-a17f-880b5109e6ce/TVRMQUlJK0hKdXFPZ2g1WTFuSVAxS0FJVmxpeWlXdlM4MDI2MUd1S0dKMD0/clip.mp4",
               "asset_id": "9a0b1b46-8c74-400b-a17f-880b5109e6ce",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -365,6 +386,7 @@
               "league": "AAPB",
               "event_id": "6aa261bf782356afb70c0b3a",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -378,7 +400,7 @@
           "synergy_id": "5834aaf335be47a927638c2b",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/9a9a4be4-12ec-4028-a9cf-057d02d3c95c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/9a9a4be4-12ec-4028-a9cf-057d02d3c95c/c1hhalovUE1haklFMFVwOWREM2pSaHhqbzBTd0RrN1BuU3l0TzhKSGUzND0/clip.mp4",
               "asset_id": "9a9a4be4-12ec-4028-a9cf-057d02d3c95c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -386,11 +408,12 @@
               "league": "ALPB",
               "event_id": "69f4e650a2303e115877b287",
               "result": "Double",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/9a9a4be4-12ec-4028-a9cf-057d02d3c95c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/9a9a4be4-12ec-4028-a9cf-057d02d3c95c/YzJTellOcnkrYUtOdmY0dzlLaU1vY2xiS3FhZGtvalFCZWlPTE9WSUxPcz0/clip.mp4",
               "asset_id": "9a9a4be4-12ec-4028-a9cf-057d02d3c95c",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -398,6 +421,7 @@
               "league": "ALPB",
               "event_id": "69f4e63ba2303e115877b272",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -411,7 +435,7 @@
           "synergy_id": "6467b5ad1e180da51dae1f5c",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/c6e6b57c-86b1-41fa-83b4-ca131a50d930/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c6e6b57c-86b1-41fa-83b4-ca131a50d930/MlNtVmUySlNycHdsVXdmSjE5Y0VhWERjWlh0VEpxemE2MG9QdlZ3ejBGQT0/clip.mp4",
               "asset_id": "c6e6b57c-86b1-41fa-83b4-ca131a50d930",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -419,11 +443,12 @@
               "league": "MILB",
               "event_id": "6a731cd2f95a8b7dfcd49c31",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/c6e6b57c-86b1-41fa-83b4-ca131a50d930/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c6e6b57c-86b1-41fa-83b4-ca131a50d930/Z1JhNGErREJ4ZXRQVUxRb3k0TmJRMTBpQVpCRUFuYjZuZlRlYUpPNlU5WT0/clip.mp4",
               "asset_id": "c6e6b57c-86b1-41fa-83b4-ca131a50d930",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -431,6 +456,7 @@
               "league": "MILB",
               "event_id": "6a731cd7da25ae8a8e3af0b8",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -444,7 +470,7 @@
           "synergy_id": "59c8b5d844b2b8aa7efc596f",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/8a029ba9-9f73-4e9e-adad-5b2612c41645/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/8a029ba9-9f73-4e9e-adad-5b2612c41645/QmpUWHpNZXpoTlE0VzRaU1o3UEVrNDlEM3BodjNOZnlNaTVCMzdGa093QT0/clip.mp4",
               "asset_id": "8a029ba9-9f73-4e9e-adad-5b2612c41645",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -452,11 +478,12 @@
               "league": "KBO",
               "event_id": "6a5c828f3149cd307af66c84",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/8a029ba9-9f73-4e9e-adad-5b2612c41645/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/8a029ba9-9f73-4e9e-adad-5b2612c41645/NGk0ZGcvWUtLeDcyd3gwY09lR0c2SEhoSTdleGdYTEZ0TFBuZ1k2R2s5dz0/clip.mp4",
               "asset_id": "8a029ba9-9f73-4e9e-adad-5b2612c41645",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -464,6 +491,7 @@
               "league": "KBO",
               "event_id": "6a5c82d43149cd307af66cc6",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -485,7 +513,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc1144f",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/45687d46-75ea-4ce2-b367-42f1ba560d16/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/45687d46-75ea-4ce2-b367-42f1ba560d16/NE42eVNxbmllM09UWHdtaEJFOVp5NVMxZUtJVFlPekJVeCs5cGZCTDdEZVZRRGZzdExhYUUxT0JkVHVlcGxSSQ/clip.mp4",
               "asset_id": "45687d46-75ea-4ce2-b367-42f1ba560d16",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -493,11 +521,12 @@
               "league": "LBPRC",
               "event_id": "6926c878d46aaf46b44dd3bd",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/d47b0db3-93dc-46d2-9d4a-198ba83dcbe4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/d47b0db3-93dc-46d2-9d4a-198ba83dcbe4/RmU0ZVRUWHBwbmRoKzgzTWpGUDMrSnNETFh4UUVMd0h4L1JBYWJYeUtBazl5Sys2VFRaWWYvUEYzRVE3TG4yRA/clip.mp4",
               "asset_id": "d47b0db3-93dc-46d2-9d4a-198ba83dcbe4",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -505,6 +534,7 @@
               "league": "LBPRC",
               "event_id": "692c615ee974b6f399860faa",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -518,7 +548,7 @@
           "synergy_id": "58a74e5735268c61b0b85709",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/c55e5b26-3e83-46b2-9726-063a322c1465/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c55e5b26-3e83-46b2-9726-063a322c1465/OGltcjZrVUdzWURmcVdnUnBmblBSYzFhQmtwV1QxaHZ6ODNjMWpBbHlpcz0/clip.mp4",
               "asset_id": "c55e5b26-3e83-46b2-9726-063a322c1465",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -526,11 +556,12 @@
               "league": "MILB",
               "event_id": "6ab1228154010750743271fd",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/c55e5b26-3e83-46b2-9726-063a322c1465/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c55e5b26-3e83-46b2-9726-063a322c1465/L05sNXBtbCtsTFNXdnpyNFFucTJ3VXJPYWVIOFJmN0YycmZyaGNmZ2RIQT0/clip.mp4",
               "asset_id": "c55e5b26-3e83-46b2-9726-063a322c1465",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -538,6 +569,7 @@
               "league": "MILB",
               "event_id": "6ab1225e54010750743271e2",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -551,7 +583,7 @@
           "synergy_id": "5e25fda0455b981528c9dc59",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/1e81b016-eed2-4beb-82fa-f3bf8acdb3f5/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1e81b016-eed2-4beb-82fa-f3bf8acdb3f5/V1YrcFgxUVI2cGJLZDl2cVRMYUJQa1ZhOWNPQVNkS09kOUhnb1F2MUFGSG1oUFU5Y2hqVHE0RXFtajdDTDkyVg/clip.mp4",
               "asset_id": "1e81b016-eed2-4beb-82fa-f3bf8acdb3f5",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -559,11 +591,12 @@
               "league": "MILB",
               "event_id": "6a8ee0cdc313d5114c3ac38e",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/1e81b016-eed2-4beb-82fa-f3bf8acdb3f5/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1e81b016-eed2-4beb-82fa-f3bf8acdb3f5/QlY2Zk1xb05ONmRJdjV6amJnT2laOEFUOGJiaGNCaGkzV1BkV0VBWlBXVFhLNmFSQUEvRFlUR1U2YkVhZE8vaA/clip.mp4",
               "asset_id": "1e81b016-eed2-4beb-82fa-f3bf8acdb3f5",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -571,6 +604,7 @@
               "league": "MILB",
               "event_id": "6a8ee0e00a44c0bb1baf67b1",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -584,7 +618,7 @@
           "synergy_id": "5a4cbda4c6deb2ec2b2a6f96",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/2372e0f3-4644-4e28-bc6d-c98139eb5352/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/2372e0f3-4644-4e28-bc6d-c98139eb5352/M0xWVmdENXZpMGtMejBEUTlnbjFJdklzMENsalovZ1BOeFc0dW1uNW9LWT0/clip.mp4",
               "asset_id": "2372e0f3-4644-4e28-bc6d-c98139eb5352",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -592,11 +626,12 @@
               "league": "LMB",
               "event_id": "6a4e2de93043a4ba352942f2",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/2372e0f3-4644-4e28-bc6d-c98139eb5352/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/2372e0f3-4644-4e28-bc6d-c98139eb5352/YTY0YzhIV2NhUElxdzFDWFY5YncvdXhIdk1xbHZpUXUyQjhGUFFPK3h1Yz0/clip.mp4",
               "asset_id": "2372e0f3-4644-4e28-bc6d-c98139eb5352",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -604,6 +639,7 @@
               "league": "LMB",
               "event_id": "6a4e2dfe3043a4ba35294319",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -617,7 +653,7 @@
           "synergy_id": "61fadbd0dd46830bafa41b15",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/65925fb3-045d-4c42-9a6b-c0bcfab2df0b/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/65925fb3-045d-4c42-9a6b-c0bcfab2df0b/bmtPYll2V3h2bDVORi9mTm9DZldkd0tuWkM2aFQ5UUkxREhJZVNFU2VrbjRqYlp1MGZBRUIzR25SaERFaSsvVw/clip.mp4",
               "asset_id": "65925fb3-045d-4c42-9a6b-c0bcfab2df0b",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -625,11 +661,12 @@
               "league": "AAPB",
               "event_id": "6aa8e1d88d48d582cb52ab5d",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/65925fb3-045d-4c42-9a6b-c0bcfab2df0b/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/65925fb3-045d-4c42-9a6b-c0bcfab2df0b/Q3ZsUVlQTDR0UllhdVdDRGhvczg5TDJFOTFtdVdzYzhyN0E2RFg1OHRNZlMzM0o1YURwOHJiMGJjWXJuVkdyUw/clip.mp4",
               "asset_id": "65925fb3-045d-4c42-9a6b-c0bcfab2df0b",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -637,6 +674,7 @@
               "league": "AAPB",
               "event_id": "6aa8e1cfbf67bc5c34e49961",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -650,7 +688,7 @@
           "synergy_id": "5e20823150c03b26e0aed09e",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/c0797d00-d7db-4b77-8ac6-250c7989b6e2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c0797d00-d7db-4b77-8ac6-250c7989b6e2/aEhpZ2JBRUR0WTIvdHc1Vm0yYmpiZUFGZ00wS3dLUFkrWnA1VEpIT2JBdlFWbk83TXV1bkRjM2E4LzhCQitYdw/clip.mp4",
               "asset_id": "c0797d00-d7db-4b77-8ac6-250c7989b6e2",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -658,11 +696,12 @@
               "league": "MILB",
               "event_id": "6a9ee79dec7ea24ab470e475",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/c0797d00-d7db-4b77-8ac6-250c7989b6e2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c0797d00-d7db-4b77-8ac6-250c7989b6e2/RVhFWlBmM2l3TjVPdmpPZXAzSm9UcDFsaHduR1FaZHRPTG5SUlpQUzRUR08vdldlU01BSlpUUThoQkQveUV4RQ/clip.mp4",
               "asset_id": "c0797d00-d7db-4b77-8ac6-250c7989b6e2",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -670,6 +709,7 @@
               "league": "MILB",
               "event_id": "6a9ee6f1ec7ea24ab470e43f",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -685,7 +725,7 @@
           "synergy_id": "5f9b5021e75c190001cd7ef0",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/bc715d4d-ab39-4ef5-9879-633a89b33b83/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bc715d4d-ab39-4ef5-9879-633a89b33b83/MDNhaHFjY0FQajlCQjZsRzEvbjV2cXVCbjdQcjdYbnNkTmdCK3hUVHVWSzZMWGZJUEtmUVJldE9PbG5VR1ZSZw/clip.mp4",
               "asset_id": "bc715d4d-ab39-4ef5-9879-633a89b33b83",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -693,11 +733,12 @@
               "league": "LBPRC",
               "event_id": "69624dc2b051a5a12d44e9d8",
               "result": "Single",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Single"
             },
             {
-              "url": "https://asset.synergysportstech.com/6c90f3bd-a666-44f8-b1f5-2bbb28579bd2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6c90f3bd-a666-44f8-b1f5-2bbb28579bd2/WmZwWE1pYnNvTmp4QWR6YXM3VVNxY1craFlMRFlveVFjR3Y3UEFnQ3h6OD0/clip.mp4",
               "asset_id": "6c90f3bd-a666-44f8-b1f5-2bbb28579bd2",
               "angle": "AsLogged",
               "pitch_type": "",
@@ -705,6 +746,7 @@
               "league": "LBPRC",
               "event_id": "69609bd71a286ecd249fdb94",
               "result": "Single",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Single"
             }
@@ -726,7 +768,7 @@
           "synergy_id": "5abcb5322cb661f293636a79",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/bc715d4d-ab39-4ef5-9879-633a89b33b83/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bc715d4d-ab39-4ef5-9879-633a89b33b83/MDNhaHFjY0FQajlCQjZsRzEvbjV2cXVCbjdQcjdYbnNkTmdCK3hUVHVWSzZMWGZJUEtmUVJldE9PbG5VR1ZSZw/clip.mp4",
               "asset_id": "bc715d4d-ab39-4ef5-9879-633a89b33b83",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -734,11 +776,12 @@
               "league": "LBPRC",
               "event_id": "69624dc2b051a5a12d44e9d8",
               "result": "Single",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Single"
             },
             {
-              "url": "https://asset.synergysportstech.com/6c90f3bd-a666-44f8-b1f5-2bbb28579bd2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6c90f3bd-a666-44f8-b1f5-2bbb28579bd2/WmZwWE1pYnNvTmp4QWR6YXM3VVNxY1craFlMRFlveVFjR3Y3UEFnQ3h6OD0/clip.mp4",
               "asset_id": "6c90f3bd-a666-44f8-b1f5-2bbb28579bd2",
               "angle": "AsLogged",
               "pitch_type": "",
@@ -746,6 +789,7 @@
               "league": "LBPRC",
               "event_id": "69609bd71a286ecd249fdb94",
               "result": "Single",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Single"
             }
@@ -759,7 +803,7 @@
           "synergy_id": "60bcbcc4e22410a01cd610d2",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/bc715d4d-ab39-4ef5-9879-633a89b33b83/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bc715d4d-ab39-4ef5-9879-633a89b33b83/MDNhaHFjY0FQajlCQjZsRzEvbjV2cXVCbjdQcjdYbnNkTmdCK3hUVHVWSzZMWGZJUEtmUVJldE9PbG5VR1ZSZw/clip.mp4",
               "asset_id": "bc715d4d-ab39-4ef5-9879-633a89b33b83",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -767,11 +811,12 @@
               "league": "LBPRC",
               "event_id": "69624dc2b051a5a12d44e9d8",
               "result": "Single",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Single"
             },
             {
-              "url": "https://asset.synergysportstech.com/6c90f3bd-a666-44f8-b1f5-2bbb28579bd2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6c90f3bd-a666-44f8-b1f5-2bbb28579bd2/WmZwWE1pYnNvTmp4QWR6YXM3VVNxY1craFlMRFlveVFjR3Y3UEFnQ3h6OD0/clip.mp4",
               "asset_id": "6c90f3bd-a666-44f8-b1f5-2bbb28579bd2",
               "angle": "AsLogged",
               "pitch_type": "",
@@ -779,6 +824,7 @@
               "league": "LBPRC",
               "event_id": "69609bd71a286ecd249fdb94",
               "result": "Single",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Single"
             }
@@ -799,7 +845,7 @@
           "synergy_id": "61878530c379865a58bb2725",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/2069b8ef-678d-4178-86b8-d6ab7ea1146f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/2069b8ef-678d-4178-86b8-d6ab7ea1146f/MmVOWVFCdEhsMlExdGhhcWxsUDNpRU80RDd1dm9aUi9DTU5JZXcyN2VOdz0/clip.mp4",
               "asset_id": "2069b8ef-678d-4178-86b8-d6ab7ea1146f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -807,11 +853,12 @@
               "league": "LVBP",
               "event_id": "6ae764e6846ee2304b97b3c1",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/2069b8ef-678d-4178-86b8-d6ab7ea1146f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/2069b8ef-678d-4178-86b8-d6ab7ea1146f/clFqTWdJYUpBaG5YcDBnL3I4dzFQMFlqZno2VFNLampQcUVNbk9oWW5sZz0/clip.mp4",
               "asset_id": "2069b8ef-678d-4178-86b8-d6ab7ea1146f",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -819,6 +866,7 @@
               "league": "LVBP",
               "event_id": "6ae764d5846ee2304b97b3c0",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -832,7 +880,7 @@
           "synergy_id": "5f139b51e0962f87ad7e8c15",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/8d177746-c15f-40cf-8908-525b0cc8399d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/8d177746-c15f-40cf-8908-525b0cc8399d/YUtNOEhzSy9SRm02U0o1ZFFaWnA4UHNITWxJZm5kU3NZdm1yWXA0MmVmajdKVVNEMGhoNVdSdk00OW9vc0J5OA/clip.mp4",
               "asset_id": "8d177746-c15f-40cf-8908-525b0cc8399d",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -840,11 +888,12 @@
               "league": "MILB",
               "event_id": "6a5d1b489d416762620b7ba1",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/5b340e20-3785-488a-a583-0aee4e55ffc2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/5b340e20-3785-488a-a583-0aee4e55ffc2/Nk04OEpueHdtRTJ5Q2ZLS0p0cnF0ME1CV0ErV0liTktzZk9pN1p1dnZVcz0/clip.mp4",
               "asset_id": "5b340e20-3785-488a-a583-0aee4e55ffc2",
               "angle": "AsLogged",
               "pitch_type": "SWEEPER",
@@ -852,6 +901,7 @@
               "league": "MILB",
               "event_id": "6a26c8b5ba1efa4e55e6424c",
               "result": "HomeRun",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -865,7 +915,7 @@
           "synergy_id": "60ca08f50a5437fe8e8f5129",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/17d9be27-d18c-4675-8c6c-fd9419027721/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/17d9be27-d18c-4675-8c6c-fd9419027721/YTFSbng4ZC9qYkt6alM3cXoyc2diYjF2Z3hsS0cyV1JSQVU2dnBmUjg0MD0/clip.mp4",
               "asset_id": "17d9be27-d18c-4675-8c6c-fd9419027721",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -873,11 +923,12 @@
               "league": "MILB",
               "event_id": "6a957aff933b5feaee2c5c70",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/75a263b2-45c7-4dc2-8b9d-b16d1a0e67f0/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/75a263b2-45c7-4dc2-8b9d-b16d1a0e67f0/alc5UkltNERpQmN6eE92VzNaaFNNaFo1UkJSck0wTmRNRld3SVJxcnBPbHphSmJEUFFPQzh1Y2wrRUp3eVhjWQ/clip.mp4",
               "asset_id": "75a263b2-45c7-4dc2-8b9d-b16d1a0e67f0",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -885,6 +936,7 @@
               "league": "MILB",
               "event_id": "6a9d7a96471de991291427e2",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -898,7 +950,7 @@
           "synergy_id": "5f8628c91cb0540001a546de",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4b41db09-caf3-4024-a0cf-34946cca69b4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4b41db09-caf3-4024-a0cf-34946cca69b4/UFdpdi95bjByUVQxaHRKYi9HVnZ3WEo2WWxFa1kyemtYRC94b2dDNW9oUT0/clip.mp4",
               "asset_id": "4b41db09-caf3-4024-a0cf-34946cca69b4",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -906,11 +958,12 @@
               "league": "MLB",
               "event_id": "6ab5e88d312a8d6f300c33b4",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/4b41db09-caf3-4024-a0cf-34946cca69b4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4b41db09-caf3-4024-a0cf-34946cca69b4/SVlxczhRZXF6QnNqN2VvaU1QZTBUTXVLRWI4ZDRpMThNMlUzNFUrZFVMQT0/clip.mp4",
               "asset_id": "4b41db09-caf3-4024-a0cf-34946cca69b4",
               "angle": "AsLogged",
               "pitch_type": "SWEEPER",
@@ -918,6 +971,7 @@
               "league": "MLB",
               "event_id": "6ab5e8a7bb75908376e86674",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -931,7 +985,7 @@
           "synergy_id": "5a78a1fdda5c2a72b4c2eda4",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/7a7829ea-a066-44f9-8400-6619a77a15f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7a7829ea-a066-44f9-8400-6619a77a15f2/TWZMS1FVR0Nvd2oveldFMlFXYzFGS00ydXB4aWQ5VFArVy94OHdYVG92TT0/clip.mp4",
               "asset_id": "7a7829ea-a066-44f9-8400-6619a77a15f2",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -939,11 +993,12 @@
               "league": "FRON",
               "event_id": "6a9e29a3300caff1d71775a0",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/7a7829ea-a066-44f9-8400-6619a77a15f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7a7829ea-a066-44f9-8400-6619a77a15f2/ODZVS3JSd0ErQ0I2cVRVSDFTZlpITUVCYTZlRlpXQjUrbWsvWG5QT3BOdz0/clip.mp4",
               "asset_id": "7a7829ea-a066-44f9-8400-6619a77a15f2",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -951,6 +1006,7 @@
               "league": "FRON",
               "event_id": "6a9e29abec456ea3b92aed77",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -964,7 +1020,7 @@
           "synergy_id": "60b8f2dce22410a01cd50436",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/dba490b3-268d-4668-9b33-12a3f3f37411/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/dba490b3-268d-4668-9b33-12a3f3f37411/bndRNTFQY1JsM1ZQYWllQ1l2RXdwN3VtZDlXVExnR2lTV0d1ajN4SWxnND0/clip.mp4",
               "asset_id": "dba490b3-268d-4668-9b33-12a3f3f37411",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -972,11 +1028,12 @@
               "league": "AAPB",
               "event_id": "6ab5eb6b312a8d6f300c3409",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/dba490b3-268d-4668-9b33-12a3f3f37411/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/dba490b3-268d-4668-9b33-12a3f3f37411/elpRZS9jbWtiQjFRTXdLOG4rYnk0U1Z4cWhSQmJsVnk4RE81Z2ZPN3hNZz0/clip.mp4",
               "asset_id": "dba490b3-268d-4668-9b33-12a3f3f37411",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -984,6 +1041,7 @@
               "league": "AAPB",
               "event_id": "6ab5eb70bb75908376e866d9",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1005,7 +1063,7 @@
           "synergy_id": "5c44db00ceada624e425e854",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/a81e489d-4582-432a-8416-2bff53385ba1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a81e489d-4582-432a-8416-2bff53385ba1/cS8yTGIzeGtZWk5pdVdyczdsMENod3ZGRnNzRkYvak1hVWxjVldzRk4vRT0/clip.mp4",
               "asset_id": "a81e489d-4582-432a-8416-2bff53385ba1",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1013,11 +1071,12 @@
               "league": "MILB",
               "event_id": "6aa28af05152d1c84e54c4f1",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/a81e489d-4582-432a-8416-2bff53385ba1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a81e489d-4582-432a-8416-2bff53385ba1/cGJkdTU2SVZ0ZTl3dE9SQkZSWEJPVkNWS0J0MUpUKzd6cGx1VUZUVElUdz0/clip.mp4",
               "asset_id": "a81e489d-4582-432a-8416-2bff53385ba1",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1025,6 +1084,7 @@
               "league": "MILB",
               "event_id": "6aa28af85152d1c84e54c4fb",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1046,7 +1106,7 @@
           "synergy_id": "582b8a1d35be47a9274e12a8",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/13d9f716-a918-41e6-be61-a283f6d0cc27/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/13d9f716-a918-41e6-be61-a283f6d0cc27/RkVSYVhURjFmdkhKMFM5SGtmck56MVFPM29HR0p1WDBPR1RKQWtVdDF0ST0/clip.mp4",
               "asset_id": "13d9f716-a918-41e6-be61-a283f6d0cc27",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -1054,11 +1114,12 @@
               "league": "MILB",
               "event_id": "6a6e03e699671c848bd2d35a",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/13d9f716-a918-41e6-be61-a283f6d0cc27/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/13d9f716-a918-41e6-be61-a283f6d0cc27/bTZwalNJL0IwREREaVNQV3o1alAwVkFhT3RPeUI3blkxYzVYMURGbC9MOXJGU0VFRDUzQWxGY1lXMmJqNlBRQg/clip.mp4",
               "asset_id": "13d9f716-a918-41e6-be61-a283f6d0cc27",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -1066,6 +1127,7 @@
               "league": "MILB",
               "event_id": "6a6e0a927465086db93bb745",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1079,7 +1141,7 @@
           "synergy_id": "5fffbfa940027c458d128dec",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/00a73f6b-1b73-47f1-b036-2442ff30670e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/00a73f6b-1b73-47f1-b036-2442ff30670e/cW9RaUlZcnJ0YzlZSWVwOExuaUdOS1M3b2hZWVBsT1NyTUp4clZFczVJMjJ5akZkaTBPRzg3TmdUdTNrdDA1Vw/clip.mp4",
               "asset_id": "00a73f6b-1b73-47f1-b036-2442ff30670e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1087,11 +1149,12 @@
               "league": "MILB",
               "event_id": "6a9c14f5917793f20c88152b",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/00a73f6b-1b73-47f1-b036-2442ff30670e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/00a73f6b-1b73-47f1-b036-2442ff30670e/NGUzdmNKVjZPMjJ3Mk15cXUvVUszNlF1aXptb0ZtZU5ySURLeGpUcitvMGFFVG5YOXdaL1RMYUhGdllBTW0rbw/clip.mp4",
               "asset_id": "00a73f6b-1b73-47f1-b036-2442ff30670e",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1099,6 +1162,7 @@
               "league": "MILB",
               "event_id": "6a9c1517917793f20c88153f",
               "result": "FieldError",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1112,7 +1176,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc113e6",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/6905e9be-8c4e-45bf-a6d5-3ad33de9ed20/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6905e9be-8c4e-45bf-a6d5-3ad33de9ed20/d012VnBXanNsVFpYV1BCUThKYnpiSThhVGt0SXIvRy9tTitQOWRPMngwUkw5bFIvdDZMbThRNzVVK2dZblp6YQ/clip.mp4",
               "asset_id": "6905e9be-8c4e-45bf-a6d5-3ad33de9ed20",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1120,11 +1184,12 @@
               "league": "MILB",
               "event_id": "6894cbb7042b19e0d4950262",
               "result": "FieldersChoice",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6905e9be-8c4e-45bf-a6d5-3ad33de9ed20/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6905e9be-8c4e-45bf-a6d5-3ad33de9ed20/bTFlT01vNlE1eTBDc1gxdVU3YWp1NVR0a003SU95OXp2bzlUM2ZUTXRSMzlMMGswUVdhMVRwM0xtNlBKN0FLcg/clip.mp4",
               "asset_id": "6905e9be-8c4e-45bf-a6d5-3ad33de9ed20",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1132,6 +1197,7 @@
               "league": "MILB",
               "event_id": "6894cbade64921e9ebd063a1",
               "result": "FieldersChoice",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1145,7 +1211,7 @@
           "synergy_id": "5f85ceedd9b60b00014e1d40",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/dfe60d6b-be72-44fe-8591-5ebaa2af453c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/dfe60d6b-be72-44fe-8591-5ebaa2af453c/T3NrRTV5bDJBdUFGOVhsaXkzQVh1RnZTam1tZTBPVDVjR3VtVWZaQXY3az0/clip.mp4",
               "asset_id": "dfe60d6b-be72-44fe-8591-5ebaa2af453c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1153,11 +1219,12 @@
               "league": "MILB",
               "event_id": "6aa7dc851e469b0c1b4b6ad0",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/dfe60d6b-be72-44fe-8591-5ebaa2af453c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/dfe60d6b-be72-44fe-8591-5ebaa2af453c/NGh3Y2hidDdjNm95bUdFVFN3cElla2t0WjZlV2lDRlVnZHpsQWFUSTNtST0/clip.mp4",
               "asset_id": "dfe60d6b-be72-44fe-8591-5ebaa2af453c",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1165,6 +1232,7 @@
               "league": "MILB",
               "event_id": "6aa7dc8d1e469b0c1b4b6ad3",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1178,7 +1246,7 @@
           "synergy_id": "5834aa3035be47a927637ec2",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/af22cb2f-c582-4f18-8c19-76795586c9e0/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/af22cb2f-c582-4f18-8c19-76795586c9e0/YU9CZ1BWVHd3M0tEVXVkTGhGNGNNQmdVOStubHl3R3BuR3YwTFp6Zkx3ND0/clip.mp4",
               "asset_id": "af22cb2f-c582-4f18-8c19-76795586c9e0",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1186,11 +1254,12 @@
               "league": "ALPB",
               "event_id": "6aa4cae87215d72e1497353d",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/af22cb2f-c582-4f18-8c19-76795586c9e0/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/af22cb2f-c582-4f18-8c19-76795586c9e0/eTlvUFpSeFYzb04xQ3Mra2g3K0QxM1dxTFBnSkhiU0FBUDN5bi9aK1lLRT0/clip.mp4",
               "asset_id": "af22cb2f-c582-4f18-8c19-76795586c9e0",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1198,6 +1267,7 @@
               "league": "ALPB",
               "event_id": "6aa4cb3496706f31b3d4f8e8",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1211,7 +1281,7 @@
           "synergy_id": "6266f2ccf340c2395a244fec",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/a995f03f-fc69-4ce1-932d-d7acd091313c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a995f03f-fc69-4ce1-932d-d7acd091313c/Q3pmN0E1d256dUE5RmFOS2xoOWhNcW9iSk1OYlVJbW1jMlBwOERQMG1idz0/clip.mp4",
               "asset_id": "a995f03f-fc69-4ce1-932d-d7acd091313c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1219,11 +1289,12 @@
               "league": "LMB",
               "event_id": "6a981f29a612cd2cca074d27",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/a995f03f-fc69-4ce1-932d-d7acd091313c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a995f03f-fc69-4ce1-932d-d7acd091313c/UWVDdmIrTXlZcjJDZmxxb24vVHY5dWdyQStXRzl0aU9BSnFRcE1UK3F2WT0/clip.mp4",
               "asset_id": "a995f03f-fc69-4ce1-932d-d7acd091313c",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1231,6 +1302,7 @@
               "league": "LMB",
               "event_id": "6a981f13443400824c81d394",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1244,7 +1316,7 @@
           "synergy_id": "5f70df9e93b2350001cd5843",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/1f97403a-1ea7-4e94-8a5f-b4c7d86dde1a/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1f97403a-1ea7-4e94-8a5f-b4c7d86dde1a/VkNNamNWcWhQM0k2QTJQNE13R2YrZGVNQzl1aGVIVFZFcTFWZkFpVlhDUT0/clip.mp4",
               "asset_id": "1f97403a-1ea7-4e94-8a5f-b4c7d86dde1a",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -1252,11 +1324,12 @@
               "league": "MILB",
               "event_id": "6aaa79c9961bc9b7b5c31581",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/1f97403a-1ea7-4e94-8a5f-b4c7d86dde1a/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1f97403a-1ea7-4e94-8a5f-b4c7d86dde1a/bXNkNDRWZ0puNjZnSFg3Z0ZjVGJ1QVA4ZUpweFhxR0g2SXUxMTdZMTVTND0/clip.mp4",
               "asset_id": "1f97403a-1ea7-4e94-8a5f-b4c7d86dde1a",
               "angle": "AsLogged",
               "pitch_type": "SWEEPER",
@@ -1264,6 +1337,7 @@
               "league": "MILB",
               "event_id": "6aaa79ce961bc9b7b5c31583",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1285,7 +1359,7 @@
           "synergy_id": "618780ddc379865a58bb271c",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/6404c808-b974-4eef-841a-8d70469df27c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6404c808-b974-4eef-841a-8d70469df27c/QXFSUmNwMm91dWRqSFVXZ0RvR3prMFBkY0RBdGI0SjlNTXJxckQwamdqTT0/clip.mp4",
               "asset_id": "6404c808-b974-4eef-841a-8d70469df27c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1293,11 +1367,12 @@
               "league": "LBPRC",
               "event_id": "695bdb8df17efec3f04c7255",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6404c808-b974-4eef-841a-8d70469df27c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6404c808-b974-4eef-841a-8d70469df27c/Z0dIaDVQNit0aGhQYzRIWWFzZ3hYS3ZMeWJKY3h6TGUyeUNBMCtOeHF3WT0/clip.mp4",
               "asset_id": "6404c808-b974-4eef-841a-8d70469df27c",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -1305,6 +1380,7 @@
               "league": "LBPRC",
               "event_id": "695bdb48f17efec3f04c7245",
               "result": "FieldersChoiceOut",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1318,7 +1394,7 @@
           "synergy_id": "618f3cf9ed5d3e62bc9ecf40",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/a809dc89-2039-4cb8-82db-8e37eba4723f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a809dc89-2039-4cb8-82db-8e37eba4723f/eDUyQVpSeloraUVaY2lheFJHYUQxTlRqaGp1dnNZSmVsc1kxTE56bEFUZkVrd1ZiN3pyTlcyUWM5bmNCcGNkWg/clip.mp4",
               "asset_id": "a809dc89-2039-4cb8-82db-8e37eba4723f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1326,11 +1402,12 @@
               "league": "MILB",
               "event_id": "6a2462daa42f5f2f4332e0b9",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/a809dc89-2039-4cb8-82db-8e37eba4723f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a809dc89-2039-4cb8-82db-8e37eba4723f/d2tyU0lWSVRGWmJHcHRhR1NySUpIOHpKUjhneC96bDRyM0ZLRTlvTFN5WCt5RVJsdHU5ZjArUWNheXRwNC9ZYg/clip.mp4",
               "asset_id": "a809dc89-2039-4cb8-82db-8e37eba4723f",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -1338,6 +1415,7 @@
               "league": "MILB",
               "event_id": "6a2462e8a42f5f2f4332e0c4",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1353,7 +1431,7 @@
           "synergy_id": "5f849e771cb0540001a544be",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/f99f8f52-d58b-40a3-a631-d97a4420dbcb/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/f99f8f52-d58b-40a3-a631-d97a4420dbcb/YjBoaW9ZVzgrRnhCZGUwU2xpNWJtTVpUbkdnV1d1ZTZGUFV3ZjZjUWx4UEYxZnArRVI3blc3L0djWVJjWmkxNg/clip.mp4",
               "asset_id": "f99f8f52-d58b-40a3-a631-d97a4420dbcb",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1361,11 +1439,12 @@
               "league": "LBPRC",
               "event_id": "696237a5146ccc19a2c3fdf6",
               "result": "SacrificeFly",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 SacrificeFly"
             },
             {
-              "url": "https://asset.synergysportstech.com/57f05b47-7c87-4742-8513-30e833090e0c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/57f05b47-7c87-4742-8513-30e833090e0c/eWdRZm1laUxWcWFZamYzV0NxRUNndkpaZEQxa2ozaHhrWGFPczNMWFB6OD0/clip.mp4",
               "asset_id": "57f05b47-7c87-4742-8513-30e833090e0c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1373,11 +1452,12 @@
               "league": "LBPRC",
               "event_id": "6960e1eadc0ae105fe4d3b69",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/57f05b47-7c87-4742-8513-30e833090e0c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/57f05b47-7c87-4742-8513-30e833090e0c/UzB4S3hiOFVrZEhPNVJSdjV0ejljaWl4VG0xc1JmUEdCbVhsZkVNK1RtMD0/clip.mp4",
               "asset_id": "57f05b47-7c87-4742-8513-30e833090e0c",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -1385,6 +1465,7 @@
               "league": "LBPRC",
               "event_id": "6960f50c0c286d175704cfe5",
               "result": "Walk",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Walk"
             }
@@ -1406,7 +1487,7 @@
           "synergy_id": "61fe77be13680009d78442f8",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/f99f8f52-d58b-40a3-a631-d97a4420dbcb/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/f99f8f52-d58b-40a3-a631-d97a4420dbcb/YjBoaW9ZVzgrRnhCZGUwU2xpNWJtTVpUbkdnV1d1ZTZGUFV3ZjZjUWx4UEYxZnArRVI3blc3L0djWVJjWmkxNg/clip.mp4",
               "asset_id": "f99f8f52-d58b-40a3-a631-d97a4420dbcb",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1414,11 +1495,12 @@
               "league": "LBPRC",
               "event_id": "696237a5146ccc19a2c3fdf6",
               "result": "SacrificeFly",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 SacrificeFly"
             },
             {
-              "url": "https://asset.synergysportstech.com/57f05b47-7c87-4742-8513-30e833090e0c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/57f05b47-7c87-4742-8513-30e833090e0c/eWdRZm1laUxWcWFZamYzV0NxRUNndkpaZEQxa2ozaHhrWGFPczNMWFB6OD0/clip.mp4",
               "asset_id": "57f05b47-7c87-4742-8513-30e833090e0c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1426,11 +1508,12 @@
               "league": "LBPRC",
               "event_id": "6960e1eadc0ae105fe4d3b69",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/57f05b47-7c87-4742-8513-30e833090e0c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/57f05b47-7c87-4742-8513-30e833090e0c/UzB4S3hiOFVrZEhPNVJSdjV0ejljaWl4VG0xc1JmUEdCbVhsZkVNK1RtMD0/clip.mp4",
               "asset_id": "57f05b47-7c87-4742-8513-30e833090e0c",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -1438,6 +1521,7 @@
               "league": "LBPRC",
               "event_id": "6960f50c0c286d175704cfe5",
               "result": "Walk",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Walk"
             }
@@ -1466,7 +1550,7 @@
           "synergy_id": "582b877935be47a9274df61a",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/629cc33e-0e76-4ec3-a2ac-c8e516d21cf7/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/629cc33e-0e76-4ec3-a2ac-c8e516d21cf7/SUJSck5jbjdaQWxOZyt0T2VFN0E0WFBoR0taSmZGUDJRTWk4WGJ1elVhZz0/clip.mp4",
               "asset_id": "629cc33e-0e76-4ec3-a2ac-c8e516d21cf7",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1474,11 +1558,12 @@
               "league": "ALPB",
               "event_id": "6aa23bda782356afb70c01ec",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/629cc33e-0e76-4ec3-a2ac-c8e516d21cf7/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/629cc33e-0e76-4ec3-a2ac-c8e516d21cf7/ZndubEhvMVA0NFM5dTZWbFhpa1RyK2ZlTDB6THFiTkNhTjl4blFIWkFSMD0/clip.mp4",
               "asset_id": "629cc33e-0e76-4ec3-a2ac-c8e516d21cf7",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -1486,6 +1571,7 @@
               "league": "ALPB",
               "event_id": "6aa23be2782356afb70c01ef",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1499,7 +1585,7 @@
           "synergy_id": "60b888f42b2ec8ce41c5168e",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e0e23afb-b24c-45f4-83f7-48afdaa739f3/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e0e23afb-b24c-45f4-83f7-48afdaa739f3/NE1aNzNTb2pSTUNpanVwT3BaQUozVHRBRXlmdW8zU0x3Q09rUllEQWJJbz0/clip.mp4",
               "asset_id": "e0e23afb-b24c-45f4-83f7-48afdaa739f3",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1507,11 +1593,12 @@
               "league": "LBPRC",
               "event_id": "6951f69db15d9b2b8a54f5a4",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e0e23afb-b24c-45f4-83f7-48afdaa739f3/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e0e23afb-b24c-45f4-83f7-48afdaa739f3/NnZIU3poR0dkL2JFRXhqOVk2SjdQYlVHL0ZJWHA1VHVFdUE2N3ZnUjEzdz0/clip.mp4",
               "asset_id": "e0e23afb-b24c-45f4-83f7-48afdaa739f3",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1519,6 +1606,7 @@
               "league": "LBPRC",
               "event_id": "6951f697cf2a1ab101abf784",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1532,7 +1620,7 @@
           "synergy_id": "5deb67e44b8b4f28d0143e46",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/7854f60c-db23-4913-baa6-621c87aa0156/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7854f60c-db23-4913-baa6-621c87aa0156/SmFodGYybFhJd2oyQkZaRjJPZXdoUXI3VUFKOURzWnlkVjFYU2N4TmcxST0/clip.mp4",
               "asset_id": "7854f60c-db23-4913-baa6-621c87aa0156",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1540,11 +1628,12 @@
               "league": "CAR",
               "event_id": "67a18ba990619b346e2e5a40",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/7854f60c-db23-4913-baa6-621c87aa0156/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7854f60c-db23-4913-baa6-621c87aa0156/WUxTNWIzcXg3ZndKeUJzTmtnZVJkRThIMWVRUGxhM3BDUy9kV0Z1eE9IST0/clip.mp4",
               "asset_id": "7854f60c-db23-4913-baa6-621c87aa0156",
               "angle": "AsLogged",
               "pitch_type": "SPLITTER",
@@ -1552,6 +1641,7 @@
               "league": "CAR",
               "event_id": "67a18bb2222fc96564fdb66f",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1565,7 +1655,7 @@
           "synergy_id": "5f7429ef0f6ebc00019df118",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/d75aa871-6c92-417f-9b8b-b60618f01a7a/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/d75aa871-6c92-417f-9b8b-b60618f01a7a/OUNxRFk2YTY4VENkSVUxZE9ic2pqVjB6MnV0MUx6Z3kzWGtRaVNkaUdFZz0/clip.mp4",
               "asset_id": "d75aa871-6c92-417f-9b8b-b60618f01a7a",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1573,11 +1663,12 @@
               "league": "MILB",
               "event_id": "6a01c1b1556d5c489b5d1b14",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/968c44aa-635a-4276-a457-4412113daecd/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/968c44aa-635a-4276-a457-4412113daecd/bGhmVHJrZGFlRDFDZjhYMVhDRHh1OTN2TXplemQ0NHl6bTN0TFRRR1pXRT0/clip.mp4",
               "asset_id": "968c44aa-635a-4276-a457-4412113daecd",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1585,6 +1676,7 @@
               "league": "MILB",
               "event_id": "6a0ad31a694dba38b27fd8cf",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1598,7 +1690,7 @@
           "synergy_id": "5abcb5312cb661f293635acb",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e81e8679-2d3c-45c4-bf98-89bff913ac93/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e81e8679-2d3c-45c4-bf98-89bff913ac93/VGFiQklpK0FSalY1Qk5IZjM1RFRoc09MV25pOWVYelRwanMyK1AwakhBaz0/clip.mp4",
               "asset_id": "e81e8679-2d3c-45c4-bf98-89bff913ac93",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1606,11 +1698,12 @@
               "league": "ALPB",
               "event_id": "6a45c06a0e2e80d964ed5d2c",
               "result": "HitByPitch",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e81e8679-2d3c-45c4-bf98-89bff913ac93/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e81e8679-2d3c-45c4-bf98-89bff913ac93/TGJ2OFIrUFgyU2NuaEVzVUFGY3ZkcXU0WWRRZk95UnBaYngwanJiS250Yz0/clip.mp4",
               "asset_id": "e81e8679-2d3c-45c4-bf98-89bff913ac93",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -1618,6 +1711,7 @@
               "league": "ALPB",
               "event_id": "6a45c0900e2e80d964ed5d35",
               "result": "HomeRun",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1631,7 +1725,7 @@
           "synergy_id": "62a17f964a6526afee3ca9b0",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/aba92717-0418-47cb-ad8b-f742feed4a6d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/aba92717-0418-47cb-ad8b-f742feed4a6d/L0Y2ZVgzdUl6WkhMKy9BekF0WG1QWFZnOVkxeThQSUd3dTFwdlphZGtTST0/clip.mp4",
               "asset_id": "aba92717-0418-47cb-ad8b-f742feed4a6d",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1639,11 +1733,12 @@
               "league": "LMB",
               "event_id": "6a75c9cfe843fb90557892f4",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/aba92717-0418-47cb-ad8b-f742feed4a6d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/aba92717-0418-47cb-ad8b-f742feed4a6d/NTZSOGZxSVcvOWtaL0JqOGVoY3FKa1d2Y1pjR1M2YUpNSjI4WUFoZGw4MD0/clip.mp4",
               "asset_id": "aba92717-0418-47cb-ad8b-f742feed4a6d",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1651,6 +1746,7 @@
               "league": "LMB",
               "event_id": "6a75c9c7cf6ed1aed601f1e3",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1664,7 +1760,7 @@
           "synergy_id": "5c7a392a85d07ba97655f43d",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e011981d-67d5-425e-a316-d11e216a197f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e011981d-67d5-425e-a316-d11e216a197f/bnkvNHpTSFZHUGFFS2Q0Nzc3TmRmL3ZrU2g2Q3l2THExdmVQcnJxRTdzdz0/clip.mp4",
               "asset_id": "e011981d-67d5-425e-a316-d11e216a197f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1672,11 +1768,12 @@
               "league": "WBSCBB",
               "event_id": "6a8228294d16b70397d4dd20",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e011981d-67d5-425e-a316-d11e216a197f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e011981d-67d5-425e-a316-d11e216a197f/TlFNT0ZMYzBtYndReG53R1pOcXRCQndEWis3bXB6b2k4dFhuY2J3Vi9LVT0/clip.mp4",
               "asset_id": "e011981d-67d5-425e-a316-d11e216a197f",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -1684,6 +1781,7 @@
               "league": "WBSCBB",
               "event_id": "6a822888a03353e6fa922de5",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1697,7 +1795,7 @@
           "synergy_id": "59f06461f934491175c1c932",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/d5d5a7f9-a859-45c8-b40b-f10913b654ec/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/d5d5a7f9-a859-45c8-b40b-f10913b654ec/aURqbk11RWtZckR2Mm8xZzlGdUgxZy9EcCtWOGZ2M0l6VThpNERadWZIQT0/clip.mp4",
               "asset_id": "d5d5a7f9-a859-45c8-b40b-f10913b654ec",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1705,11 +1803,12 @@
               "league": "LMB",
               "event_id": "6a75bdb7cf3042c1473a7545",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/d5d5a7f9-a859-45c8-b40b-f10913b654ec/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/d5d5a7f9-a859-45c8-b40b-f10913b654ec/a0I0dGVWNkxXRCtpYXlXQTVKTDFVblNhdUY3VXUyTWhtWVcxUVprVmV0Zz0/clip.mp4",
               "asset_id": "d5d5a7f9-a859-45c8-b40b-f10913b654ec",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -1717,6 +1816,7 @@
               "league": "LMB",
               "event_id": "6a75bdc0cf3042c1473a754c",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1730,7 +1830,7 @@
           "synergy_id": "5fd0cfc2af4a6f44dfdcb350",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/f35619d5-314a-4b4c-8cda-7292751fdc8f/TFdSUDVJbDkzMzNJWGwyTEwycm1EMHRmOUNnMzdPNGlKVGxtYjJrVjlZUT0/clip.mp4",
               "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1738,11 +1838,12 @@
               "league": "LBPRC",
               "event_id": "696e0b84d00dfa5baf0b1127",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e694c9f6-c4c9-479c-83f3-964125d15996/UytyQStEZ0pKZml2TlF5YjJxVlZvNVlaTFIvQkhiQVllOW93dTJWU2h0Zz0/clip.mp4",
               "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -1750,6 +1851,7 @@
               "league": "LBPRC",
               "event_id": "695266bccf2a1ab101abffdb",
               "result": "FieldersChoiceOut",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1771,7 +1873,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc11347",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/a1ba9712-2560-4cfc-8548-3de8bc79134e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a1ba9712-2560-4cfc-8548-3de8bc79134e/VWVUV2E0V1ZpWWN2dTFxcjlVU21EbW1icWhhV3R2alFBcmlQUzJWZ1Bsdz0/clip.mp4",
               "asset_id": "a1ba9712-2560-4cfc-8548-3de8bc79134e",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -1779,11 +1881,12 @@
               "league": "ALPB",
               "event_id": "6a168a842028fdee12ac31ac",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/8e2694fd-8b36-4cd2-82b2-f2d63a2024b2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/8e2694fd-8b36-4cd2-82b2-f2d63a2024b2/aHRDMnpIeXUwYXdmbDBZeHJqdmNnT01Td2MwUEpCSE9mejFwVml0V2xBTmsyRlRVOXdKdDNRdGh5d2YrbW1FUQ/clip.mp4",
               "asset_id": "8e2694fd-8b36-4cd2-82b2-f2d63a2024b2",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -1791,6 +1894,7 @@
               "league": "ALPB",
               "event_id": "6a1fd575891935cfc3679121",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1812,7 +1916,7 @@
           "synergy_id": "5e1d054446ce1b4784ea9779",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/74060792-9282-49a3-9523-ea36dc0dcfc4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/74060792-9282-49a3-9523-ea36dc0dcfc4/ZGdlNWlUalVIdzM2YTE0NE5vU2x0eTdWcmpKYVk5NzNzNHNkY0dPVk1paz0/clip.mp4",
               "asset_id": "74060792-9282-49a3-9523-ea36dc0dcfc4",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1820,11 +1924,12 @@
               "league": "LMB",
               "event_id": "6a63426f4f7d722f18bed755",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/74060792-9282-49a3-9523-ea36dc0dcfc4/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/74060792-9282-49a3-9523-ea36dc0dcfc4/TnZEOUFWOWlrekk1U2cwaDZpZHpuRGdxYkhQdjZGSlc0TERTVHBFMWhuRT0/clip.mp4",
               "asset_id": "74060792-9282-49a3-9523-ea36dc0dcfc4",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -1832,6 +1937,7 @@
               "league": "LMB",
               "event_id": "6a6342604f7d722f18bed748",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1845,7 +1951,7 @@
           "synergy_id": "58dbb4a735268c61b07755e4",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/975beaf2-4891-4adb-a9ae-a5d261dfd77b/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/975beaf2-4891-4adb-a9ae-a5d261dfd77b/QzhwckNBU2poZUJxTC93eXR5Rm1EOG5ybjlDdHpHMlY0OUc0bGJlMTN4WktSRzlibVluVXF3WTEzMGhYUWFacw/clip.mp4",
               "asset_id": "975beaf2-4891-4adb-a9ae-a5d261dfd77b",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1853,11 +1959,12 @@
               "league": "NPBML",
               "event_id": "6ab798c27d09c74e98c9eb47",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/975beaf2-4891-4adb-a9ae-a5d261dfd77b/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/975beaf2-4891-4adb-a9ae-a5d261dfd77b/aGx1MG9YNG9qdlZxdnVoRS92Qm51MysxN3VjWEQ2YWtDV0lXMFh5ZlJJamFKM3YzRWxiaGEzenNzbzdwVENoeQ/clip.mp4",
               "asset_id": "975beaf2-4891-4adb-a9ae-a5d261dfd77b",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1865,6 +1972,7 @@
               "league": "NPBML",
               "event_id": "6ab798b97d09c74e98c9eb45",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1878,7 +1986,7 @@
           "synergy_id": "607e90c12a20973e219e92ad",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/b136a5a5-56fd-4aba-85aa-2eec96d00e98/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/b136a5a5-56fd-4aba-85aa-2eec96d00e98/THV3NldJTjR2ajY4b1cvTk03VlpDUUtiQTR3Wm1LV3BpbUFQOHBpam9xQT0/clip.mp4",
               "asset_id": "b136a5a5-56fd-4aba-85aa-2eec96d00e98",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -1886,11 +1994,12 @@
               "league": "FRON",
               "event_id": "6a4b548c784660da0b81627d",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/b136a5a5-56fd-4aba-85aa-2eec96d00e98/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/b136a5a5-56fd-4aba-85aa-2eec96d00e98/RytuU0NZaUxoODF6NkpnaytVUlN0ejA4Q3ZhcnhSdGYyaDkxV0daWkFpQT0/clip.mp4",
               "asset_id": "b136a5a5-56fd-4aba-85aa-2eec96d00e98",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -1898,6 +2007,7 @@
               "league": "FRON",
               "event_id": "6a4b545e0263120d4c47a3f8",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1911,7 +2021,7 @@
           "synergy_id": "5c3caa482ae7c358342282d7",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/200eae0c-b969-48ff-918f-f21b1aa4ee0e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/200eae0c-b969-48ff-918f-f21b1aa4ee0e/UVRKN1p3bHRuNU11L1BVdnRmT3NsTVE1M05UMjR3am1XMnZkbjZuVWVKND0/clip.mp4",
               "asset_id": "200eae0c-b969-48ff-918f-f21b1aa4ee0e",
               "angle": "LowHome",
               "pitch_type": "FASTBALL",
@@ -1919,11 +2029,12 @@
               "league": "LBPRC",
               "event_id": "677e2b0fe24952c4640de9e9",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/200eae0c-b969-48ff-918f-f21b1aa4ee0e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/200eae0c-b969-48ff-918f-f21b1aa4ee0e/UVVSUjNWeXJDc1RrRXpONGUvZ3lKU254MTBSak1BTjhqL0JrL3ppK0dHdz0/clip.mp4",
               "asset_id": "200eae0c-b969-48ff-918f-f21b1aa4ee0e",
               "angle": "LowHome",
               "pitch_type": "SLIDER",
@@ -1931,6 +2042,7 @@
               "league": "LBPRC",
               "event_id": "677e2aa8e24952c4640de9d4",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1944,7 +2056,7 @@
           "synergy_id": "582b882b35be47a9274e0009",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/1302c0c4-f598-4473-827c-bc3aaaad5ea1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1302c0c4-f598-4473-827c-bc3aaaad5ea1/QUlyWi9TakpuTGRzdWp1eDJWVEx6eUtSb2Jwa3ViU21UbGFmb1d3VmQ3WT0/clip.mp4",
               "asset_id": "1302c0c4-f598-4473-827c-bc3aaaad5ea1",
               "angle": "HighHome",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -1952,11 +2064,12 @@
               "league": "LIDOM",
               "event_id": "6ad5a35d813a99ca9b374514",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/1302c0c4-f598-4473-827c-bc3aaaad5ea1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1302c0c4-f598-4473-827c-bc3aaaad5ea1/T2JjYndSRlNXZHFmZkxheDIzeXJjdU43VVp4ekJqMW1Gd3BqNzIvVlhiYz0/clip.mp4",
               "asset_id": "1302c0c4-f598-4473-827c-bc3aaaad5ea1",
               "angle": "HighHome",
               "pitch_type": "CURVEBALL",
@@ -1964,6 +2077,7 @@
               "league": "LIDOM",
               "event_id": "6ad5a5a6813a99ca9b3745a4",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -1979,7 +2093,7 @@
           "synergy_id": "5abcb5312cb661f2936359ad",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -1987,11 +2101,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -1999,11 +2114,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2011,6 +2127,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2024,7 +2141,7 @@
           "synergy_id": "5c44a59029c75d6bac21c73d",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2032,11 +2149,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2044,11 +2162,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2056,6 +2175,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2069,7 +2189,7 @@
           "synergy_id": "5abcb5312cb661f293635166",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2077,11 +2197,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2089,11 +2210,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2101,6 +2223,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2114,7 +2237,7 @@
           "synergy_id": "5abcb5312cb661f2936356e5",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2122,11 +2245,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2134,11 +2258,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2146,6 +2271,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2159,7 +2285,7 @@
           "synergy_id": "634407ef8125843e5afdc6c3",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2167,11 +2293,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2179,11 +2306,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2191,6 +2319,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2204,7 +2333,7 @@
           "synergy_id": "62031461f43ef499fa336e17",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2212,11 +2341,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2224,11 +2354,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2236,6 +2367,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2249,7 +2381,7 @@
           "synergy_id": "602da37a546065e992c14b52",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2257,11 +2389,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2269,11 +2402,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2281,6 +2415,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2294,7 +2429,7 @@
           "synergy_id": "612334a9953ce4571b7a9885",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/4cf1b01b-4251-454e-b605-6c5aa98756f2/Tm1LNHNQWW5vdUlMeTlkSlB3MHhMaHBPOU15SkVjZkdKL3craUxCWTI1MD0/clip.mp4",
               "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
               "angle": "HighHome",
               "pitch_type": "",
@@ -2302,11 +2437,12 @@
               "league": "LBPRC",
               "event_id": "69533c006b74e54ea61b9d49",
               "result": "Popout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Popout"
             },
             {
-              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3bf1158c-9a6f-4341-8105-38f64e24174c/MXY4R2hkM2x2ejJvZXloRVRWWnJBQWN1ZWVmTEtKVFBUQ0JlT0tEcGxsaz0/clip.mp4",
               "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -2314,11 +2450,12 @@
               "league": "LBPRC",
               "event_id": "695340516b74e54ea61b9dcf",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             },
             {
-              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/UzZzdklnbFJsTzMvTlB0NkM5c1MwWHp2U0ZZczZSWUQ4MDZjUDkvQnY3bz0/clip.mp4",
               "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2326,6 +2463,7 @@
               "league": "LBPRC",
               "event_id": "6951f821b15d9b2b8a54f5ce",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -2346,7 +2484,7 @@
           "synergy_id": "5cad08898df5e60d6c924061",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/bc130b0e-aa65-4b3f-b441-278d24c1e554/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bc130b0e-aa65-4b3f-b441-278d24c1e554/MnpZdllobG9TSTNzTnJGbGlMYlFESjlPVExMTE0wNGROQTZMUVRsTHd4ND0/clip.mp4",
               "asset_id": "bc130b0e-aa65-4b3f-b441-278d24c1e554",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2354,11 +2492,12 @@
               "league": "LMP",
               "event_id": "6ae710221534a50380c9c3a6",
               "result": "HomeRun",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/bc130b0e-aa65-4b3f-b441-278d24c1e554/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bc130b0e-aa65-4b3f-b441-278d24c1e554/SWJQKzRHWTdIRWhHSGlyNlNHVXBiR0d6bGg5WUVtV2JxeWFPWHlLeWVaUT0/clip.mp4",
               "asset_id": "bc130b0e-aa65-4b3f-b441-278d24c1e554",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2366,6 +2505,7 @@
               "league": "LMP",
               "event_id": "6ae710381534a50380c9c3a9",
               "result": "HomeRun",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2379,7 +2519,7 @@
           "synergy_id": "5cf9745329c59c0498923390",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/974fd62f-dce9-4d60-b02f-c88429a8dbb3/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/974fd62f-dce9-4d60-b02f-c88429a8dbb3/TGZzVzR0Qm9HNmFCOURHNjkwMXVqSVJuUWp6TTZxSy8vRFNMT0ZLKzA2WldLNTlGOCtpekUxTXlnTnVXMzFmKw/clip.mp4",
               "asset_id": "974fd62f-dce9-4d60-b02f-c88429a8dbb3",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -2387,11 +2527,12 @@
               "league": "MILB",
               "event_id": "6aae6723535a600147c0c102",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/974fd62f-dce9-4d60-b02f-c88429a8dbb3/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/974fd62f-dce9-4d60-b02f-c88429a8dbb3/K0FOdkdqN0hSZXA5YWt3ZHFMWnd5SEtBajZTQWQ3dGFSNUo0UlF1NXNKWmZBeFkwOXFLVDgybGVJVVZUWHJwbg/clip.mp4",
               "asset_id": "974fd62f-dce9-4d60-b02f-c88429a8dbb3",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -2399,6 +2540,7 @@
               "league": "MILB",
               "event_id": "6aae66e8fb4c49901604a8d2",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2412,7 +2554,7 @@
           "synergy_id": "573d7065080cc2cbe8bf3063",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/6500528d-e140-4b12-890d-ca56326bb4a0/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6500528d-e140-4b12-890d-ca56326bb4a0/ZzBQamlzU0Y2T0p2eEo2cUJRbTZ0bXBjQzdzSm1nOTh2bW5zUkR2Z3JkZz0/clip.mp4",
               "asset_id": "6500528d-e140-4b12-890d-ca56326bb4a0",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2420,11 +2562,12 @@
               "league": "LMB",
               "event_id": "6a7088de6417f168aec888ce",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6500528d-e140-4b12-890d-ca56326bb4a0/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6500528d-e140-4b12-890d-ca56326bb4a0/MTRhWFRCRWJHZjNlN0U0bnVuNVVnQTdSbW4yNEtPRnBRdlprN1kzVHlUMD0/clip.mp4",
               "asset_id": "6500528d-e140-4b12-890d-ca56326bb4a0",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2432,6 +2575,7 @@
               "league": "LMB",
               "event_id": "6a7088d0185f415806fc31e8",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2445,7 +2589,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc11318",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/64960908-6219-4006-b809-4cbf705f6b5d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/64960908-6219-4006-b809-4cbf705f6b5d/OUY4NWIxelNpNlozczJyWnNFdWxRUEhnSU1aTEtrUDhicFFSWjBQNGtqUT0/clip.mp4",
               "asset_id": "64960908-6219-4006-b809-4cbf705f6b5d",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2453,11 +2597,12 @@
               "league": "AAPB",
               "event_id": "6a8970c491742d3a54d45d9f",
               "result": "LinedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/12dbef7a-f950-4266-ae6f-b20ce93c588d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/12dbef7a-f950-4266-ae6f-b20ce93c588d/TFhIOVB1RzVNNjBXMGhQczRtU1FSeGltd2FZeUFZZW52V3dLZjFKUXdKND0/clip.mp4",
               "asset_id": "12dbef7a-f950-4266-ae6f-b20ce93c588d",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2465,6 +2610,7 @@
               "league": "AAPB",
               "event_id": "6a87f95f973a9dfae6cdce82",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2478,7 +2624,7 @@
           "synergy_id": "603a6a6e94720836d4b3ef1d",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/6f259039-8699-44d0-b74e-2ba19763253f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6f259039-8699-44d0-b74e-2ba19763253f/am5DUGR0TCs0bWdodzd3ckw2MVp2VVRQclhSbVIxbWxoOURSbVFQMUpScz0/clip.mp4",
               "asset_id": "6f259039-8699-44d0-b74e-2ba19763253f",
               "angle": "LowHome",
               "pitch_type": "FASTBALL",
@@ -2486,11 +2632,12 @@
               "league": "LBPRC",
               "event_id": "69660a5c3f244cc7f7c7ecba",
               "result": "HitByPitch",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6f259039-8699-44d0-b74e-2ba19763253f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6f259039-8699-44d0-b74e-2ba19763253f/ZFUxTmo0OUUvczdEVkRFTHlzSkZRWlpheTNJQXl0U04zZGRzZDZKSlpYbz0/clip.mp4",
               "asset_id": "6f259039-8699-44d0-b74e-2ba19763253f",
               "angle": "LowHome",
               "pitch_type": "SLIDER",
@@ -2498,6 +2645,7 @@
               "league": "LBPRC",
               "event_id": "69660a553f244cc7f7c7ecb9",
               "result": "HitByPitch",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2511,7 +2659,7 @@
           "synergy_id": "5f387d65d812f7433020842b",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d/bjhkVDFTQmM2Y3hEK2kzKzVDZEV2M0hML3doUHNZUzBRWGhoR2pCWjFNND0/clip.mp4",
               "asset_id": "e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2519,11 +2667,12 @@
               "league": "MILB",
               "event_id": "6aa2878c5152d1c84e54c25d",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d/MUJhb2Y3bzZaMkdEa3QydFo4U0NRYXJtRjlPekdna1BoQUs3MGhpQjlhUT0/clip.mp4",
               "asset_id": "e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -2531,6 +2680,7 @@
               "league": "MILB",
               "event_id": "6aa287805152d1c84e54c258",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2544,7 +2694,7 @@
           "synergy_id": "5aeffb0b9559b26e7e9b7c09",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/cca7a10d-6cdc-4549-ab30-8d053fd6a711/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/cca7a10d-6cdc-4549-ab30-8d053fd6a711/SURxMlFFeHhpcFdFVW1QcUxqczdUK1A5L01IUUVPME9DS0ZqZy8vdWdSST0/clip.mp4",
               "asset_id": "cca7a10d-6cdc-4549-ab30-8d053fd6a711",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2552,11 +2702,12 @@
               "league": "LBPRC",
               "event_id": "69103cf44862e85cc73f596e",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/cca7a10d-6cdc-4549-ab30-8d053fd6a711/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/cca7a10d-6cdc-4549-ab30-8d053fd6a711/ai9sQlgyMXdiZFFpNFNYZHNIenhtdmlkS1h1RmFMTXB3cFFhZWxhNlJvMD0/clip.mp4",
               "asset_id": "cca7a10d-6cdc-4549-ab30-8d053fd6a711",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2564,6 +2715,7 @@
               "league": "LBPRC",
               "event_id": "69103c83b32addd7191461d1",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2577,7 +2729,7 @@
           "synergy_id": "6115b53de911423818fc3fc1",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/7b4d8b08-3196-4a6e-90cd-c2e00f926c94/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7b4d8b08-3196-4a6e-90cd-c2e00f926c94/aWhLQmVnNXRCRGViNUtqUE51ZkZrZHF3bk9GdVhZdlpoS3JWN1JVSmxBYz0/clip.mp4",
               "asset_id": "7b4d8b08-3196-4a6e-90cd-c2e00f926c94",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2585,11 +2737,12 @@
               "league": "FRON",
               "event_id": "6aa37f9b0a36416512d5e0c9",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/7b4d8b08-3196-4a6e-90cd-c2e00f926c94/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7b4d8b08-3196-4a6e-90cd-c2e00f926c94/R1QrdGNMYUV6b1VTb1JldHRkREwrMWdLRFUzTlR2MXFEL0lUMkVMcWh2OD0/clip.mp4",
               "asset_id": "7b4d8b08-3196-4a6e-90cd-c2e00f926c94",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -2597,6 +2750,7 @@
               "league": "FRON",
               "event_id": "6aa37fb80a36416512d5e0da",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2610,7 +2764,7 @@
           "synergy_id": "5e48606406c7bff564766247",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/3ffecc55-c37d-47bf-8684-8e2446eb48ae/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3ffecc55-c37d-47bf-8684-8e2446eb48ae/RHJzUWVWQm1OUHdtQ1dGcG1SaktWc2F6Vk5OeEhYMUFFV1h0dnZFYzdwQT0/clip.mp4",
               "asset_id": "3ffecc55-c37d-47bf-8684-8e2446eb48ae",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2618,11 +2772,12 @@
               "league": "MILB",
               "event_id": "6aa7e733010a0791e93cc299",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/3ffecc55-c37d-47bf-8684-8e2446eb48ae/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/3ffecc55-c37d-47bf-8684-8e2446eb48ae/aTAwRXNFRmhOVisyc0diOFZWU01ENUgvNjBzeXVEZVVKOG9zNWNSOUhEdz0/clip.mp4",
               "asset_id": "3ffecc55-c37d-47bf-8684-8e2446eb48ae",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2630,6 +2785,7 @@
               "league": "MILB",
               "event_id": "6aa7e6c0f6637b9396ec9de0",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2643,7 +2799,7 @@
           "synergy_id": "5f8c915b1cb0540001a54b5c",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/a8358081-9127-4cb6-9ac7-25e51c74cf1c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a8358081-9127-4cb6-9ac7-25e51c74cf1c/YXVRMFZDNjR4TmFzYVg4RFVGVjNtUWZ3eURlQUh5V2pUWDAyOFVHcnFGRT0/clip.mp4",
               "asset_id": "a8358081-9127-4cb6-9ac7-25e51c74cf1c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2651,11 +2807,12 @@
               "league": "FRON",
               "event_id": "6a990b53066a27639b9cfa04",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/a8358081-9127-4cb6-9ac7-25e51c74cf1c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a8358081-9127-4cb6-9ac7-25e51c74cf1c/TDBhUjV0TThjd1JOM3cxTWU2K0RzVDlHTWkrblF4SnlPK25lWnlia0lVVT0/clip.mp4",
               "asset_id": "a8358081-9127-4cb6-9ac7-25e51c74cf1c",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2663,6 +2820,7 @@
               "league": "FRON",
               "event_id": "6a990b66b71653343c89bc97",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2676,7 +2834,7 @@
           "synergy_id": "5d46fdb14b8b4f2d3c4aeb5d",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e3c1d671-4afa-4adb-a3dc-166687885a06/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e3c1d671-4afa-4adb-a3dc-166687885a06/NTg2VzNBVWJGUkF2U0M0akR6UWpTUkVpUGUzQk5BUGJFWDJ5K1NUdjZ2OD0/clip.mp4",
               "asset_id": "e3c1d671-4afa-4adb-a3dc-166687885a06",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2684,11 +2842,12 @@
               "league": "MILB",
               "event_id": "6a69f6324816ef8009be781e",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e3c1d671-4afa-4adb-a3dc-166687885a06/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e3c1d671-4afa-4adb-a3dc-166687885a06/MkdqV1k0RC9JOVFhMlhVRTJYemZaYlZzSUJJOGc5a2wyMXZhK0dJYTBROD0/clip.mp4",
               "asset_id": "e3c1d671-4afa-4adb-a3dc-166687885a06",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2696,6 +2855,7 @@
               "league": "MILB",
               "event_id": "6a69f61c4816ef8009be7805",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2709,7 +2869,7 @@
           "synergy_id": "5e203911cba3c7495422a551",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/34b1dc0a-fa01-4bb2-b74c-97213118c25c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/34b1dc0a-fa01-4bb2-b74c-97213118c25c/em1IL0cvMW83a2lHL2VVczl2SnduTzJ5YUdTSWpscC9oU1cySngrdzFQWT0/clip.mp4",
               "asset_id": "34b1dc0a-fa01-4bb2-b74c-97213118c25c",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2717,11 +2877,12 @@
               "league": "MILB",
               "event_id": "6a9c1127ae24a11f696c3ea8",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/34b1dc0a-fa01-4bb2-b74c-97213118c25c/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/34b1dc0a-fa01-4bb2-b74c-97213118c25c/VDc5S2xFU1ZqLzlHdHRzL3Z4YlovbTIvQzgvdVdxRXhIckdyd0hnZXRacz0/clip.mp4",
               "asset_id": "34b1dc0a-fa01-4bb2-b74c-97213118c25c",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2729,6 +2890,7 @@
               "league": "MILB",
               "event_id": "6a9c0fdbae24a11f696c3dba",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2742,7 +2904,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc11543",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/bf702c4b-f7b8-425b-98fa-d061827feab8/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bf702c4b-f7b8-425b-98fa-d061827feab8/RXFMZzBRUHRodTVyZ2NlRk1NZTE3Qm1LcG1OWlhZbEx6QnNmSUZ6aUV1Zz0/clip.mp4",
               "asset_id": "bf702c4b-f7b8-425b-98fa-d061827feab8",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2750,11 +2912,12 @@
               "league": "WBSCBB",
               "event_id": "6a82233ba03353e6fa922b1e",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/bf702c4b-f7b8-425b-98fa-d061827feab8/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/bf702c4b-f7b8-425b-98fa-d061827feab8/Ukw0R0dmR2VRRWV5V3JjQ1pPdUZEcDhUQWkva000QkJLcWU0bW1EQm1pOD0/clip.mp4",
               "asset_id": "bf702c4b-f7b8-425b-98fa-d061827feab8",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -2762,6 +2925,7 @@
               "league": "WBSCBB",
               "event_id": "6a822359a03353e6fa922b28",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2775,7 +2939,7 @@
           "synergy_id": "638e3074774478a128320d48",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/b2659a7e-585f-4ef9-a470-bc1a4c2f74d7/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/b2659a7e-585f-4ef9-a470-bc1a4c2f74d7/Z1VsN3NxbmoxRTJ3aFpmd0RNZW43SU1GYnAyT015L3dQUGVBaTRpSGFVND0/clip.mp4",
               "asset_id": "b2659a7e-585f-4ef9-a470-bc1a4c2f74d7",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2783,11 +2947,12 @@
               "league": "LBPRC",
               "event_id": "65a0276f7073318abcb20ad0",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/b2659a7e-585f-4ef9-a470-bc1a4c2f74d7/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/b2659a7e-585f-4ef9-a470-bc1a4c2f74d7/b1dvSk1Qd1VlQTFsNXJ3S2JhTEkxUjE0S3F6bWZSVTlFRmJuaWpJUDlSQT0/clip.mp4",
               "asset_id": "b2659a7e-585f-4ef9-a470-bc1a4c2f74d7",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2795,6 +2960,7 @@
               "league": "LBPRC",
               "event_id": "65a026eb32226e6b2b3605cb",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2808,7 +2974,7 @@
           "synergy_id": "5f8b05e9d9b60b00014e20de",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/44545aa0-0c31-46ce-aec6-4343d83a93bd/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/44545aa0-0c31-46ce-aec6-4343d83a93bd/Q3V0RHhNK1ZnTE1oNThhZGp3RW5DWWV1RTV3dHEycG5vK0pXNUdHbDl3b1VGRFVwOWp6OGhHK2lTTUl1QUw0VA/clip.mp4",
               "asset_id": "44545aa0-0c31-46ce-aec6-4343d83a93bd",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2816,11 +2982,12 @@
               "league": "MILB",
               "event_id": "6aa3f44f7215d72e1496c272",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/44545aa0-0c31-46ce-aec6-4343d83a93bd/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/44545aa0-0c31-46ce-aec6-4343d83a93bd/bGZFVjdBalpPajNFZWJTVUEyWTd6Q0kxcnpWZEx6eEZQS2FpMzJoY1Zab0tDd2tkOWs2RnVDeDE3djFKREFMcA/clip.mp4",
               "asset_id": "44545aa0-0c31-46ce-aec6-4343d83a93bd",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2828,6 +2995,7 @@
               "league": "MILB",
               "event_id": "6aa3f46f96706f31b3d46f52",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2841,7 +3009,7 @@
           "synergy_id": "618783e7c379865a58bb2720",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/85594e2c-22fa-47f8-bc66-1cb2b2f130a2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/85594e2c-22fa-47f8-bc66-1cb2b2f130a2/Rkc5OWpkVjRtM2pGWjdqNzM3ZDVlaDNhblJZUXdLeUNCNTFrZytyK2RZczZSL0tsY1JmOGVTeGV1OEh0MTA3Sg/clip.mp4",
               "asset_id": "85594e2c-22fa-47f8-bc66-1cb2b2f130a2",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2849,11 +3017,12 @@
               "league": "MILB",
               "event_id": "6a9ed0aa2f0f0b61ab6a6fea",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/85594e2c-22fa-47f8-bc66-1cb2b2f130a2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/85594e2c-22fa-47f8-bc66-1cb2b2f130a2/dWprc3k1ZFhvTGx6aVVNSDU2bWRxZHdqek50cVY3Vmg5MVBjZm9VUGhURC9KM0d3bzd5d2JqWjcwZm9HVk1xSg/clip.mp4",
               "asset_id": "85594e2c-22fa-47f8-bc66-1cb2b2f130a2",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2861,6 +3030,7 @@
               "league": "MILB",
               "event_id": "6a9ed0ba2f0f0b61ab6a6ff3",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2874,7 +3044,7 @@
           "synergy_id": "5d0d977d4b8b504a2c04114a",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5/UDc5dFNneUFXV1p3N0hwL2o4UmdvandPWnJwZUxDWER6NzVSL2thcnhyM0F3L1djR25SZ3Ribm5GaVR3ZWlVRA/clip.mp4",
               "asset_id": "eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -2882,11 +3052,12 @@
               "league": "MILB",
               "event_id": "6aaa83a6961bc9b7b5c32266",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5/OHlFSm1FaW5pLy8zaFBudlNobSsrNDUvNm44eW9JVEFzaEFNUTl3empkOGNCamdmWnZJRExlSUo2Q0JYN3NOUw/clip.mp4",
               "asset_id": "eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5",
               "angle": "AsLogged",
               "pitch_type": "SWEEPER",
@@ -2894,6 +3065,7 @@
               "league": "MILB",
               "event_id": "6aaa83c41f061a7a366b0cf6",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2907,7 +3079,7 @@
           "synergy_id": "5f889f3e1cb0540001a5488d",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/1f13de4c-0bed-475f-a067-376430556061/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1f13de4c-0bed-475f-a067-376430556061/QWw4Q3I4aHI0SUs3MTRLNW5vM0RqWjZsUTVsblhNeWJ6YXhidGgwbkdIWT0/clip.mp4",
               "asset_id": "1f13de4c-0bed-475f-a067-376430556061",
               "angle": "AsLogged",
               "pitch_type": "FASTBALLFOURSEAM",
@@ -2915,11 +3087,12 @@
               "league": "MILB",
               "event_id": "6a2bef9bc95b71a7af93ce65",
               "result": "Double",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/1f13de4c-0bed-475f-a067-376430556061/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/1f13de4c-0bed-475f-a067-376430556061/cVFoUUd0SGJmTEZLMlpDcjIwMTZMcXVZSnJDTks5MlhKMXJ5aDNMdXR1Zz0/clip.mp4",
               "asset_id": "1f13de4c-0bed-475f-a067-376430556061",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2927,6 +3100,7 @@
               "league": "MILB",
               "event_id": "6a2befd0504971378886f772",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2940,7 +3114,7 @@
           "synergy_id": "5c4201293a22f215c43aeb3a",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/a99b0456-c72b-4c22-8b65-133a4bfd364f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a99b0456-c72b-4c22-8b65-133a4bfd364f/TUFqWjc0cnk1VUJWeDUyUzMrOEVETHpHeFh5b0NIamdWcklBYXA1SDNlbkkrQ0hlbndiVFl1YklMT0RrOHNSQQ/clip.mp4",
               "asset_id": "a99b0456-c72b-4c22-8b65-133a4bfd364f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2948,11 +3122,12 @@
               "league": "MILB",
               "event_id": "6a29589d3915cb292f583261",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/a99b0456-c72b-4c22-8b65-133a4bfd364f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/a99b0456-c72b-4c22-8b65-133a4bfd364f/QUJpTzBhNmgwZ0kvbS9kODlGSXBYWXhxakZ4K2lWL3A2bmU2Z2Y0TkpSbWNNM25Ya3hWUStUaHh3Umt6ZGt0aw/clip.mp4",
               "asset_id": "a99b0456-c72b-4c22-8b65-133a4bfd364f",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -2960,6 +3135,7 @@
               "league": "MILB",
               "event_id": "6a2958954e2c216270fbcd29",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -2973,7 +3149,7 @@
           "synergy_id": "5df286ca4b8b5006984fee0f",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/0b17dd34-c749-4322-bb02-7d4c75da569f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/0b17dd34-c749-4322-bb02-7d4c75da569f/RTZnMUkvd2x1NGFNRzJpVnp2R3Z6UXVyS2c5UjdycEMxMVpoY1FHRDZhdzRZZE5NN2h2WnVjano2aW05Y1hiWQ/clip.mp4",
               "asset_id": "0b17dd34-c749-4322-bb02-7d4c75da569f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -2981,11 +3157,12 @@
               "league": "LBPRC",
               "event_id": "695924ec90538b49a33666ff",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/0b17dd34-c749-4322-bb02-7d4c75da569f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/0b17dd34-c749-4322-bb02-7d4c75da569f/MUVaQkczY0ljZ2tjcWJHYXlTV05wZGgxVUlZemRsWFd5dXVYSzNDaEJFSkxjWTV1L1FGS0tuS2RZY0gwNmdGUw/clip.mp4",
               "asset_id": "0b17dd34-c749-4322-bb02-7d4c75da569f",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -2993,6 +3170,7 @@
               "league": "LBPRC",
               "event_id": "695924f7a82af2283b047962",
               "result": "Groundout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3006,7 +3184,7 @@
           "synergy_id": "5f84b8c41cb0540001a544d9",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e3eda0b2-fe6c-4507-9622-d42c0c113ee8/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e3eda0b2-fe6c-4507-9622-d42c0c113ee8/MTJnL2VBMFo3SFBvWGNWR1QrVDh0VndLR2c2SHdOaERxUm5xdzFJTFN5a21yRURWUXdLYWJxRFJFZ0RObkh4UQ/clip.mp4",
               "asset_id": "e3eda0b2-fe6c-4507-9622-d42c0c113ee8",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3014,11 +3192,12 @@
               "league": "ALPB",
               "event_id": "6aa664e0ef3b100036cf930d",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e3eda0b2-fe6c-4507-9622-d42c0c113ee8/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e3eda0b2-fe6c-4507-9622-d42c0c113ee8/dm5yaWpidzZPKzRyVnl4czhlbWNJODM3OVFDN0cxUWovS1cvQUFDbG5jVzhOTnI4TkU0Rk9XdGtlYWllQ1VvcQ/clip.mp4",
               "asset_id": "e3eda0b2-fe6c-4507-9622-d42c0c113ee8",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -3026,6 +3205,7 @@
               "league": "ALPB",
               "event_id": "6aa664e6ef3b100036cf930e",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3039,7 +3219,7 @@
           "synergy_id": "5d0d95b24b8b504a2c040fdf",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/232e898c-4b14-4282-95a4-10814c5eb5b8/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/232e898c-4b14-4282-95a4-10814c5eb5b8/cVQ2bTJKakQ2ZHlBMElvUGJWVmpjREpoZ1RwVi9XWXJzVkUxdk1iaGN3az0/clip.mp4",
               "asset_id": "232e898c-4b14-4282-95a4-10814c5eb5b8",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3047,11 +3227,12 @@
               "league": "MILB",
               "event_id": "680606b1582c8c046b2bef4e",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6fbc7b1a-b69d-41e9-8842-aaf30e18c5d6/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6fbc7b1a-b69d-41e9-8842-aaf30e18c5d6/RkVmZFhWbGVCMVlkM0x1S2JrSERWU0ZSaTVhRnVxMEpvQzFYYTd3VFRTQ08wSHhkV083NFIybUNUMTZHWHhXRg/clip.mp4",
               "asset_id": "6fbc7b1a-b69d-41e9-8842-aaf30e18c5d6",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3059,6 +3240,7 @@
               "league": "MILB",
               "event_id": "680a673a79370e70b84ff59e",
               "result": "Triple",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3082,7 +3264,7 @@
           "synergy_id": "618777c7c379865a58bb2607",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/f35619d5-314a-4b4c-8cda-7292751fdc8f/Y0QvZHEyc3ZidzRqZzNyNEVOQnlia2hQZGhLZkFtSDI5enBsVFZFNHU1UT0/clip.mp4",
               "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3090,6 +3272,7 @@
               "league": "LBPRC",
               "event_id": "696e04b7c1035f8c76d62d8d",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -3111,7 +3294,7 @@
           "synergy_id": "60100e076416d8c9ea744ca5",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/f35619d5-314a-4b4c-8cda-7292751fdc8f/Y0QvZHEyc3ZidzRqZzNyNEVOQnlia2hQZGhLZkFtSDI5enBsVFZFNHU1UT0/clip.mp4",
               "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3119,6 +3302,7 @@
               "league": "LBPRC",
               "event_id": "696e04b7c1035f8c76d62d8d",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -3132,7 +3316,7 @@
           "synergy_id": "58d92c1e4b8b533e00f4db3a",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/f35619d5-314a-4b4c-8cda-7292751fdc8f/Y0QvZHEyc3ZidzRqZzNyNEVOQnlia2hQZGhLZkFtSDI5enBsVFZFNHU1UT0/clip.mp4",
               "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3140,6 +3324,7 @@
               "league": "LBPRC",
               "event_id": "696e04b7c1035f8c76d62d8d",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 Strikeout"
             }
@@ -3160,7 +3345,7 @@
           "synergy_id": "6a3f5afcbf122fd43965efeb",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/03b37109-e1f8-40ee-94e1-73e4fcbf70df/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/03b37109-e1f8-40ee-94e1-73e4fcbf70df/MHRPdCsxcmlTcVE2V2dHVlEwK1VrSVBrVXpHRmNNQVF6SW1UY0dKcFk1bz0/clip.mp4",
               "asset_id": "03b37109-e1f8-40ee-94e1-73e4fcbf70df",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3168,11 +3353,12 @@
               "league": "ALPB",
               "event_id": "6aa231955152d1c84e54a808",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/03b37109-e1f8-40ee-94e1-73e4fcbf70df/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/03b37109-e1f8-40ee-94e1-73e4fcbf70df/VVVMUHRubVYrVkR4WE9CMTRxdnRBYm9qN3A3elBHMTNsVTJPWS9jR2graz0/clip.mp4",
               "asset_id": "03b37109-e1f8-40ee-94e1-73e4fcbf70df",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -3180,6 +3366,7 @@
               "league": "ALPB",
               "event_id": "6aa231ef5152d1c84e54a822",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3209,7 +3396,7 @@
           "synergy_id": "5deb5e694b8b4f28d0143deb",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/630dda00-feba-4bd7-86ac-bce6970bead1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/630dda00-feba-4bd7-86ac-bce6970bead1/L05la2gwbnF0UFFyY0I5QnRkSWI2NmwvMjV1ZDhmbmo0MDM3S3VQQzR2TnhKZGR2dXJlYzFYcEtrN0w0T2QxVQ/clip.mp4",
               "asset_id": "630dda00-feba-4bd7-86ac-bce6970bead1",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3217,11 +3404,12 @@
               "league": "ALPB",
               "event_id": "6a9d4965300caff1d7168869",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/cead3692-6bcc-4c36-981b-e37cb9c850e6/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/cead3692-6bcc-4c36-981b-e37cb9c850e6/Mi9tMDkrTDJsbWxoeEVFYzhaSlhEN0U1K0I1UXJ4eStsVXhaVVl2OWwrd1IrZXR6RVJZekNsdGd1YUt0NEdCUg/clip.mp4",
               "asset_id": "cead3692-6bcc-4c36-981b-e37cb9c850e6",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3229,6 +3417,7 @@
               "league": "ALPB",
               "event_id": "6a992da6066a27639b9d12f3",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3242,7 +3431,7 @@
           "synergy_id": "5834aa2d35be47a927637d92",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/7cfc0c17-2eca-4073-b68f-c7e6d0e74820/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7cfc0c17-2eca-4073-b68f-c7e6d0e74820/RHI5WnJYQnhOMTJaVU51MlFEbnk2anNwRGphRHpPaHI1RXR4VEJFUHNmczFRd2xDdkVNcXAzL2RZamNNVmUzUw/clip.mp4",
               "asset_id": "7cfc0c17-2eca-4073-b68f-c7e6d0e74820",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3250,11 +3439,12 @@
               "league": "WBSCBB",
               "event_id": "6a822072a03353e6fa9229ba",
               "result": "Single",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/7cfc0c17-2eca-4073-b68f-c7e6d0e74820/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/7cfc0c17-2eca-4073-b68f-c7e6d0e74820/QWlRRmwyYU93end2dW5DbFBPWTdIdFRvaXlBdit0UXZwM1NLMEdLT3hhNDV4TnlMbFdSZXpIQVcxNlUyRmRicg/clip.mp4",
               "asset_id": "7cfc0c17-2eca-4073-b68f-c7e6d0e74820",
               "angle": "AsLogged",
               "pitch_type": "CHANGEUP",
@@ -3262,6 +3452,7 @@
               "league": "WBSCBB",
               "event_id": "6a822077a03353e6fa9229bc",
               "result": "Single",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3275,7 +3466,7 @@
           "synergy_id": "6145ec759b656db70d4bc2c0",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/56e30521-a74a-4ecd-ad01-98a27696dea1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/56e30521-a74a-4ecd-ad01-98a27696dea1/L2ZpN2JjWjNOYUJzTzlGQnp1S3NqREF6ZVM0dWpBS1BQT2VnTkJqMmMxQT0/clip.mp4",
               "asset_id": "56e30521-a74a-4ecd-ad01-98a27696dea1",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3283,11 +3474,12 @@
               "league": "PBL",
               "event_id": "6a67113e355866a21a609cf1",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/56e30521-a74a-4ecd-ad01-98a27696dea1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/56e30521-a74a-4ecd-ad01-98a27696dea1/b1hlcUNPRUNvVkp6L2VpRExxQWRBQklFNVhQVVZqNjdpNVBYSmR0SnFNOD0/clip.mp4",
               "asset_id": "56e30521-a74a-4ecd-ad01-98a27696dea1",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3295,6 +3487,7 @@
               "league": "PBL",
               "event_id": "6a67114bc40999c7ca4cce4d",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3308,7 +3501,7 @@
           "synergy_id": "5e52ca0f7455336e875b7a5d",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/04c13e30-4f9c-468d-805e-b3cedc342143/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/04c13e30-4f9c-468d-805e-b3cedc342143/WVZkVGhQM0gwN1NzMTVDWlZJUXhoQ3BYVFJYSXRHU1dmREFkaWIrcDRvZz0/clip.mp4",
               "asset_id": "04c13e30-4f9c-468d-805e-b3cedc342143",
               "angle": "LowHome",
               "pitch_type": "FASTBALL",
@@ -3316,11 +3509,12 @@
               "league": "LBPRC",
               "event_id": "6951090ba65b0d28b116467d",
               "result": "FieldersChoiceOut",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/d8e16064-fd21-4149-8097-cc354466f6eb/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/d8e16064-fd21-4149-8097-cc354466f6eb/OXJGSFEzUkRTYmYvNGhjUmo3ODcwSTJlN2Z2cDcxY3ZEVGFtemFyK1I0OD0/clip.mp4",
               "asset_id": "d8e16064-fd21-4149-8097-cc354466f6eb",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3328,6 +3522,7 @@
               "league": "LBPRC",
               "event_id": "677f3a3d833c05cfc945c1de",
               "result": "Lineout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3341,7 +3536,7 @@
           "synergy_id": "67e6d014be559430bd271882",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/RUlDZ3d5WFNrOWdXQ0QyajBMQTBCb1ErWnNNTlJpNjk0SzRjRFo4ZUl3VT0/clip.mp4",
               "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3349,11 +3544,12 @@
               "league": "NPBML",
               "event_id": "6ad86e6fa80cee550a90fa5a",
               "result": "Walk",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/bmFQelpLMXNJVXYvRkJZalFwR0txZHovUzJBRmwrZUVVRVdzY2NOSFFqZz0/clip.mp4",
               "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
               "angle": "AsLogged",
               "pitch_type": "SPLITTER",
@@ -3361,6 +3557,7 @@
               "league": "NPBML",
               "event_id": "6ad86e59d71e5cd469bde00e",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3390,7 +3587,7 @@
           "synergy_id": "60fb2668f97523255ad9db6f",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/b0173e3b-0d19-415a-89e1-1b9e01c6fb57/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/b0173e3b-0d19-415a-89e1-1b9e01c6fb57/OFZXS2kxREhzQjUrMXJVbG4wbDdidHVvNFVFeUhCZ1dDczFwMElRVXpaWT0/clip.mp4",
               "asset_id": "b0173e3b-0d19-415a-89e1-1b9e01c6fb57",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3398,11 +3595,12 @@
               "league": "MILB",
               "event_id": "6a870b1c223b17421d2e9bf0",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6caa86c2-c3c8-4cc3-8c86-98c3ca8fab27/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6caa86c2-c3c8-4cc3-8c86-98c3ca8fab27/UjV3YUVTOU1uMjc3MEtWVEFIblVETTFZOFF0a0pXWG9GWitVNEV4QllGZjFaNEVqdFFyR1dvZkZsc2ZrZ0xydg/clip.mp4",
               "asset_id": "6caa86c2-c3c8-4cc3-8c86-98c3ca8fab27",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3410,6 +3608,7 @@
               "league": "MILB",
               "event_id": "6a8077e5dc08270d4f8173a5",
               "result": "Walk",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3423,7 +3622,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc11483",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e694c9f6-c4c9-479c-83f3-964125d15996/ZEw1ejYzcTFnMHhtd3ppSkJsdng1TkNRUDlDWVNUK0RodDNyblR2ZEFjbz0/clip.mp4",
               "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3431,11 +3630,12 @@
               "league": "LBPRC",
               "event_id": "69526bd1ff036ddff01c79f9",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e694c9f6-c4c9-479c-83f3-964125d15996/d3BBZ29HSnNSaHo5MlFERjNMcHZCbDIwVEU0ZGdaazBPM1dua3FsdGpTZz0/clip.mp4",
               "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3443,6 +3643,7 @@
               "league": "LBPRC",
               "event_id": "69526c04a12b69547f43927b",
               "result": "Strikeout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3456,7 +3657,7 @@
           "synergy_id": "5e04e5404b8b4f7430ff1067",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/6ae5cf03-3971-4d5f-afff-f6110688d49e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6ae5cf03-3971-4d5f-afff-f6110688d49e/c0hpWHZ1UGZiRVdMVmVjcmEwcGFGYnl4Yk9GOE5CdXU5d1hoTUZVMTAxZz0/clip.mp4",
               "asset_id": "6ae5cf03-3971-4d5f-afff-f6110688d49e",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3464,11 +3665,12 @@
               "league": "LBPRC",
               "event_id": "6942f923455ed020126e9b11",
               "result": "Popout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/6ae5cf03-3971-4d5f-afff-f6110688d49e/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6ae5cf03-3971-4d5f-afff-f6110688d49e/R1lvVkVJV0ExMk5IUytqWi9Oc212Z3dNYjhDUGpYempwdzI3cUoxNXR0cz0/clip.mp4",
               "asset_id": "6ae5cf03-3971-4d5f-afff-f6110688d49e",
               "angle": "AsLogged",
               "pitch_type": "CURVEBALL",
@@ -3476,6 +3678,7 @@
               "league": "LBPRC",
               "event_id": "6942f92d455ed020126e9b12",
               "result": "Popout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3497,7 +3700,7 @@
           "synergy_id": "681d6486373abc5e4678b3f2",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/S1Rjb3NMd3Eya0pLOTcyb21jWElXNmcwdlRSdXFxWThvM3hrMGltSU5raz0/clip.mp4",
               "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3505,11 +3708,12 @@
               "league": "NPBML",
               "event_id": "6ad84bfaa80cee550a90e8c4",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/Q3QrMm9XbksrQWI0VzJzMnJXSXlkWTF3bDAvT0F4LzJrOE1iYUxYbFMwST0/clip.mp4",
               "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3517,6 +3721,7 @@
               "league": "NPBML",
               "event_id": "6ad84be7a4729ed52c3e2607",
               "result": "GroundedIntoDoublePlay",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3530,7 +3735,7 @@
           "synergy_id": "623d659e2b7aa6e7196c79e7",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/c586218f-d62e-4026-87ce-8cbfb58d6a5d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c586218f-d62e-4026-87ce-8cbfb58d6a5d/NWd2OHBhV0FPTEV0YjZ2WlpXdzM2dmtrOVE5WVJKYTJZN0MzZDB4ZlpMWT0/clip.mp4",
               "asset_id": "c586218f-d62e-4026-87ce-8cbfb58d6a5d",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3538,11 +3743,12 @@
               "league": "ALPB",
               "event_id": "6a6385a37a09091d8ac15e9f",
               "result": "Double",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/c586218f-d62e-4026-87ce-8cbfb58d6a5d/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/c586218f-d62e-4026-87ce-8cbfb58d6a5d/b0ZUT25UUlNjNlBuTi9RTmwvTWFBN3RHS2ZEMXhJSS9TTCtlWktIM3JITT0/clip.mp4",
               "asset_id": "c586218f-d62e-4026-87ce-8cbfb58d6a5d",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3550,6 +3756,7 @@
               "league": "ALPB",
               "event_id": "6a6385acbf3069d08c447f74",
               "result": "Double",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3563,7 +3770,7 @@
           "synergy_id": "5fd12a915fe05a0e9fc11468",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/cbe93e04-a93f-4f1a-8271-d8d4fa193894/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/cbe93e04-a93f-4f1a-8271-d8d4fa193894/MVczSjY0VlRjWW1aVnJQUzRLSW5vcUlKSmtZYms4NmExNkh3RjVJVGtXMD0/clip.mp4",
               "asset_id": "cbe93e04-a93f-4f1a-8271-d8d4fa193894",
               "angle": "HighHome",
               "pitch_type": "FASTBALL",
@@ -3571,11 +3778,12 @@
               "league": "LBPRC",
               "event_id": "63aebd1b7c38ce8b4495dece",
               "result": "FieldersChoiceOut",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/cbe93e04-a93f-4f1a-8271-d8d4fa193894/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/cbe93e04-a93f-4f1a-8271-d8d4fa193894/ejNobGxuNFVhdHJTR0s5SHdKNnVKem9GMkppdVc2YmsrTVZpS2Zoc0Zkdz0/clip.mp4",
               "asset_id": "cbe93e04-a93f-4f1a-8271-d8d4fa193894",
               "angle": "HighHome",
               "pitch_type": "CURVEBALL",
@@ -3583,6 +3791,7 @@
               "league": "LBPRC",
               "event_id": "63aebd2ed5352a3da7f63b72",
               "result": "FieldersChoiceOut",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3596,7 +3805,7 @@
           "synergy_id": "5e1f3a8808f07a4f286d3fa9",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/48468def-c101-45b3-aef2-6047eda1cb05/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/48468def-c101-45b3-aef2-6047eda1cb05/VkVTRkZGK0RCampQMDBCbTFwaGw4M2lBSjA5bVdVbTEyZWNUNTNhMjkzST0/clip.mp4",
               "asset_id": "48468def-c101-45b3-aef2-6047eda1cb05",
               "angle": "AsLogged",
               "pitch_type": "FASTBALL",
@@ -3604,11 +3813,12 @@
               "league": "FRON",
               "event_id": "6a9e7728300caff1d7179add",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "FB",
               "label": "Fastball \u00b7 R1"
             },
             {
-              "url": "https://asset.synergysportstech.com/48468def-c101-45b3-aef2-6047eda1cb05/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/48468def-c101-45b3-aef2-6047eda1cb05/WnVHZUlyT1hvSTNmKzZuYWRNeXFsdVUyY3V1RzRQZWxHVUlHeHhpNlFpOD0/clip.mp4",
               "asset_id": "48468def-c101-45b3-aef2-6047eda1cb05",
               "angle": "AsLogged",
               "pitch_type": "SLIDER",
@@ -3616,6 +3826,7 @@
               "league": "FRON",
               "event_id": "6a9e7751300caff1d7179ae7",
               "result": "Flyout",
+              "kind": "clip",
               "slot": "OS",
               "label": "Offspeed \u00b7 R1"
             }
@@ -3631,7 +3842,7 @@
           "synergy_id": "5fcfc763b92d134ff91d69b4",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e694c9f6-c4c9-479c-83f3-964125d15996/YlVGaW8wdjFzRW5BRThPS1U2VHkvQXhQVnRJVGtnM0Fmc1dtT2JMRDJSdz0/clip.mp4",
               "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -3639,11 +3850,12 @@
               "league": "LBPRC",
               "event_id": "69526e9ca12b69547f43930e",
               "result": "StrikeTaken",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 StrikeTaken"
             },
             {
-              "url": "https://asset.synergysportstech.com/6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce/SWxmcW8veGNvd3FnYVhtK3hScEJKRTN1R3h4MWdqUkljOTZCaWtZTnYyYz0/clip.mp4",
               "asset_id": "6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce",
               "angle": "LowHome",
               "pitch_type": "CURVEBALL",
@@ -3651,11 +3863,12 @@
               "league": "LBPRC",
               "event_id": "6950cf080d4772becd279457",
               "result": "SacrificeFly",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 SacrificeFly"
             },
             {
-              "url": "https://asset.synergysportstech.com/9aefd267-9d87-49ec-92a4-606408d490f1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/9aefd267-9d87-49ec-92a4-606408d490f1/VGVKbEk5SkxRNHRwQkgzRzd1czMrN3YvKzVUNWoxb2pqOW54ZFk0VDgzND0/clip.mp4",
               "asset_id": "9aefd267-9d87-49ec-92a4-606408d490f1",
               "angle": "LowHome",
               "pitch_type": "SLIDER",
@@ -3663,6 +3876,7 @@
               "league": "LBPRC",
               "event_id": "69510789a65b0d28b116462b",
               "result": "SacrificeFly",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 SacrificeFly"
             }
@@ -3676,7 +3890,7 @@
           "synergy_id": "627c2fea453834a0759cf711",
           "clips": [
             {
-              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/e694c9f6-c4c9-479c-83f3-964125d15996/YlVGaW8wdjFzRW5BRThPS1U2VHkvQXhQVnRJVGtnM0Fmc1dtT2JMRDJSdz0/clip.mp4",
               "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
               "angle": "AsLogged",
               "pitch_type": "SINKER",
@@ -3684,11 +3898,12 @@
               "league": "LBPRC",
               "event_id": "69526e9ca12b69547f43930e",
               "result": "StrikeTaken",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 StrikeTaken"
             },
             {
-              "url": "https://asset.synergysportstech.com/6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce/SWxmcW8veGNvd3FnYVhtK3hScEJKRTN1R3h4MWdqUkljOTZCaWtZTnYyYz0/clip.mp4",
               "asset_id": "6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce",
               "angle": "LowHome",
               "pitch_type": "CURVEBALL",
@@ -3696,11 +3911,12 @@
               "league": "LBPRC",
               "event_id": "6950cf080d4772becd279457",
               "result": "SacrificeFly",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 SacrificeFly"
             },
             {
-              "url": "https://asset.synergysportstech.com/9aefd267-9d87-49ec-92a4-606408d490f1/hls/master.m3u8",
+              "url": "https://asset.synergysportstech.com/clip/9aefd267-9d87-49ec-92a4-606408d490f1/VGVKbEk5SkxRNHRwQkgzRzd1czMrN3YvKzVUNWoxb2pqOW54ZFk0VDgzND0/clip.mp4",
               "asset_id": "9aefd267-9d87-49ec-92a4-606408d490f1",
               "angle": "LowHome",
               "pitch_type": "SLIDER",
@@ -3708,6 +3924,7 @@
               "league": "LBPRC",
               "event_id": "69510789a65b0d28b116462b",
               "result": "SacrificeFly",
+              "kind": "clip",
               "slot": "THROW2B",
               "label": "Throw 2B \u00b7 SacrificeFly"
             }

@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
-"""Build pitcherinputs data/catalog.json — Synergy HLS URLs only (no local mp4).
+"""Build pitcherinputs data/catalog.json — short Synergy CLIP URLs (stream, no local files).
 
 Pitchers: runner on 1B → 1 fastball + 1 offspeed clip each (A–Z on site).
 Catchers: SB/CS of 2B throw-down clips.
+
+IMPORTANT: Prefer signed progressive clip URLs:
+  https://asset.synergysportstech.com/clip/{uuid}/{token}/clip.mp4
+Never store full-game HLS masters (.../{asset_id}/hls/master.m3u8).
 """
 from __future__ import annotations
 
@@ -131,35 +135,51 @@ def angle_rank(angle: str) -> int:
     return 9
 
 
-def to_hls(url: str | None, asset_id: str) -> str | None:
-    """Prefer Synergy HLS master; never store progressive mp4 for the site."""
-    if asset_id:
-        return f"https://asset.synergysportstech.com/{asset_id}/hls/master.m3u8"
-    if not url:
+def normalize_media_url(path: str | None) -> str | None:
+    if not path:
         return None
-    u = str(url).replace("http://", "https://")
-    if "/hls/master.m3u8" in u:
-        return u
-    # clip/.../clip.mp4 → extract uuid if present
-    m = re.search(r"/clip/([0-9a-f-]{36})/", u, re.I)
-    if m:
-        return f"https://asset.synergysportstech.com/{m.group(1)}/hls/master.m3u8"
-    if u.endswith(".m3u8"):
-        return u
-    return None
+    u = str(path).strip().replace("http://", "https://")
+    if not u:
+        return None
+    if u.startswith("//"):
+        u = "https:" + u
+    if u.startswith("/"):
+        u = "https://asset.synergysportstech.com" + u
+    return u
+
+
+def is_short_clip_url(url: str | None) -> bool:
+    """True for Synergy per-play progressive / clip streams (not full-game HLS)."""
+    if not url:
+        return False
+    u = str(url).lower()
+    # Signed progressive clip: .../clip/{uuid}/{token}/clip.mp4
+    if "/clip/" in u and (u.endswith(".mp4") or "/clip.mp4" in u or u.endswith(".m3u8") or "/clip.m3u8" in u):
+        return True
+    # Never treat bare asset HLS master as a short clip — that is usually the full game.
+    if re.search(r"asset\.synergysportstech\.com/[0-9a-f-]{36}/hls/master\.m3u8", u):
+        return False
+    return False
 
 
 def track_playable(track: dict) -> tuple[str | None, str]:
+    """Prefer signed short clip URLs from videoVariants; never fall back to game HLS."""
     for seg in track.get("segments") or []:
         video = seg.get("video") or {}
         asset_id = str(video.get("id") or "")
-        if asset_id:
-            return to_hls(None, asset_id), asset_id
+        short: str | None = None
         for var in video.get("videoVariants") or []:
-            path = var.get("endpointRelativePath") or var.get("url")
-            hls = to_hls(path, asset_id)
-            if hls:
-                return hls, asset_id
+            path = normalize_media_url(var.get("endpointRelativePath") or var.get("url"))
+            if not path:
+                continue
+            # Prefer explicit clip paths; accept other progressive mp4 under /clip/.
+            if is_short_clip_url(path):
+                return path, asset_id
+            if short is None and "/clip/" in path.lower():
+                short = path
+        if short:
+            return short, asset_id
+        # Do NOT use asset_id → /hls/master.m3u8 — that streams the entire game.
     return None, ""
 
 
@@ -168,7 +188,7 @@ def best_clip(ev: dict) -> dict | None:
     for track in ((ev.get("videoGroup") or {}).get("videoTracks")) or []:
         angle = str(track.get("videoCameraAngle") or track.get("cameraAngle") or "").strip()
         url, asset_id = track_playable(track)
-        if not url:
+        if not url or not is_short_clip_url(url):
             continue
         rank = angle_rank(angle)
         cand = {"url": url, "asset_id": asset_id, "angle": angle, "rank": rank}
@@ -190,6 +210,7 @@ def best_clip(ev: dict) -> dict | None:
         "league": league.get("nameAbbrev") or league.get("name") or "",
         "event_id": str(ev.get("id") or ""),
         "result": str(ev.get("plateAppearanceResult") or (ev.get("pitch") or {}).get("pitchResult") or ""),
+        "kind": "clip",
     }
 
 
@@ -309,7 +330,7 @@ def pick_catcher_clips(events: list[dict], limit: int = 3) -> list[dict]:
 def write_catalog(teams: list[dict]) -> None:
     doc = {
         "updated": now(),
-        "note": "HLS URLs from Synergy CDN only — no local video files.",
+        "note": "Short Synergy clip URLs only (signed /clip/.../clip.mp4) — not full-game HLS.",
         "teams": teams,
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)

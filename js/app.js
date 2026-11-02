@@ -134,8 +134,8 @@
     ].filter(Boolean).join(' · ');
     return `<div class="clip-card" data-url="${esc(clip.url)}" data-title="${esc(title)}" data-detail="${esc(detail)}">
       <h3>${esc(title)}</h3>
-      <p>${esc(detail || 'Synergy HLS')}</p>
-      <span class="tag">Play stream</span>
+      <p>${esc(detail || 'Synergy clip')}</p>
+      <span class="tag">${/\.mp4/i.test(clip.url) ? 'Play clip' : 'Play stream'}</span>
     </div>`;
   }
 
@@ -147,15 +147,18 @@
     if (state.hls) { try { state.hls.destroy(); } catch (e) {} state.hls = null; }
     video.pause();
     video.removeAttribute('src');
-    if (window.Hls && Hls.isSupported() && /\.m3u8($|\?)/i.test(url)) {
+    video.load();
+    const isHls = /\.m3u8($|\?)/i.test(url);
+    if (isHls && window.Hls && Hls.isSupported()) {
       state.hls = new Hls({ enableWorker: true });
       state.hls.loadSource(url);
       state.hls.attachMedia(video);
       state.hls.on(Hls.Events.MANIFEST_PARSED, () => { video.play().catch(() => {}); });
-    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    } else if (isHls && video.canPlayType('application/vnd.apple.mpegurl')) {
       video.src = url;
       video.play().catch(() => {});
     } else {
+      // Progressive Synergy short clips (.../clip/.../clip.mp4) play natively.
       video.src = url;
       video.play().catch(() => {});
     }
