@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T17:21:02Z",
+  "updated": "2026-11-02T17:30:39Z",
   "note": "HLS URLs from Synergy CDN only \u2014 no local video files.",
   "teams": [
     {
@@ -1457,9 +1457,2271 @@
           "last": "Cruz",
           "synergy_id": null,
           "clips": []
+        },
+        {
+          "id": -887923890,
+          "mlb_id": -887923890,
+          "name": "Eddy Demurias",
+          "last": "Demurias",
+          "synergy_id": "582b877935be47a9274df61a",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/629cc33e-0e76-4ec3-a2ac-c8e516d21cf7/hls/master.m3u8",
+              "asset_id": "629cc33e-0e76-4ec3-a2ac-c8e516d21cf7",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/09/2026",
+              "league": "ALPB",
+              "event_id": "6aa23bda782356afb70c01ec",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/629cc33e-0e76-4ec3-a2ac-c8e516d21cf7/hls/master.m3u8",
+              "asset_id": "629cc33e-0e76-4ec3-a2ac-c8e516d21cf7",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "09/09/2026",
+              "league": "ALPB",
+              "event_id": "6aa23be2782356afb70c01ef",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 687956,
+          "mlb_id": 687956,
+          "name": "Carlos Francisco",
+          "last": "Francisco",
+          "synergy_id": "60b888f42b2ec8ce41c5168e",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e0e23afb-b24c-45f4-83f7-48afdaa739f3/hls/master.m3u8",
+              "asset_id": "e0e23afb-b24c-45f4-83f7-48afdaa739f3",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f69db15d9b2b8a54f5a4",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e0e23afb-b24c-45f4-83f7-48afdaa739f3/hls/master.m3u8",
+              "asset_id": "e0e23afb-b24c-45f4-83f7-48afdaa739f3",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f697cf2a1ab101abf784",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -346943911,
+          "mlb_id": -346943911,
+          "name": "Nelvin Fuentes",
+          "last": "Fuentes",
+          "synergy_id": "5deb67e44b8b4f28d0143e46",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/7854f60c-db23-4913-baa6-621c87aa0156/hls/master.m3u8",
+              "asset_id": "7854f60c-db23-4913-baa6-621c87aa0156",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "02/03/2025",
+              "league": "CAR",
+              "event_id": "67a18ba990619b346e2e5a40",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/7854f60c-db23-4913-baa6-621c87aa0156/hls/master.m3u8",
+              "asset_id": "7854f60c-db23-4913-baa6-621c87aa0156",
+              "angle": "AsLogged",
+              "pitch_type": "SPLITTER",
+              "game_date": "02/03/2025",
+              "league": "CAR",
+              "event_id": "67a18bb2222fc96564fdb66f",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 807485,
+          "mlb_id": 807485,
+          "name": "Davian Garcia",
+          "last": "Garcia",
+          "synergy_id": "5f7429ef0f6ebc00019df118",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/d75aa871-6c92-417f-9b8b-b60618f01a7a/hls/master.m3u8",
+              "asset_id": "d75aa871-6c92-417f-9b8b-b60618f01a7a",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "05/10/2026",
+              "league": "MILB",
+              "event_id": "6a01c1b1556d5c489b5d1b14",
+              "result": "Single",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/968c44aa-635a-4276-a457-4412113daecd/hls/master.m3u8",
+              "asset_id": "968c44aa-635a-4276-a457-4412113daecd",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "05/16/2026",
+              "league": "MILB",
+              "event_id": "6a0ad31a694dba38b27fd8cf",
+              "result": "Double",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 623485,
+          "mlb_id": 623485,
+          "name": "Ashton Goudeau",
+          "last": "Goudeau",
+          "synergy_id": "5abcb5312cb661f293635acb",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e81e8679-2d3c-45c4-bf98-89bff913ac93/hls/master.m3u8",
+              "asset_id": "e81e8679-2d3c-45c4-bf98-89bff913ac93",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "06/30/2026",
+              "league": "ALPB",
+              "event_id": "6a45c06a0e2e80d964ed5d2c",
+              "result": "HitByPitch",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e81e8679-2d3c-45c4-bf98-89bff913ac93/hls/master.m3u8",
+              "asset_id": "e81e8679-2d3c-45c4-bf98-89bff913ac93",
+              "angle": "AsLogged",
+              "pitch_type": "CURVEBALL",
+              "game_date": "06/30/2026",
+              "league": "ALPB",
+              "event_id": "6a45c0900e2e80d964ed5d35",
+              "result": "HomeRun",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 805248,
+          "mlb_id": 805248,
+          "name": "Jonathan Haab",
+          "last": "Haab",
+          "synergy_id": "62a17f964a6526afee3ca9b0",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/aba92717-0418-47cb-ad8b-f742feed4a6d/hls/master.m3u8",
+              "asset_id": "aba92717-0418-47cb-ad8b-f742feed4a6d",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/06/2026",
+              "league": "LMB",
+              "event_id": "6a75c9cfe843fb90557892f4",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/aba92717-0418-47cb-ad8b-f742feed4a6d/hls/master.m3u8",
+              "asset_id": "aba92717-0418-47cb-ad8b-f742feed4a6d",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "08/06/2026",
+              "league": "LMB",
+              "event_id": "6a75c9c7cf6ed1aed601f1e3",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 571772,
+          "mlb_id": 571772,
+          "name": "Hector Hernandez",
+          "last": "Hernandez",
+          "synergy_id": "5c7a392a85d07ba97655f43d",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e011981d-67d5-425e-a316-d11e216a197f/hls/master.m3u8",
+              "asset_id": "e011981d-67d5-425e-a316-d11e216a197f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/05/2026",
+              "league": "WBSCBB",
+              "event_id": "6a8228294d16b70397d4dd20",
+              "result": "Groundout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e011981d-67d5-425e-a316-d11e216a197f/hls/master.m3u8",
+              "asset_id": "e011981d-67d5-425e-a316-d11e216a197f",
+              "angle": "AsLogged",
+              "pitch_type": "CURVEBALL",
+              "game_date": "08/05/2026",
+              "league": "WBSCBB",
+              "event_id": "6a822888a03353e6fa922de5",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 605347,
+          "mlb_id": 605347,
+          "name": "Jorge Lopez",
+          "last": "Lopez",
+          "synergy_id": "59f06461f934491175c1c932",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/d5d5a7f9-a859-45c8-b40b-f10913b654ec/hls/master.m3u8",
+              "asset_id": "d5d5a7f9-a859-45c8-b40b-f10913b654ec",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/06/2026",
+              "league": "LMB",
+              "event_id": "6a75bdb7cf3042c1473a7545",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/d5d5a7f9-a859-45c8-b40b-f10913b654ec/hls/master.m3u8",
+              "asset_id": "d5d5a7f9-a859-45c8-b40b-f10913b654ec",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "08/06/2026",
+              "league": "LMB",
+              "event_id": "6a75bdc0cf3042c1473a754c",
+              "result": "Flyout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 446651,
+          "mlb_id": 446651,
+          "name": "Miguel Martinez",
+          "last": "Martinez",
+          "synergy_id": "5fd0cfc2af4a6f44dfdcb350",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/18/2026",
+              "league": "LBPRC",
+              "event_id": "696e0b84d00dfa5baf0b1127",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
+              "angle": "AsLogged",
+              "pitch_type": "CURVEBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "695266bccf2a1ab101abffdb",
+              "result": "FieldersChoiceOut",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 687879,
+          "mlb_id": 687879,
+          "name": "Luis Quinonez",
+          "last": "Quinonez",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": 681938,
+          "mlb_id": 681938,
+          "name": "Angel Reyes",
+          "last": "Reyes",
+          "synergy_id": "5fd12a915fe05a0e9fc11347",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/a1ba9712-2560-4cfc-8548-3de8bc79134e/hls/master.m3u8",
+              "asset_id": "a1ba9712-2560-4cfc-8548-3de8bc79134e",
+              "angle": "AsLogged",
+              "pitch_type": "SINKER",
+              "game_date": "05/26/2026",
+              "league": "ALPB",
+              "event_id": "6a168a842028fdee12ac31ac",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/8e2694fd-8b36-4cd2-82b2-f2d63a2024b2/hls/master.m3u8",
+              "asset_id": "8e2694fd-8b36-4cd2-82b2-f2d63a2024b2",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "06/02/2026",
+              "league": "ALPB",
+              "event_id": "6a1fd575891935cfc3679121",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -465760315,
+          "mlb_id": -465760315,
+          "name": "Devin Rivera",
+          "last": "Rivera",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": 687560,
+          "mlb_id": 687560,
+          "name": "Bryant Salgado",
+          "last": "Salgado",
+          "synergy_id": "5e1d054446ce1b4784ea9779",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/74060792-9282-49a3-9523-ea36dc0dcfc4/hls/master.m3u8",
+              "asset_id": "74060792-9282-49a3-9523-ea36dc0dcfc4",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "07/23/2026",
+              "league": "LMB",
+              "event_id": "6a63426f4f7d722f18bed755",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/74060792-9282-49a3-9523-ea36dc0dcfc4/hls/master.m3u8",
+              "asset_id": "74060792-9282-49a3-9523-ea36dc0dcfc4",
+              "angle": "AsLogged",
+              "pitch_type": "CURVEBALL",
+              "game_date": "07/23/2026",
+              "league": "LMB",
+              "event_id": "6a6342604f7d722f18bed748",
+              "result": "Flyout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 683803,
+          "mlb_id": 683803,
+          "name": "Kazuto Taguchi",
+          "last": "Taguchi",
+          "synergy_id": "58dbb4a735268c61b07755e4",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/975beaf2-4891-4adb-a9ae-a5d261dfd77b/hls/master.m3u8",
+              "asset_id": "975beaf2-4891-4adb-a9ae-a5d261dfd77b",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/26/2026",
+              "league": "NPBML",
+              "event_id": "6ab798c27d09c74e98c9eb47",
+              "result": "Popout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/975beaf2-4891-4adb-a9ae-a5d261dfd77b/hls/master.m3u8",
+              "asset_id": "975beaf2-4891-4adb-a9ae-a5d261dfd77b",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/26/2026",
+              "league": "NPBML",
+              "event_id": "6ab798b97d09c74e98c9eb45",
+              "result": "Popout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 837223,
+          "mlb_id": 837223,
+          "name": "Lucas Vega",
+          "last": "Vega",
+          "synergy_id": "607e90c12a20973e219e92ad",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/b136a5a5-56fd-4aba-85aa-2eec96d00e98/hls/master.m3u8",
+              "asset_id": "b136a5a5-56fd-4aba-85aa-2eec96d00e98",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "07/05/2026",
+              "league": "FRON",
+              "event_id": "6a4b548c784660da0b81627d",
+              "result": "Single",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/b136a5a5-56fd-4aba-85aa-2eec96d00e98/hls/master.m3u8",
+              "asset_id": "b136a5a5-56fd-4aba-85aa-2eec96d00e98",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "07/05/2026",
+              "league": "FRON",
+              "event_id": "6a4b545e0263120d4c47a3f8",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -165648089,
+          "mlb_id": -165648089,
+          "name": "Antonio Velez",
+          "last": "Velez",
+          "synergy_id": "5c3caa482ae7c358342282d7",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/200eae0c-b969-48ff-918f-f21b1aa4ee0e/hls/master.m3u8",
+              "asset_id": "200eae0c-b969-48ff-918f-f21b1aa4ee0e",
+              "angle": "LowHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/07/2025",
+              "league": "LBPRC",
+              "event_id": "677e2b0fe24952c4640de9e9",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/200eae0c-b969-48ff-918f-f21b1aa4ee0e/hls/master.m3u8",
+              "asset_id": "200eae0c-b969-48ff-918f-f21b1aa4ee0e",
+              "angle": "LowHome",
+              "pitch_type": "SLIDER",
+              "game_date": "01/07/2025",
+              "league": "LBPRC",
+              "event_id": "677e2aa8e24952c4640de9d4",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 663723,
+          "mlb_id": 663723,
+          "name": "Derek West",
+          "last": "West",
+          "synergy_id": "582b882b35be47a9274e0009",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/1302c0c4-f598-4473-827c-bc3aaaad5ea1/hls/master.m3u8",
+              "asset_id": "1302c0c4-f598-4473-827c-bc3aaaad5ea1",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALLFOURSEAM",
+              "game_date": "10/18/2026",
+              "league": "LIDOM",
+              "event_id": "6ad5a35d813a99ca9b374514",
+              "result": "Single",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/1302c0c4-f598-4473-827c-bc3aaaad5ea1/hls/master.m3u8",
+              "asset_id": "1302c0c4-f598-4473-827c-bc3aaaad5ea1",
+              "angle": "HighHome",
+              "pitch_type": "CURVEBALL",
+              "game_date": "10/18/2026",
+              "league": "LIDOM",
+              "event_id": "6ad5a5a6813a99ca9b3745a4",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
         }
       ],
-      "catchers": []
+      "catchers": [
+        {
+          "id": 669134,
+          "mlb_id": 669134,
+          "name": "Luis Campusano",
+          "last": "Campusano",
+          "synergy_id": "5abcb5312cb661f2936359ad",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 680728,
+          "mlb_id": 680728,
+          "name": "Adrian Del Castillo",
+          "last": "Castillo",
+          "synergy_id": "5c44a59029c75d6bac21c73d",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 657538,
+          "mlb_id": 657538,
+          "name": "Ruben Castro",
+          "last": "Castro",
+          "synergy_id": "5abcb5312cb661f293635166",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 666128,
+          "mlb_id": 666128,
+          "name": "Mario Feliciano",
+          "last": "Feliciano",
+          "synergy_id": "5abcb5312cb661f2936356e5",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 813930,
+          "mlb_id": 813930,
+          "name": "Ivan Luciano",
+          "last": "Luciano",
+          "synergy_id": "634407ef8125843e5afdc6c3",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 676566,
+          "mlb_id": 676566,
+          "name": "Shawn Ross",
+          "last": "Ross",
+          "synergy_id": "62031461f43ef499fa336e17",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 807714,
+          "mlb_id": 807714,
+          "name": "Carter Trice",
+          "last": "Trice",
+          "synergy_id": "602da37a546065e992c14b52",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 700845,
+          "mlb_id": 700845,
+          "name": "Adam Zebrowski",
+          "last": "Zebrowski",
+          "synergy_id": "612334a9953ce4571b7a9885",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/4cf1b01b-4251-454e-b605-6c5aa98756f2/hls/master.m3u8",
+              "asset_id": "4cf1b01b-4251-454e-b605-6c5aa98756f2",
+              "angle": "HighHome",
+              "pitch_type": "",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "69533c006b74e54ea61b9d49",
+              "result": "Popout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Popout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3bf1158c-9a6f-4341-8105-38f64e24174c/hls/master.m3u8",
+              "asset_id": "3bf1158c-9a6f-4341-8105-38f64e24174c",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2025",
+              "league": "LBPRC",
+              "event_id": "695340516b74e54ea61b9dcf",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/62a61c00-de6e-4cfc-a4f4-cef71b636b1e/hls/master.m3u8",
+              "asset_id": "62a61c00-de6e-4cfc-a4f4-cef71b636b1e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "6951f821b15d9b2b8a54f5ce",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "PON",
+      "name": "Leones de Ponce",
+      "synergy_team_id": "6274570a77783bd4debe46be",
+      "pitchers": [
+        {
+          "id": 642834,
+          "mlb_id": 642834,
+          "name": "Jonathan Bermudez",
+          "last": "Bermudez",
+          "synergy_id": "5cad08898df5e60d6c924061",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/bc130b0e-aa65-4b3f-b441-278d24c1e554/hls/master.m3u8",
+              "asset_id": "bc130b0e-aa65-4b3f-b441-278d24c1e554",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "10/31/2026",
+              "league": "LMP",
+              "event_id": "6ae710221534a50380c9c3a6",
+              "result": "HomeRun",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/bc130b0e-aa65-4b3f-b441-278d24c1e554/hls/master.m3u8",
+              "asset_id": "bc130b0e-aa65-4b3f-b441-278d24c1e554",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "10/31/2026",
+              "league": "LMP",
+              "event_id": "6ae710381534a50380c9c3a9",
+              "result": "HomeRun",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 690462,
+          "mlb_id": 690462,
+          "name": "Ricky Castro",
+          "last": "Castro",
+          "synergy_id": "5cf9745329c59c0498923390",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/974fd62f-dce9-4d60-b02f-c88429a8dbb3/hls/master.m3u8",
+              "asset_id": "974fd62f-dce9-4d60-b02f-c88429a8dbb3",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALLFOURSEAM",
+              "game_date": "09/17/2026",
+              "league": "MILB",
+              "event_id": "6aae6723535a600147c0c102",
+              "result": "Popout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/974fd62f-dce9-4d60-b02f-c88429a8dbb3/hls/master.m3u8",
+              "asset_id": "974fd62f-dce9-4d60-b02f-c88429a8dbb3",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "09/17/2026",
+              "league": "MILB",
+              "event_id": "6aae66e8fb4c49901604a8d2",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 592222,
+          "mlb_id": 592222,
+          "name": "Alex Claudio",
+          "last": "Claudio",
+          "synergy_id": "573d7065080cc2cbe8bf3063",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/6500528d-e140-4b12-890d-ca56326bb4a0/hls/master.m3u8",
+              "asset_id": "6500528d-e140-4b12-890d-ca56326bb4a0",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/02/2026",
+              "league": "LMB",
+              "event_id": "6a7088de6417f168aec888ce",
+              "result": "Groundout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6500528d-e140-4b12-890d-ca56326bb4a0/hls/master.m3u8",
+              "asset_id": "6500528d-e140-4b12-890d-ca56326bb4a0",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "08/02/2026",
+              "league": "LMB",
+              "event_id": "6a7088d0185f415806fc31e8",
+              "result": "Groundout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 676435,
+          "mlb_id": 676435,
+          "name": "Harold Cortijo",
+          "last": "Cortijo",
+          "synergy_id": "5fd12a915fe05a0e9fc11318",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/64960908-6219-4006-b809-4cbf705f6b5d/hls/master.m3u8",
+              "asset_id": "64960908-6219-4006-b809-4cbf705f6b5d",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/22/2026",
+              "league": "AAPB",
+              "event_id": "6a8970c491742d3a54d45d9f",
+              "result": "LinedIntoDoublePlay",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/12dbef7a-f950-4266-ae6f-b20ce93c588d/hls/master.m3u8",
+              "asset_id": "12dbef7a-f950-4266-ae6f-b20ce93c588d",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "08/19/2026",
+              "league": "AAPB",
+              "event_id": "6a87f95f973a9dfae6cdce82",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 806586,
+          "mlb_id": 806586,
+          "name": "Eric Garcia",
+          "last": "Garcia",
+          "synergy_id": "603a6a6e94720836d4b3ef1d",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/6f259039-8699-44d0-b74e-2ba19763253f/hls/master.m3u8",
+              "asset_id": "6f259039-8699-44d0-b74e-2ba19763253f",
+              "angle": "LowHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/12/2026",
+              "league": "LBPRC",
+              "event_id": "69660a5c3f244cc7f7c7ecba",
+              "result": "HitByPitch",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6f259039-8699-44d0-b74e-2ba19763253f/hls/master.m3u8",
+              "asset_id": "6f259039-8699-44d0-b74e-2ba19763253f",
+              "angle": "LowHome",
+              "pitch_type": "SLIDER",
+              "game_date": "01/12/2026",
+              "league": "LBPRC",
+              "event_id": "69660a553f244cc7f7c7ecb9",
+              "result": "HitByPitch",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -368999174,
+          "mlb_id": -368999174,
+          "name": "Tyler Gough",
+          "last": "Gough",
+          "synergy_id": "5f387d65d812f7433020842b",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d/hls/master.m3u8",
+              "asset_id": "e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/08/2026",
+              "league": "MILB",
+              "event_id": "6aa2878c5152d1c84e54c25d",
+              "result": "Popout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d/hls/master.m3u8",
+              "asset_id": "e3d9bee1-5356-4f9b-827e-0c6f62cc3c0d",
+              "angle": "AsLogged",
+              "pitch_type": "CURVEBALL",
+              "game_date": "09/08/2026",
+              "league": "MILB",
+              "event_id": "6aa287805152d1c84e54c258",
+              "result": "Popout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 657624,
+          "mlb_id": 657624,
+          "name": "Josh James",
+          "last": "James",
+          "synergy_id": "5aeffb0b9559b26e7e9b7c09",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/cca7a10d-6cdc-4549-ab30-8d053fd6a711/hls/master.m3u8",
+              "asset_id": "cca7a10d-6cdc-4549-ab30-8d053fd6a711",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "11/08/2025",
+              "league": "LBPRC",
+              "event_id": "69103cf44862e85cc73f596e",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/cca7a10d-6cdc-4549-ab30-8d053fd6a711/hls/master.m3u8",
+              "asset_id": "cca7a10d-6cdc-4549-ab30-8d053fd6a711",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "11/08/2025",
+              "league": "LBPRC",
+              "event_id": "69103c83b32addd7191461d1",
+              "result": "Popout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -259860308,
+          "mlb_id": -259860308,
+          "name": "Jorhan Laboy",
+          "last": "Laboy",
+          "synergy_id": "6115b53de911423818fc3fc1",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/7b4d8b08-3196-4a6e-90cd-c2e00f926c94/hls/master.m3u8",
+              "asset_id": "7b4d8b08-3196-4a6e-90cd-c2e00f926c94",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/10/2026",
+              "league": "FRON",
+              "event_id": "6aa37f9b0a36416512d5e0c9",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/7b4d8b08-3196-4a6e-90cd-c2e00f926c94/hls/master.m3u8",
+              "asset_id": "7b4d8b08-3196-4a6e-90cd-c2e00f926c94",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "09/10/2026",
+              "league": "FRON",
+              "event_id": "6aa37fb80a36416512d5e0da",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 687817,
+          "mlb_id": 687817,
+          "name": "Andrew Marrero",
+          "last": "Marrero",
+          "synergy_id": "5e48606406c7bff564766247",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/3ffecc55-c37d-47bf-8684-8e2446eb48ae/hls/master.m3u8",
+              "asset_id": "3ffecc55-c37d-47bf-8684-8e2446eb48ae",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/13/2026",
+              "league": "MILB",
+              "event_id": "6aa7e733010a0791e93cc299",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/3ffecc55-c37d-47bf-8684-8e2446eb48ae/hls/master.m3u8",
+              "asset_id": "3ffecc55-c37d-47bf-8684-8e2446eb48ae",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/13/2026",
+              "league": "MILB",
+              "event_id": "6aa7e6c0f6637b9396ec9de0",
+              "result": "Double",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 801018,
+          "mlb_id": 801018,
+          "name": "Omar Melendez",
+          "last": "Melendez",
+          "synergy_id": "5f8c915b1cb0540001a54b5c",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/a8358081-9127-4cb6-9ac7-25e51c74cf1c/hls/master.m3u8",
+              "asset_id": "a8358081-9127-4cb6-9ac7-25e51c74cf1c",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/02/2026",
+              "league": "FRON",
+              "event_id": "6a990b53066a27639b9cfa04",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/a8358081-9127-4cb6-9ac7-25e51c74cf1c/hls/master.m3u8",
+              "asset_id": "a8358081-9127-4cb6-9ac7-25e51c74cf1c",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/02/2026",
+              "league": "FRON",
+              "event_id": "6a990b66b71653343c89bc97",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 691786,
+          "mlb_id": 691786,
+          "name": "Michael Morales",
+          "last": "Morales",
+          "synergy_id": "5d46fdb14b8b4f2d3c4aeb5d",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e3c1d671-4afa-4adb-a3dc-166687885a06/hls/master.m3u8",
+              "asset_id": "e3c1d671-4afa-4adb-a3dc-166687885a06",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "07/28/2026",
+              "league": "MILB",
+              "event_id": "6a69f6324816ef8009be781e",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e3c1d671-4afa-4adb-a3dc-166687885a06/hls/master.m3u8",
+              "asset_id": "e3c1d671-4afa-4adb-a3dc-166687885a06",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "07/28/2026",
+              "league": "MILB",
+              "event_id": "6a69f61c4816ef8009be7805",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 689508,
+          "mlb_id": 689508,
+          "name": "Orlando Ortiz-Mayr",
+          "last": "Ortiz-Mayr",
+          "synergy_id": "5e203911cba3c7495422a551",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/34b1dc0a-fa01-4bb2-b74c-97213118c25c/hls/master.m3u8",
+              "asset_id": "34b1dc0a-fa01-4bb2-b74c-97213118c25c",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/04/2026",
+              "league": "MILB",
+              "event_id": "6a9c1127ae24a11f696c3ea8",
+              "result": "GroundedIntoDoublePlay",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/34b1dc0a-fa01-4bb2-b74c-97213118c25c/hls/master.m3u8",
+              "asset_id": "34b1dc0a-fa01-4bb2-b74c-97213118c25c",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/04/2026",
+              "league": "MILB",
+              "event_id": "6a9c0fdbae24a11f696c3dba",
+              "result": "Groundout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 676984,
+          "mlb_id": 676984,
+          "name": "Noel Pinto",
+          "last": "Pinto",
+          "synergy_id": "5fd12a915fe05a0e9fc11543",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/bf702c4b-f7b8-425b-98fa-d061827feab8/hls/master.m3u8",
+              "asset_id": "bf702c4b-f7b8-425b-98fa-d061827feab8",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/06/2026",
+              "league": "WBSCBB",
+              "event_id": "6a82233ba03353e6fa922b1e",
+              "result": "Groundout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/bf702c4b-f7b8-425b-98fa-d061827feab8/hls/master.m3u8",
+              "asset_id": "bf702c4b-f7b8-425b-98fa-d061827feab8",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "08/06/2026",
+              "league": "WBSCBB",
+              "event_id": "6a822359a03353e6fa922b28",
+              "result": "Groundout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -346674215,
+          "mlb_id": -346674215,
+          "name": "Hector Quinones",
+          "last": "Quinones",
+          "synergy_id": "638e3074774478a128320d48",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/b2659a7e-585f-4ef9-a470-bc1a4c2f74d7/hls/master.m3u8",
+              "asset_id": "b2659a7e-585f-4ef9-a470-bc1a4c2f74d7",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/10/2024",
+              "league": "LBPRC",
+              "event_id": "65a0276f7073318abcb20ad0",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/b2659a7e-585f-4ef9-a470-bc1a4c2f74d7/hls/master.m3u8",
+              "asset_id": "b2659a7e-585f-4ef9-a470-bc1a4c2f74d7",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "01/10/2024",
+              "league": "LBPRC",
+              "event_id": "65a026eb32226e6b2b3605cb",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 682992,
+          "mlb_id": 682992,
+          "name": "Erik Rivera",
+          "last": "Rivera",
+          "synergy_id": "5f8b05e9d9b60b00014e20de",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/44545aa0-0c31-46ce-aec6-4343d83a93bd/hls/master.m3u8",
+              "asset_id": "44545aa0-0c31-46ce-aec6-4343d83a93bd",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/10/2026",
+              "league": "MILB",
+              "event_id": "6aa3f44f7215d72e1496c272",
+              "result": "Single",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/44545aa0-0c31-46ce-aec6-4343d83a93bd/hls/master.m3u8",
+              "asset_id": "44545aa0-0c31-46ce-aec6-4343d83a93bd",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/10/2026",
+              "league": "MILB",
+              "event_id": "6aa3f46f96706f31b3d46f52",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 676082,
+          "mlb_id": 676082,
+          "name": "Gabriel Rodriguez",
+          "last": "Rodriguez",
+          "synergy_id": "618783e7c379865a58bb2720",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/85594e2c-22fa-47f8-bc66-1cb2b2f130a2/hls/master.m3u8",
+              "asset_id": "85594e2c-22fa-47f8-bc66-1cb2b2f130a2",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/06/2026",
+              "league": "MILB",
+              "event_id": "6a9ed0aa2f0f0b61ab6a6fea",
+              "result": "Popout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/85594e2c-22fa-47f8-bc66-1cb2b2f130a2/hls/master.m3u8",
+              "asset_id": "85594e2c-22fa-47f8-bc66-1cb2b2f130a2",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/06/2026",
+              "league": "MILB",
+              "event_id": "6a9ed0ba2f0f0b61ab6a6ff3",
+              "result": "Popout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 691012,
+          "mlb_id": 691012,
+          "name": "Alex Santos",
+          "last": "Santos",
+          "synergy_id": "5d0d977d4b8b504a2c04114a",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5/hls/master.m3u8",
+              "asset_id": "eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALLFOURSEAM",
+              "game_date": "09/15/2026",
+              "league": "MILB",
+              "event_id": "6aaa83a6961bc9b7b5c32266",
+              "result": "Single",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5/hls/master.m3u8",
+              "asset_id": "eabd6bb2-b86b-4c3f-a7c4-d9283e395dc5",
+              "angle": "AsLogged",
+              "pitch_type": "SWEEPER",
+              "game_date": "09/15/2026",
+              "league": "MILB",
+              "event_id": "6aaa83c41f061a7a366b0cf6",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -458228708,
+          "mlb_id": -458228708,
+          "name": "Charlee Soto",
+          "last": "Soto",
+          "synergy_id": "5f889f3e1cb0540001a5488d",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/1f13de4c-0bed-475f-a067-376430556061/hls/master.m3u8",
+              "asset_id": "1f13de4c-0bed-475f-a067-376430556061",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALLFOURSEAM",
+              "game_date": "06/11/2026",
+              "league": "MILB",
+              "event_id": "6a2bef9bc95b71a7af93ce65",
+              "result": "Double",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/1f13de4c-0bed-475f-a067-376430556061/hls/master.m3u8",
+              "asset_id": "1f13de4c-0bed-475f-a067-376430556061",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "06/11/2026",
+              "league": "MILB",
+              "event_id": "6a2befd0504971378886f772",
+              "result": "Double",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 701539,
+          "mlb_id": 701539,
+          "name": "Eric Torres",
+          "last": "Torres",
+          "synergy_id": "5c4201293a22f215c43aeb3a",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/a99b0456-c72b-4c22-8b65-133a4bfd364f/hls/master.m3u8",
+              "asset_id": "a99b0456-c72b-4c22-8b65-133a4bfd364f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "06/09/2026",
+              "league": "MILB",
+              "event_id": "6a29589d3915cb292f583261",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/a99b0456-c72b-4c22-8b65-133a4bfd364f/hls/master.m3u8",
+              "asset_id": "a99b0456-c72b-4c22-8b65-133a4bfd364f",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "06/09/2026",
+              "league": "MILB",
+              "event_id": "6a2958954e2c216270fbcd29",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 692937,
+          "mlb_id": 692937,
+          "name": "Julio Torres",
+          "last": "Torres",
+          "synergy_id": "5df286ca4b8b5006984fee0f",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/0b17dd34-c749-4322-bb02-7d4c75da569f/hls/master.m3u8",
+              "asset_id": "0b17dd34-c749-4322-bb02-7d4c75da569f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/02/2026",
+              "league": "LBPRC",
+              "event_id": "695924ec90538b49a33666ff",
+              "result": "Groundout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/0b17dd34-c749-4322-bb02-7d4c75da569f/hls/master.m3u8",
+              "asset_id": "0b17dd34-c749-4322-bb02-7d4c75da569f",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "01/02/2026",
+              "league": "LBPRC",
+              "event_id": "695924f7a82af2283b047962",
+              "result": "Groundout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 678013,
+          "mlb_id": 678013,
+          "name": "Lenny Torres",
+          "last": "Torres",
+          "synergy_id": "5f84b8c41cb0540001a544d9",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e3eda0b2-fe6c-4507-9622-d42c0c113ee8/hls/master.m3u8",
+              "asset_id": "e3eda0b2-fe6c-4507-9622-d42c0c113ee8",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/12/2026",
+              "league": "ALPB",
+              "event_id": "6aa664e0ef3b100036cf930d",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e3eda0b2-fe6c-4507-9622-d42c0c113ee8/hls/master.m3u8",
+              "asset_id": "e3eda0b2-fe6c-4507-9622-d42c0c113ee8",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "09/12/2026",
+              "league": "ALPB",
+              "event_id": "6aa664e6ef3b100036cf930e",
+              "result": "Flyout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -174792236,
+          "mlb_id": -174792236,
+          "name": "Mario Zabala",
+          "last": "Zabala",
+          "synergy_id": "5d0d95b24b8b504a2c040fdf",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/232e898c-4b14-4282-95a4-10814c5eb5b8/hls/master.m3u8",
+              "asset_id": "232e898c-4b14-4282-95a4-10814c5eb5b8",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "04/19/2025",
+              "league": "MILB",
+              "event_id": "680606b1582c8c046b2bef4e",
+              "result": "GroundedIntoDoublePlay",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6fbc7b1a-b69d-41e9-8842-aaf30e18c5d6/hls/master.m3u8",
+              "asset_id": "6fbc7b1a-b69d-41e9-8842-aaf30e18c5d6",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "04/23/2025",
+              "league": "MILB",
+              "event_id": "680a673a79370e70b84ff59e",
+              "result": "Triple",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        }
+      ],
+      "catchers": [
+        {
+          "id": -411650644,
+          "mlb_id": -411650644,
+          "name": "Samuel Hernandez",
+          "last": "Hernandez",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": 695467,
+          "mlb_id": 695467,
+          "name": "Juan Montero",
+          "last": "Montero",
+          "synergy_id": "618777c7c379865a58bb2607",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/18/2026",
+              "league": "LBPRC",
+              "event_id": "696e04b7c1035f8c76d62d8d",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": -173185958,
+          "mlb_id": -173185958,
+          "name": "Gabriel Rosado",
+          "last": "Rosado",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": 703804,
+          "mlb_id": 703804,
+          "name": "Romeo Sanabria",
+          "last": "Sanabria",
+          "synergy_id": "60100e076416d8c9ea744ca5",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/18/2026",
+              "league": "LBPRC",
+              "event_id": "696e04b7c1035f8c76d62d8d",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        },
+        {
+          "id": 686766,
+          "mlb_id": 686766,
+          "name": "William Simoneit",
+          "last": "Simoneit",
+          "synergy_id": "58d92c1e4b8b533e00f4db3a",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/f35619d5-314a-4b4c-8cda-7292751fdc8f/hls/master.m3u8",
+              "asset_id": "f35619d5-314a-4b4c-8cda-7292751fdc8f",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "01/18/2026",
+              "league": "LBPRC",
+              "event_id": "696e04b7c1035f8c76d62d8d",
+              "result": "Strikeout",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 Strikeout"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "abbrev": "SJU",
+      "name": "Senadores de San Juan",
+      "synergy_team_id": "67080ee4004b3d1070e35804",
+      "pitchers": [
+        {
+          "id": -579003596,
+          "mlb_id": -579003596,
+          "name": "Anthony Borrero",
+          "last": "Borrero",
+          "synergy_id": "6a3f5afcbf122fd43965efeb",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/03b37109-e1f8-40ee-94e1-73e4fcbf70df/hls/master.m3u8",
+              "asset_id": "03b37109-e1f8-40ee-94e1-73e4fcbf70df",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/09/2026",
+              "league": "ALPB",
+              "event_id": "6aa231955152d1c84e54a808",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/03b37109-e1f8-40ee-94e1-73e4fcbf70df/hls/master.m3u8",
+              "asset_id": "03b37109-e1f8-40ee-94e1-73e4fcbf70df",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "09/09/2026",
+              "league": "ALPB",
+              "event_id": "6aa231ef5152d1c84e54a822",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -280803405,
+          "mlb_id": -280803405,
+          "name": "Freddy Cabrera",
+          "last": "Cabrera",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": -693644039,
+          "mlb_id": -693644039,
+          "name": "Miguel Cirino",
+          "last": "Cirino",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": 692808,
+          "mlb_id": 692808,
+          "name": "Jose Cruz",
+          "last": "Cruz",
+          "synergy_id": "5deb5e694b8b4f28d0143deb",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/630dda00-feba-4bd7-86ac-bce6970bead1/hls/master.m3u8",
+              "asset_id": "630dda00-feba-4bd7-86ac-bce6970bead1",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/05/2026",
+              "league": "ALPB",
+              "event_id": "6a9d4965300caff1d7168869",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/cead3692-6bcc-4c36-981b-e37cb9c850e6/hls/master.m3u8",
+              "asset_id": "cead3692-6bcc-4c36-981b-e37cb9c850e6",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/02/2026",
+              "league": "ALPB",
+              "event_id": "6a992da6066a27639b9d12f3",
+              "result": "Double",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 656389,
+          "mlb_id": 656389,
+          "name": "Sidney Duprey",
+          "last": "Duprey",
+          "synergy_id": "5834aa2d35be47a927637d92",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/7cfc0c17-2eca-4073-b68f-c7e6d0e74820/hls/master.m3u8",
+              "asset_id": "7cfc0c17-2eca-4073-b68f-c7e6d0e74820",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/04/2026",
+              "league": "WBSCBB",
+              "event_id": "6a822072a03353e6fa9229ba",
+              "result": "Single",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/7cfc0c17-2eca-4073-b68f-c7e6d0e74820/hls/master.m3u8",
+              "asset_id": "7cfc0c17-2eca-4073-b68f-c7e6d0e74820",
+              "angle": "AsLogged",
+              "pitch_type": "CHANGEUP",
+              "game_date": "08/04/2026",
+              "league": "WBSCBB",
+              "event_id": "6a822077a03353e6fa9229bc",
+              "result": "Single",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 695064,
+          "mlb_id": 695064,
+          "name": "Agnel Miranda",
+          "last": "Miranda",
+          "synergy_id": "6145ec759b656db70d4bc2c0",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/56e30521-a74a-4ecd-ad01-98a27696dea1/hls/master.m3u8",
+              "asset_id": "56e30521-a74a-4ecd-ad01-98a27696dea1",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "07/26/2026",
+              "league": "PBL",
+              "event_id": "6a67113e355866a21a609cf1",
+              "result": "Popout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/56e30521-a74a-4ecd-ad01-98a27696dea1/hls/master.m3u8",
+              "asset_id": "56e30521-a74a-4ecd-ad01-98a27696dea1",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "07/26/2026",
+              "league": "PBL",
+              "event_id": "6a67114bc40999c7ca4cce4d",
+              "result": "Popout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 684841,
+          "mlb_id": 684841,
+          "name": "Ryan Munoz",
+          "last": "Munoz",
+          "synergy_id": "5e52ca0f7455336e875b7a5d",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/04c13e30-4f9c-468d-805e-b3cedc342143/hls/master.m3u8",
+              "asset_id": "04c13e30-4f9c-468d-805e-b3cedc342143",
+              "angle": "LowHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/27/2025",
+              "league": "LBPRC",
+              "event_id": "6951090ba65b0d28b116467d",
+              "result": "FieldersChoiceOut",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/d8e16064-fd21-4149-8097-cc354466f6eb/hls/master.m3u8",
+              "asset_id": "d8e16064-fd21-4149-8097-cc354466f6eb",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "01/04/2025",
+              "league": "LBPRC",
+              "event_id": "677f3a3d833c05cfc945c1de",
+              "result": "Lineout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -670692245,
+          "mlb_id": -670692245,
+          "name": "Haruse Narita",
+          "last": "Narita",
+          "synergy_id": "67e6d014be559430bd271882",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "10/19/2026",
+              "league": "NPBML",
+              "event_id": "6ad86e6fa80cee550a90fa5a",
+              "result": "Walk",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
+              "angle": "AsLogged",
+              "pitch_type": "SPLITTER",
+              "game_date": "10/19/2026",
+              "league": "NPBML",
+              "event_id": "6ad86e59d71e5cd469bde00e",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 458960,
+          "mlb_id": 458960,
+          "name": "Jean Ortega",
+          "last": "Ortega",
+          "synergy_id": "6a03ee1a8d5f953964d5e4cc",
+          "clips": []
+        },
+        {
+          "id": -324713460,
+          "mlb_id": -324713460,
+          "name": "Julio Ortiz",
+          "last": "Ortiz",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": -842689811,
+          "mlb_id": -842689811,
+          "name": "Randy Ramnarace",
+          "last": "Ramnarace",
+          "synergy_id": "60fb2668f97523255ad9db6f",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/b0173e3b-0d19-415a-89e1-1b9e01c6fb57/hls/master.m3u8",
+              "asset_id": "b0173e3b-0d19-415a-89e1-1b9e01c6fb57",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "08/19/2026",
+              "league": "MILB",
+              "event_id": "6a870b1c223b17421d2e9bf0",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6caa86c2-c3c8-4cc3-8c86-98c3ca8fab27/hls/master.m3u8",
+              "asset_id": "6caa86c2-c3c8-4cc3-8c86-98c3ca8fab27",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "08/14/2026",
+              "league": "MILB",
+              "event_id": "6a8077e5dc08270d4f8173a5",
+              "result": "Walk",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 676219,
+          "mlb_id": 676219,
+          "name": "Jerryell Rivera",
+          "last": "Rivera",
+          "synergy_id": "5fd12a915fe05a0e9fc11483",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "69526bd1ff036ddff01c79f9",
+              "result": "Strikeout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "69526c04a12b69547f43927b",
+              "result": "Strikeout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 572077,
+          "mlb_id": 572077,
+          "name": "Raul Rivera",
+          "last": "Rivera",
+          "synergy_id": "5e04e5404b8b4f7430ff1067",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/6ae5cf03-3971-4d5f-afff-f6110688d49e/hls/master.m3u8",
+              "asset_id": "6ae5cf03-3971-4d5f-afff-f6110688d49e",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/16/2025",
+              "league": "LBPRC",
+              "event_id": "6942f923455ed020126e9b11",
+              "result": "Popout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6ae5cf03-3971-4d5f-afff-f6110688d49e/hls/master.m3u8",
+              "asset_id": "6ae5cf03-3971-4d5f-afff-f6110688d49e",
+              "angle": "AsLogged",
+              "pitch_type": "CURVEBALL",
+              "game_date": "12/16/2025",
+              "league": "LBPRC",
+              "event_id": "6942f92d455ed020126e9b12",
+              "result": "Popout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -426239217,
+          "mlb_id": -426239217,
+          "name": "Leonardo Rodriguez",
+          "last": "Rodriguez",
+          "synergy_id": null,
+          "clips": []
+        },
+        {
+          "id": -322791781,
+          "mlb_id": -322791781,
+          "name": "Keishin Saito",
+          "last": "Saito",
+          "synergy_id": "681d6486373abc5e4678b3f2",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "10/19/2026",
+              "league": "NPBML",
+              "event_id": "6ad84bfaa80cee550a90e8c4",
+              "result": "GroundedIntoDoublePlay",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2/hls/master.m3u8",
+              "asset_id": "89b041c8-fbe0-45ae-9baf-1f4a84b7c4d2",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "10/19/2026",
+              "league": "NPBML",
+              "event_id": "6ad84be7a4729ed52c3e2607",
+              "result": "GroundedIntoDoublePlay",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 805749,
+          "mlb_id": 805749,
+          "name": "Brady Tedesco",
+          "last": "Tedesco",
+          "synergy_id": "623d659e2b7aa6e7196c79e7",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/c586218f-d62e-4026-87ce-8cbfb58d6a5d/hls/master.m3u8",
+              "asset_id": "c586218f-d62e-4026-87ce-8cbfb58d6a5d",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "07/23/2026",
+              "league": "ALPB",
+              "event_id": "6a6385a37a09091d8ac15e9f",
+              "result": "Double",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/c586218f-d62e-4026-87ce-8cbfb58d6a5d/hls/master.m3u8",
+              "asset_id": "c586218f-d62e-4026-87ce-8cbfb58d6a5d",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "07/23/2026",
+              "league": "ALPB",
+              "event_id": "6a6385acbf3069d08c447f74",
+              "result": "Double",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": -846506108,
+          "mlb_id": -846506108,
+          "name": "Alexuan Vega",
+          "last": "Vega",
+          "synergy_id": "5fd12a915fe05a0e9fc11468",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/cbe93e04-a93f-4f1a-8271-d8d4fa193894/hls/master.m3u8",
+              "asset_id": "cbe93e04-a93f-4f1a-8271-d8d4fa193894",
+              "angle": "HighHome",
+              "pitch_type": "FASTBALL",
+              "game_date": "12/29/2022",
+              "league": "LBPRC",
+              "event_id": "63aebd1b7c38ce8b4495dece",
+              "result": "FieldersChoiceOut",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/cbe93e04-a93f-4f1a-8271-d8d4fa193894/hls/master.m3u8",
+              "asset_id": "cbe93e04-a93f-4f1a-8271-d8d4fa193894",
+              "angle": "HighHome",
+              "pitch_type": "CURVEBALL",
+              "game_date": "12/29/2022",
+              "league": "LBPRC",
+              "event_id": "63aebd2ed5352a3da7f63b72",
+              "result": "FieldersChoiceOut",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        },
+        {
+          "id": 693546,
+          "mlb_id": 693546,
+          "name": "Ryan Velazquez",
+          "last": "Velazquez",
+          "synergy_id": "5e1f3a8808f07a4f286d3fa9",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/48468def-c101-45b3-aef2-6047eda1cb05/hls/master.m3u8",
+              "asset_id": "48468def-c101-45b3-aef2-6047eda1cb05",
+              "angle": "AsLogged",
+              "pitch_type": "FASTBALL",
+              "game_date": "09/06/2026",
+              "league": "FRON",
+              "event_id": "6a9e7728300caff1d7179add",
+              "result": "Flyout",
+              "slot": "FB",
+              "label": "Fastball \u00b7 R1"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/48468def-c101-45b3-aef2-6047eda1cb05/hls/master.m3u8",
+              "asset_id": "48468def-c101-45b3-aef2-6047eda1cb05",
+              "angle": "AsLogged",
+              "pitch_type": "SLIDER",
+              "game_date": "09/06/2026",
+              "league": "FRON",
+              "event_id": "6a9e7751300caff1d7179ae7",
+              "result": "Flyout",
+              "slot": "OS",
+              "label": "Offspeed \u00b7 R1"
+            }
+          ]
+        }
+      ],
+      "catchers": [
+        {
+          "id": 801346,
+          "mlb_id": 801346,
+          "name": "Luis Hernandez",
+          "last": "Hernandez",
+          "synergy_id": "5fcfc763b92d134ff91d69b4",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
+              "angle": "AsLogged",
+              "pitch_type": "SINKER",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "69526e9ca12b69547f43930e",
+              "result": "StrikeTaken",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 StrikeTaken"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce/hls/master.m3u8",
+              "asset_id": "6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce",
+              "angle": "LowHome",
+              "pitch_type": "CURVEBALL",
+              "game_date": "12/27/2025",
+              "league": "LBPRC",
+              "event_id": "6950cf080d4772becd279457",
+              "result": "SacrificeFly",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 SacrificeFly"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/9aefd267-9d87-49ec-92a4-606408d490f1/hls/master.m3u8",
+              "asset_id": "9aefd267-9d87-49ec-92a4-606408d490f1",
+              "angle": "LowHome",
+              "pitch_type": "SLIDER",
+              "game_date": "12/27/2025",
+              "league": "LBPRC",
+              "event_id": "69510789a65b0d28b116462b",
+              "result": "SacrificeFly",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 SacrificeFly"
+            }
+          ]
+        },
+        {
+          "id": -402052164,
+          "mlb_id": -402052164,
+          "name": "Ediel Rivera",
+          "last": "Rivera",
+          "synergy_id": "627c2fea453834a0759cf711",
+          "clips": [
+            {
+              "url": "https://asset.synergysportstech.com/e694c9f6-c4c9-479c-83f3-964125d15996/hls/master.m3u8",
+              "asset_id": "e694c9f6-c4c9-479c-83f3-964125d15996",
+              "angle": "AsLogged",
+              "pitch_type": "SINKER",
+              "game_date": "12/28/2025",
+              "league": "LBPRC",
+              "event_id": "69526e9ca12b69547f43930e",
+              "result": "StrikeTaken",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 StrikeTaken"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce/hls/master.m3u8",
+              "asset_id": "6b1382d6-13b9-4e7a-8a73-b1c6811dd9ce",
+              "angle": "LowHome",
+              "pitch_type": "CURVEBALL",
+              "game_date": "12/27/2025",
+              "league": "LBPRC",
+              "event_id": "6950cf080d4772becd279457",
+              "result": "SacrificeFly",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 SacrificeFly"
+            },
+            {
+              "url": "https://asset.synergysportstech.com/9aefd267-9d87-49ec-92a4-606408d490f1/hls/master.m3u8",
+              "asset_id": "9aefd267-9d87-49ec-92a4-606408d490f1",
+              "angle": "LowHome",
+              "pitch_type": "SLIDER",
+              "game_date": "12/27/2025",
+              "league": "LBPRC",
+              "event_id": "69510789a65b0d28b116462b",
+              "result": "SacrificeFly",
+              "slot": "THROW2B",
+              "label": "Throw 2B \u00b7 SacrificeFly"
+            }
+          ]
+        },
+        {
+          "id": -525279548,
+          "mlb_id": -525279548,
+          "name": "Ramon Rodriguez",
+          "last": "Rodriguez",
+          "synergy_id": null,
+          "clips": []
+        }
+      ]
     }
   ]
 }
