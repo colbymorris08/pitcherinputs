@@ -31,8 +31,15 @@ FB = {"FF", "FA", "SI", "FT", "FB", "FASTBALL", "SINKER", "FOUR-SEAM", "FOURSEAM
 OS = {"CH", "CU", "CB", "SL", "SW", "FS", "SPL", "KC", "EP", "SC", "CHANGEUP", "CURVE", "CURVEBALL",
       "SLIDER", "SWEEPER", "SPLITTER", "SPLIT", "KNUCKLE"}
 
-MAX_EVENTS_P = int(__import__("os").environ.get("PI_MAX_EVENTS_P", "400"))
-MAX_EVENTS_C = int(__import__("os").environ.get("PI_MAX_EVENTS_C", "600"))
+import os as _os
+
+MAX_EVENTS_P = int(_os.environ.get("PI_MAX_EVENTS_P", "400"))
+MAX_EVENTS_C = int(_os.environ.get("PI_MAX_EVENTS_C", "600"))
+SKIP_TEAMS = {
+    a.strip().upper()
+    for a in _os.environ.get("PI_SKIP_TEAMS", "SAN").split(",")
+    if a.strip()
+}
 
 
 def now() -> str:
@@ -124,16 +131,35 @@ def angle_rank(angle: str) -> int:
     return 9
 
 
+def to_hls(url: str | None, asset_id: str) -> str | None:
+    """Prefer Synergy HLS master; never store progressive mp4 for the site."""
+    if asset_id:
+        return f"https://asset.synergysportstech.com/{asset_id}/hls/master.m3u8"
+    if not url:
+        return None
+    u = str(url).replace("http://", "https://")
+    if "/hls/master.m3u8" in u:
+        return u
+    # clip/.../clip.mp4 → extract uuid if present
+    m = re.search(r"/clip/([0-9a-f-]{36})/", u, re.I)
+    if m:
+        return f"https://asset.synergysportstech.com/{m.group(1)}/hls/master.m3u8"
+    if u.endswith(".m3u8"):
+        return u
+    return None
+
+
 def track_playable(track: dict) -> tuple[str | None, str]:
     for seg in track.get("segments") or []:
         video = seg.get("video") or {}
         asset_id = str(video.get("id") or "")
+        if asset_id:
+            return to_hls(None, asset_id), asset_id
         for var in video.get("videoVariants") or []:
             path = var.get("endpointRelativePath") or var.get("url")
-            if path:
-                return str(path).replace("http://", "https://"), asset_id
-        if (video.get("videoComponents") or []) and asset_id:
-            return f"https://asset.synergysportstech.com/{asset_id}/hls/master.m3u8", asset_id
+            hls = to_hls(path, asset_id)
+            if hls:
+                return hls, asset_id
     return None, ""
 
 
@@ -229,6 +255,42 @@ def pick_pitcher_clips(events: list[dict]) -> list[dict]:
     return out
 
 
+def fetch_pitcher_until_clips(token: str, sid: str) -> tuple[list[dict], int]:
+    """Page pitcher events and stop as soon as FB+OS R1 clips are found."""
+    page = 200
+    cap = MAX_EVENTS_P
+    out: list[dict] = []
+    skip = 0
+    scanned = 0
+    while scanned < cap:
+        body = {
+            "loggingPhases": [bas.LOGGING_PHASE_PITCH],
+            "skip": skip,
+            "take": page,
+            "pitcherId": sid,
+        }
+        try:
+            doc = bas.api_post(bas.EVENTS_FILTER_URL, token, body, timeout_s=120)
+        except Exception as exc:
+            print(f"    page fail skip={skip}: {exc}", flush=True)
+            break
+        rows = doc.get("result") if isinstance(doc, dict) else None
+        if not isinstance(rows, list) or not rows:
+            break
+        out.extend(rows)
+        scanned += len(rows)
+        skip += len(rows)
+        print(f"  fetched {len(out)} kept / {scanned} scanned (page)", flush=True)
+        clips = pick_pitcher_clips(out)
+        if len(clips) >= 2:
+            return clips, scanned
+        total = int((doc or {}).get("totalRecords") or 0)
+        if skip >= total or len(rows) < page:
+            break
+        time.sleep(0.08)
+    return pick_pitcher_clips(out), scanned
+
+
 def pick_catcher_clips(events: list[dict], limit: int = 3) -> list[dict]:
     out = []
     for ev in events:
@@ -262,17 +324,21 @@ def main() -> None:
     ckpt = load_ckpt()
     teams_out: list[dict] = []
 
-    # stable team order
+    # stable team order (SAN skipped by default via PI_SKIP_TEAMS)
     order = ["SAN", "CAG", "CAR", "MAY", "PON", "SJU"]
+    if SKIP_TEAMS:
+        print(f"Skipping teams: {', '.join(sorted(SKIP_TEAMS))}", flush=True)
     packs = []
     for key, pack in roster.items():
         abbr = pack.get("teamAbbrev")
-        if abbr in order:
+        if abbr in order and abbr not in SKIP_TEAMS:
             packs.append(pack)
     packs.sort(key=lambda p: order.index(p.get("teamAbbrev")))
 
     for pack in packs:
         abbr = pack.get("teamAbbrev")
+        if abbr in SKIP_TEAMS:
+            continue
         team_id = TEAM_IDS.get(abbr)
         players = pack.get("players") or []
         pitchers = [p for p in players if str(p.get("position") or "").upper() in {"P", "RHP", "LHP", "RHR", "LHR"}]
@@ -302,27 +368,51 @@ def main() -> None:
                 "clips": [],
             }
             cached = ckpt.get("pitchers", {}).get(key)
-            if cached and cached.get("clips"):
+            if cached and cached.get("clips") is not None and cached.get("done"):
                 row.update({k: cached[k] for k in ("synergy_id", "clips") if k in cached})
                 print(f"  [P {i}/{len(pitchers)}] {name} cached clips={len(row['clips'])}", flush=True)
             else:
-                sid = synergy_id_for(token, name, mid)
-                row["synergy_id"] = sid
-                if not sid:
-                    print(f"  [P {i}/{len(pitchers)}] {name} UNRESOLVED", flush=True)
-                else:
-                    print(f"  [P {i}/{len(pitchers)}] {name} sid={sid}", flush=True)
-                    raw = bas.fetch_events_pages(token, pitcher_id=sid, max_events=MAX_EVENTS_P)
-                    clips = pick_pitcher_clips(raw)
-                    row["clips"] = clips
-                    print(f"    events={len(raw)} clips={len(clips)}", flush=True)
+                try:
+                    sid = synergy_id_for(token, name, mid)
+                    row["synergy_id"] = sid
+                    if not sid:
+                        print(f"  [P {i}/{len(pitchers)}] {name} UNRESOLVED", flush=True)
+                    else:
+                        print(f"  [P {i}/{len(pitchers)}] {name} sid={sid}", flush=True)
+                        clips, scanned = fetch_pitcher_until_clips(token, sid)
+                        row["clips"] = clips
+                        print(f"    scanned={scanned} clips={len(clips)}", flush=True)
+                except Exception as exc:
+                    print(f"  [P {i}/{len(pitchers)}] {name} ERROR: {exc}", flush=True)
                 ckpt.setdefault("pitchers", {})[key] = {
                     "synergy_id": row["synergy_id"],
                     "clips": row["clips"],
+                    "done": True,
                 }
                 save_ckpt(ckpt)
+                # publish partial team so site updates during long runs
+                preview = teams_out + [{
+                    **team_row,
+                    "pitchers": team_row["pitchers"] + [row],
+                    "catchers": team_row["catchers"],
+                }]
+                write_catalog(preview)
                 time.sleep(0.05)
             team_row["pitchers"].append(row)
+
+        # One team-level event scan reused for all catchers
+        team_events: list[dict] = []
+        need_catcher = any(
+            not ((ckpt.get("catchers") or {}).get(f"{abbr}|{(int(p.get('id') or 0) or p.get('name'))}") or {}).get("done")
+            for p in catchers
+        )
+        if need_catcher and team_id and catchers:
+            print(f"  team event scan for catchers (max={MAX_EVENTS_C})…", flush=True)
+            try:
+                team_events = bas.fetch_events_pages(token, team_id=team_id, max_events=MAX_EVENTS_C)
+                print(f"  team events={len(team_events)}", flush=True)
+            except Exception as exc:
+                print(f"  team scan ERROR: {exc}", flush=True)
 
         for i, p in enumerate(catchers, 1):
             mid = int(p.get("id") or 0) or None
@@ -341,34 +431,32 @@ def main() -> None:
                 row.update({k: cached[k] for k in ("synergy_id", "clips") if k in cached})
                 print(f"  [C {i}/{len(catchers)}] {name} cached clips={len(row['clips'])}", flush=True)
             else:
-                sid = synergy_id_for(token, name, mid)
-                row["synergy_id"] = sid
-                clips = []
-                if not sid:
-                    print(f"  [C {i}/{len(catchers)}] {name} UNRESOLVED", flush=True)
-                else:
-                    print(f"  [C {i}/{len(catchers)}] {name} sid={sid}", flush=True)
-                    # Catcher: team filter + client-side steal + catcher match is expensive;
-                    # try batterId-style via player id if API accepts — else team events scan.
-                    raw = bas.fetch_events_pages(token, team_id=team_id, max_events=MAX_EVENTS_C) if team_id else []
-                    # Prefer events where this catcher is in defense lineup
-                    matched = []
-                    for ev in raw:
-                        defense = ev.get("defense") or {}
-                        lineup = defense.get("lineup") if isinstance(defense, dict) else {}
-                        catch = (lineup or {}).get("catcher") if isinstance(lineup, dict) else None
-                        cid = ""
-                        if isinstance(catch, dict):
-                            cid = str(catch.get("id") or "")
-                        if cid and cid == str(sid):
-                            matched.append(ev)
-                        elif steal_of_second(ev):
-                            # keep steal events for name match later
-                            matched.append(ev)
-                    use = matched or raw
-                    clips = pick_catcher_clips(use)
-                    print(f"    scanned={len(raw)} matched={len(matched)} clips={len(clips)}", flush=True)
-                row["clips"] = clips
+                try:
+                    sid = synergy_id_for(token, name, mid)
+                    row["synergy_id"] = sid
+                    clips = []
+                    if not sid:
+                        print(f"  [C {i}/{len(catchers)}] {name} UNRESOLVED", flush=True)
+                    else:
+                        print(f"  [C {i}/{len(catchers)}] {name} sid={sid}", flush=True)
+                        matched = []
+                        for ev in team_events:
+                            defense = ev.get("defense") or {}
+                            lineup = defense.get("lineup") if isinstance(defense, dict) else {}
+                            catch = (lineup or {}).get("catcher") if isinstance(lineup, dict) else None
+                            cid = ""
+                            if isinstance(catch, dict):
+                                cid = str(catch.get("id") or "")
+                            if cid and cid == str(sid):
+                                matched.append(ev)
+                            elif steal_of_second(ev):
+                                matched.append(ev)
+                        use = matched or team_events
+                        clips = pick_catcher_clips(use)
+                        print(f"    matched={len(matched)} clips={len(clips)}", flush=True)
+                    row["clips"] = clips
+                except Exception as exc:
+                    print(f"  [C {i}/{len(catchers)}] {name} ERROR: {exc}", flush=True)
                 ckpt.setdefault("catchers", {})[key] = {
                     "synergy_id": row["synergy_id"],
                     "clips": row["clips"],
@@ -386,4 +474,10 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as exc:
+        import traceback
+        print(f"FATAL: {exc}", flush=True)
+        traceback.print_exc()
+        sys.exit(1)
