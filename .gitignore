@@ -5,4 +5,6 @@ data/catalog_checkpoint.json
 data/build.log
 data/*.log
 data/*.pid
+data/*.hb
+data/*.lock
 data/cag_team_snapshot.json
