@@ -2,10 +2,11 @@
 
 Separate LBPRC site for streaming Synergy clips while filling **Time to Home** / pitcher notes on Santurce.
 
-- Team tabs → pitchers (A–Z) + catchers
+- **ALL** tab → every league catcher, grouped by team (throw downs to 2B)
+- Team tabs → pitchers (A–Z) + that team's catchers
 - Pitchers: runner on 1B · 1 fastball + 1 offspeed
-- Catchers: throw downs to 2B (SB / CS)
-- **No local video** — browser streams Synergy HLS only
+- Catchers: SB/CS of 2B only, labeled by the catcher in the field on that play
+- **No local video** — browser streams Synergy clips only
 
 ## Build catalog
 

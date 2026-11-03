@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 data/catalog_checkpoint.json
 data/build.log
+data/*.log
+data/*.pid

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pitcher Inputs · LBPRC</title>
-  <link rel="stylesheet" href="css/app.css?v=1">
+  <link rel="stylesheet" href="css/app.css?v=2">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js"></script>
 </head>
 <body>
@@ -20,18 +20,18 @@
 
   <div class="layout">
     <aside class="rail">
-      <div class="rail-seg">
+      <div class="rail-seg pitchers">
         <h2>Pitchers <span class="muted">A–Z · R1 FB + OS</span></h2>
         <div id="pitcher-list" class="player-list"></div>
       </div>
-      <div class="rail-seg">
+      <div class="rail-seg catchers">
         <h2>Catchers <span class="muted">SB / CS 2B throws</span></h2>
         <div id="catcher-list" class="player-list"></div>
       </div>
     </aside>
 
     <main class="stage">
-      <div id="empty" class="empty">Pick a team, then a pitcher or catcher.</div>
+      <div id="empty" class="empty">Pick ALL for league catchers, or a team for pitchers + catchers.</div>
       <div id="player-panel" class="player-panel" hidden>
         <header class="player-head">
           <h2 id="player-name"></h2>
@@ -51,6 +51,6 @@
     <button type="button" class="btn" id="dock-close">Close</button>
   </div>
 
-  <script src="js/app.js?v=2"></script>
+  <script src="js/app.js?v=3"></script>
 </body>
 </html>

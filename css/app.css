@@ -31,6 +31,13 @@ h2 { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; text-transform: up
 .player-list button:hover { background: var(--panel); }
 .player-list button.active { border-color: var(--accent); background: var(--panel); }
 .player-list .badge { float: right; color: var(--muted); font-size: 11px; }
+.player-list .player-name { font-weight: 600; }
+.team-group { margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+.team-group:last-child { border-bottom: none; }
+.team-group-head {
+  font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--accent); margin: 4px 2px 8px;
+}
 .stage { padding: 16px 20px 120px; }
 .empty { color: var(--muted); padding: 40px 0; }
 .player-head { margin-bottom: 14px; }

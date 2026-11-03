@@ -38,12 +38,16 @@ OS = {"CH", "CU", "CB", "SL", "SW", "FS", "SPL", "KC", "EP", "SC", "CHANGEUP", "
 import os as _os
 
 MAX_EVENTS_P = int(_os.environ.get("PI_MAX_EVENTS_P", "400"))
-MAX_EVENTS_C = int(_os.environ.get("PI_MAX_EVENTS_C", "600"))
+MAX_EVENTS_C = int(_os.environ.get("PI_MAX_EVENTS_C", "1500"))
 SKIP_TEAMS = {
     a.strip().upper()
     for a in _os.environ.get("PI_SKIP_TEAMS", "SAN").split(",")
     if a.strip()
 }
+
+# Synergy runner.how / runKind for steal attempts of second.
+STEAL_HOW = {"stolenbase", "caughtstealing", "pickoffcaughtstealing"}
+STEAL_KIND = {"steal", "caughtstealing"}
 
 
 def now() -> str:
@@ -95,33 +99,65 @@ def runner_on_1b(ev: dict) -> bool:
     return False
 
 
+def _runner_moves(ev: dict) -> list[dict]:
+    """Flatten Synergy runners.* movement objects (skip occupancy snapshots)."""
+    runners = ev.get("runners") or {}
+    if not isinstance(runners, dict):
+        return []
+    out: list[dict] = []
+    for key, val in runners.items():
+        if str(key).startswith("runnerConfiguration"):
+            continue
+        if isinstance(val, dict):
+            out.append(val)
+        elif isinstance(val, list):
+            out.extend(x for x in val if isinstance(x, dict))
+    return out
+
+
+def steal_attempt_of_second(ev: dict) -> dict | None:
+    """Return the 1B→2B steal/CS movement dict if this event is a throw-down to 2B."""
+    for move in _runner_moves(ev):
+        how = str(move.get("how") or "").replace("_", "").replace(" ", "").lower()
+        kind = str(move.get("runKind") or "").replace("_", "").replace(" ", "").lower()
+        if how not in STEAL_HOW and kind not in STEAL_KIND:
+            continue
+        start = str(move.get("locationStart") or "").lower()
+        end = str(move.get("locationEnd") or "").lower()
+        # Throw down to second: started at first, ended at/toward second.
+        if "first" in start and "second" in end:
+            return move
+    return None
+
+
 def steal_of_second(ev: dict) -> bool:
-    """True for SB/CS of 2B (throw-down context)."""
-    blob = " ".join(
-        str(x or "")
-        for x in (
-            ev.get("eventType"),
-            ev.get("eventResult"),
-            ev.get("playResult"),
-            ev.get("plateAppearanceResult"),
-            (ev.get("pitch") or {}).get("pitchResult"),
-            (ev.get("runners") or {}).get("runnerPlayResult") if isinstance(ev.get("runners"), dict) else "",
-            json.dumps(ev.get("runners") or {})[:800],
-        )
-    ).lower()
-    tokens = (
-        "stolenbase", "stolen base", "steal of second", "steal 2b", "sb2",
-        "caughtstealing", "caught stealing", "cs2", "thrown out at second",
-        "pickoff caught stealing", "stealing second",
-    )
-    if any(t in blob.replace("_", " ") for t in tokens):
-        # Prefer 2B; reject obvious 3B/home if explicitly only those.
-        if "third" in blob and "second" not in blob and "2b" not in blob:
-            return False
-        if "home" in blob and "second" not in blob and "2b" not in blob and "steal" in blob:
-            return False
-        return True
-    return False
+    """True for SB/CS of 2B (throw-down context). Uses runner how/runKind — not URL tokens."""
+    return steal_attempt_of_second(ev) is not None
+
+
+def event_catcher(ev: dict) -> dict:
+    defense = ev.get("defense") or {}
+    lineup = defense.get("lineup") if isinstance(defense, dict) else {}
+    catch = (lineup or {}).get("catcher") if isinstance(lineup, dict) else None
+    return catch if isinstance(catch, dict) else {}
+
+
+def catcher_display_name(catch: dict) -> str:
+    first = str(catch.get("nameFirst") or "").strip()
+    last = str(catch.get("nameLast") or "").strip()
+    return f"{first} {last}".strip() or str(catch.get("name") or "").strip()
+
+
+def names_match(a: str, b: str) -> bool:
+    def norm(s: str) -> str:
+        s = unicodedata.normalize("NFKD", str(s or ""))
+        s = "".join(ch for ch in s if not unicodedata.combining(ch))
+        return "".join(ch for ch in s.lower() if ch.isalnum())
+
+    na, nb = norm(a), norm(b)
+    if not na or not nb:
+        return False
+    return na == nb or na.endswith(nb) or nb.endswith(na)
 
 
 def angle_rank(angle: str) -> int:
@@ -312,19 +348,87 @@ def fetch_pitcher_until_clips(token: str, sid: str) -> tuple[list[dict], int]:
     return pick_pitcher_clips(out), scanned
 
 
-def pick_catcher_clips(events: list[dict], limit: int = 3) -> list[dict]:
+def steal_result_label(move: dict | None) -> str:
+    if not move:
+        return "SB/CS"
+    how = str(move.get("how") or "")
+    kind = str(move.get("runKind") or "")
+    blob = f"{how} {kind}".lower()
+    if "caught" in blob:
+        return "CS"
+    if "stolen" in blob or kind.lower() == "steal":
+        return "SB"
+    return how or kind or "SB/CS"
+
+
+def pick_catcher_clips(events: list[dict], catcher_name: str = "", limit: int = 3) -> list[dict]:
+    """Clips for throw-downs to 2B. Caller must already filter to this catcher's events."""
     out = []
     for ev in events:
-        if not steal_of_second(ev):
+        move = steal_attempt_of_second(ev)
+        if not move:
             continue
         clip = best_clip(ev)
         if not clip:
             continue
-        clip = {**clip, "slot": "THROW2B", "label": f"Throw 2B · {clip.get('result') or 'SB/CS'}"}
+        outcome = steal_result_label(move)
+        who = catcher_name or catcher_display_name(event_catcher(ev)) or "Catcher"
+        clip = {
+            **clip,
+            "slot": "THROW2B",
+            "catcher_name": who,
+            "steal_result": outcome,
+            "label": f"{who} · Throw 2B · {outcome}",
+            # Prefer steal outcome over PA result (PA is often unrelated Single/K).
+            "result": outcome,
+        }
         out.append(clip)
         if len(out) >= limit:
             break
     return out
+
+
+def events_for_catcher(events: list[dict], *, synergy_id: str | None, name: str) -> list[dict]:
+    """Only steal-of-2B events where this catcher was in the field."""
+    matched: list[dict] = []
+    sid = str(synergy_id or "")
+    for ev in events:
+        if not steal_of_second(ev):
+            continue
+        catch = event_catcher(ev)
+        cid = str(catch.get("id") or "")
+        cname = catcher_display_name(catch)
+        if sid and cid and cid == sid:
+            matched.append(ev)
+        elif (not sid or not cid) and names_match(cname, name):
+            matched.append(ev)
+    return matched
+
+
+def discover_field_catchers(events: list[dict]) -> list[dict]:
+    """Unique catchers who appear on 1B→2B steal/CS throws in the team event scan."""
+    by_id: dict[str, dict] = {}
+    for ev in events:
+        if not steal_of_second(ev):
+            continue
+        catch = event_catcher(ev)
+        cid = str(catch.get("id") or "")
+        name = catcher_display_name(catch)
+        if not cid and not name:
+            continue
+        key = cid or name
+        if key in by_id:
+            continue
+        by_id[key] = {
+            "id": None,
+            "mlb_id": None,
+            "name": name,
+            "last": last_name(name),
+            "synergy_id": cid or None,
+            "source": "field",
+            "clips": [],
+        }
+    return list(by_id.values())
 
 
 def write_catalog(teams: list[dict]) -> None:
@@ -421,69 +525,120 @@ def main() -> None:
                 time.sleep(0.05)
             team_row["pitchers"].append(row)
 
-        # One team-level event scan reused for all catchers
+        # Scan team pitches but retain only 1B→2B steal/CS throws (keeps memory low).
         team_events: list[dict] = []
-        need_catcher = any(
-            not ((ckpt.get("catchers") or {}).get(f"{abbr}|{(int(p.get('id') or 0) or p.get('name'))}") or {}).get("done")
-            for p in catchers
-        )
-        if need_catcher and team_id and catchers:
-            print(f"  team event scan for catchers (max={MAX_EVENTS_C})…", flush=True)
+        if team_id:
+            scan_cap = max(MAX_EVENTS_C * 4, 4000)
+            print(
+                f"  team steal-of-2B scan (keep≤{MAX_EVENTS_C}, scan≤{scan_cap})…",
+                flush=True,
+            )
             try:
-                team_events = bas.fetch_events_pages(token, team_id=team_id, max_events=MAX_EVENTS_C)
-                print(f"  team events={len(team_events)}", flush=True)
+                scan_out: dict = {}
+                team_events = bas.fetch_events_pages(
+                    token,
+                    team_id=team_id,
+                    max_events=MAX_EVENTS_C,
+                    max_scan=scan_cap,
+                    retain=steal_of_second,
+                    scan_out=scan_out,
+                )
+                print(
+                    f"  steal-of-2B kept={len(team_events)} scanned={scan_out.get('scanned')}",
+                    flush=True,
+                )
             except Exception as exc:
                 print(f"  team scan ERROR: {exc}", flush=True)
 
-        for i, p in enumerate(catchers, 1):
+        # Merge roster catchers with catchers who actually threw on SB/CS of 2B.
+        catcher_rows: list[dict] = []
+        seen_keys: set[str] = set()
+        for p in catchers:
             mid = int(p.get("id") or 0) or None
             name = p.get("name") or ""
             key = f"{abbr}|{mid or name}"
-            row = {
+            seen_keys.add(key)
+            catcher_rows.append({
                 "id": mid or key,
                 "mlb_id": mid,
                 "name": name,
                 "last": last_name(name),
                 "synergy_id": None,
+                "source": "roster",
                 "clips": [],
-            }
+                "_key": key,
+            })
+        for field in discover_field_catchers(team_events):
+            sid = field.get("synergy_id")
+            name = field.get("name") or ""
+            # Skip if already on roster (match by synergy id or name).
+            dup = False
+            for row in catcher_rows:
+                if sid and row.get("synergy_id") and str(row["synergy_id"]) == str(sid):
+                    dup = True
+                    break
+                if names_match(row.get("name") or "", name):
+                    # Prefer attaching field synergy id onto roster row.
+                    if sid and not row.get("synergy_id"):
+                        row["synergy_id"] = sid
+                    dup = True
+                    break
+            if dup:
+                continue
+            key = f"{abbr}|field|{sid or name}"
+            if key in seen_keys:
+                continue
+            seen_keys.add(key)
+            catcher_rows.append({
+                **field,
+                "id": key,
+                "_key": key,
+            })
+
+        catcher_rows.sort(key=lambda r: (str(r.get("last") or "").lower(), str(r.get("name") or "").lower()))
+
+        for i, row in enumerate(catcher_rows, 1):
+            key = row.pop("_key")
+            name = row.get("name") or ""
+            mid = row.get("mlb_id")
             cached = ckpt.get("catchers", {}).get(key)
-            if cached and (cached.get("clips") is not None) and cached.get("done"):
-                row.update({k: cached[k] for k in ("synergy_id", "clips") if k in cached})
-                print(f"  [C {i}/{len(catchers)}] {name} cached clips={len(row['clips'])}", flush=True)
+            # Force rebuild when cached clips lack catcher identity (old shared-team bug).
+            cache_ok = (
+                cached
+                and cached.get("done")
+                and cached.get("clips") is not None
+                and cached.get("v") == 2
+            )
+            if cache_ok:
+                row.update({k: cached[k] for k in ("synergy_id", "clips", "source") if k in cached})
+                print(f"  [C {i}/{len(catcher_rows)}] {name} cached clips={len(row['clips'])}", flush=True)
             else:
                 try:
-                    sid = synergy_id_for(token, name, mid)
+                    sid = row.get("synergy_id") or synergy_id_for(token, name, int(mid) if mid else None)
                     row["synergy_id"] = sid
-                    clips = []
-                    if not sid:
-                        print(f"  [C {i}/{len(catchers)}] {name} UNRESOLVED", flush=True)
+                    if not sid and row.get("source") != "field":
+                        print(f"  [C {i}/{len(catcher_rows)}] {name} UNRESOLVED", flush=True)
+                        clips = []
                     else:
-                        print(f"  [C {i}/{len(catchers)}] {name} sid={sid}", flush=True)
-                        matched = []
-                        for ev in team_events:
-                            defense = ev.get("defense") or {}
-                            lineup = defense.get("lineup") if isinstance(defense, dict) else {}
-                            catch = (lineup or {}).get("catcher") if isinstance(lineup, dict) else None
-                            cid = ""
-                            if isinstance(catch, dict):
-                                cid = str(catch.get("id") or "")
-                            if cid and cid == str(sid):
-                                matched.append(ev)
-                            elif steal_of_second(ev):
-                                matched.append(ev)
-                        use = matched or team_events
-                        clips = pick_catcher_clips(use)
-                        print(f"    matched={len(matched)} clips={len(clips)}", flush=True)
+                        print(f"  [C {i}/{len(catcher_rows)}] {name} sid={sid or '—'}", flush=True)
+                        matched = events_for_catcher(team_events, synergy_id=sid, name=name)
+                        clips = pick_catcher_clips(matched, catcher_name=name)
+                        print(f"    matched_steals={len(matched)} clips={len(clips)}", flush=True)
                     row["clips"] = clips
                 except Exception as exc:
-                    print(f"  [C {i}/{len(catchers)}] {name} ERROR: {exc}", flush=True)
+                    print(f"  [C {i}/{len(catcher_rows)}] {name} ERROR: {exc}", flush=True)
                 ckpt.setdefault("catchers", {})[key] = {
-                    "synergy_id": row["synergy_id"],
-                    "clips": row["clips"],
+                    "synergy_id": row.get("synergy_id"),
+                    "clips": row.get("clips") or [],
+                    "source": row.get("source") or "roster",
                     "done": True,
+                    "v": 2,
                 }
                 save_ckpt(ckpt)
+                write_catalog(teams_out + [{
+                    **team_row,
+                    "catchers": team_row["catchers"] + [row],
+                }])
                 time.sleep(0.05)
             team_row["catchers"].append(row)
 
