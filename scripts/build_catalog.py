@@ -39,6 +39,7 @@ import os as _os
 
 MAX_EVENTS_P = int(_os.environ.get("PI_MAX_EVENTS_P", "400"))
 MAX_EVENTS_C = int(_os.environ.get("PI_MAX_EVENTS_C", "1500"))
+MAX_SCAN_C = int(_os.environ.get("PI_MAX_SCAN_C", "4000"))
 SKIP_TEAMS = {
     a.strip().upper()
     for a in _os.environ.get("PI_SKIP_TEAMS", "SAN").split(",")
@@ -528,7 +529,7 @@ def main() -> None:
         # Scan team pitches but retain only 1B→2B steal/CS throws (keeps memory low).
         team_events: list[dict] = []
         if team_id:
-            scan_cap = max(MAX_EVENTS_C * 4, 4000)
+            scan_cap = max(MAX_EVENTS_C * 4, MAX_SCAN_C)
             print(
                 f"  team steal-of-2B scan (keep≤{MAX_EVENTS_C}, scan≤{scan_cap})…",
                 flush=True,
