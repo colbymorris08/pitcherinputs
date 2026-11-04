@@ -4,7 +4,7 @@ Separate LBPRC site for streaming Synergy clips while filling **Time to Home** /
 
 - **ALL** tab → every league catcher, grouped by team (throw downs to 2B)
 - Team tabs → pitchers (A–Z) + that team's catchers
-- Pitchers: runner on 1B · 1 fastball + 1 offspeed
+- Pitchers: **LowHome + CF** release clips + runner-on-1B FB/OS for time-to-home
 - Catchers: up to **5** SB/CS of 2B clips (Synergy `catcherId` — MLB/MiLB/LBPRC/…), labeled by field catcher
 - **No local video** — browser streams Synergy short `/clip/` URLs only
 
@@ -14,6 +14,9 @@ Separate LBPRC site for streaming Synergy clips while filling **Time to Home** /
 cd /Users/colbymorris/pitcherinputs
 # Full rebuild (skips SAN by default)
 python3 scripts/build_catalog.py
+
+# Pitchers only — fill LowHome + CF release slots (reuse catchers)
+PI_PITCHERS_ONLY=1 PI_RELEASE_FILL=1 python3 scripts/build_catalog.py
 
 # Catchers only — 5 clips/catcher from any league
 PI_CATCHERS_ONLY=1 PI_CATCHER_CLIPS=5 python3 scripts/build_catalog.py

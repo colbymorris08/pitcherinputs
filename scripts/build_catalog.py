@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Build pitcherinputs data/catalog.json — short Synergy CLIP URLs (stream, no local files).
 
-Pitchers: runner on 1B → 1 fastball + 1 offspeed clip each (A–Z on site).
+Pitchers (A–Z on site):
+  - Timing: runner on 1B → 1 fastball + 1 offspeed (slots FB / OS)
+  - Release pics: 1 LowHome/front + 1 Centerfield (slots LH / CF) — any pitch
 Catchers: up to 5 SB/CS of 2B throw-down clips via Synergy ``catcherId``
 (all leagues — MLB / MiLB / LBPRC / … — not Puerto Rico only).
 
@@ -12,6 +14,8 @@ Never store full-game HLS masters (.../{asset_id}/hls/master.m3u8).
 Env:
   PI_SKIP_TEAMS=SAN          (default)
   PI_CATCHERS_ONLY=1         reuse pitcher rows; rebuild catchers only
+  PI_PITCHERS_ONLY=1         rebuild pitchers only; reuse catchers from catalog
+  PI_RELEASE_FILL=1          only re-fetch pitchers missing LH and/or CF slots
   PI_CATCHER_CLIPS=5         clips per catcher
   PI_MAX_SCAN_CATCHER=5000   catcherId pages walked per catcher
 """
@@ -44,14 +48,18 @@ OS = {"CH", "CU", "CB", "SL", "SW", "FS", "SPL", "KC", "EP", "SC", "CHANGEUP", "
 
 import os as _os
 
-MAX_EVENTS_P = int(_os.environ.get("PI_MAX_EVENTS_P", "400"))
+MAX_EVENTS_P = int(_os.environ.get("PI_MAX_EVENTS_P", "800"))
 MAX_EVENTS_C = int(_os.environ.get("PI_MAX_EVENTS_C", "1500"))
 MAX_SCAN_C = int(_os.environ.get("PI_MAX_SCAN_C", "4000"))
 # Per-catcher Synergy catcherId scan (any league: MLB/MiLB/LBPRC/…).
 MAX_SCAN_CATCHER = int(_os.environ.get("PI_MAX_SCAN_CATCHER", "5000"))
 CATCHER_CLIPS = int(_os.environ.get("PI_CATCHER_CLIPS", "5"))
 CATCHER_CACHE_V = 3
+# v2 = FB/OS timing + LowHome + CF release slots.
+PITCHER_CACHE_V = 2
 CATCHERS_ONLY = _os.environ.get("PI_CATCHERS_ONLY", "").strip().lower() in {"1", "true", "yes"}
+PITCHERS_ONLY = _os.environ.get("PI_PITCHERS_ONLY", "").strip().lower() in {"1", "true", "yes"}
+RELEASE_FILL = _os.environ.get("PI_RELEASE_FILL", "").strip().lower() in {"1", "true", "yes"}
 SKIP_TEAMS = {
     a.strip().upper()
     for a in _os.environ.get("PI_SKIP_TEAMS", "SAN").split(",")
@@ -173,14 +181,43 @@ def names_match(a: str, b: str) -> bool:
     return na == nb or na.endswith(nb) or nb.endswith(na)
 
 
+def is_lowhome_angle(angle: str) -> bool:
+    a = (angle or "").strip().lower().replace(" ", "")
+    return a.startswith("lowhome")
+
+
+def is_highhome_angle(angle: str) -> bool:
+    a = (angle or "").strip().lower().replace(" ", "")
+    return a.startswith("highhome")
+
+
+def is_cf_angle(angle: str) -> bool:
+    """Centerfield / CF camera (release from behind pitcher)."""
+    a = (angle or "").strip().lower().replace(" ", "").replace("_", "")
+    if not a:
+        return False
+    if a.startswith("centerfield") or a.startswith("centrefield"):
+        return True
+    if a in {"cf", "center", "centre"}:
+        return True
+    if "centerfield" in a or "centrefield" in a:
+        return True
+    # Synergy sometimes labels as HighCF / LowCF / CFBroadcast
+    if a.startswith("highcf") or a.startswith("lowcf") or a.startswith("cf"):
+        return True
+    return False
+
+
 def angle_rank(angle: str) -> int:
     a = (angle or "").strip().lower()
     if a.startswith("lowhome"):
         return 0
     if a.startswith("highhome"):
         return 1
-    if a:
+    if is_cf_angle(angle):
         return 2
+    if a:
+        return 3
     return 9
 
 
@@ -232,6 +269,23 @@ def track_playable(track: dict) -> tuple[str | None, str]:
     return None, ""
 
 
+def _clip_meta(ev: dict, url: str, asset_id: str, angle: str) -> dict:
+    game = ev.get("game") or {}
+    league = game.get("league") or {}
+    pitch = norm_pitch(ev)
+    return {
+        "url": url,
+        "asset_id": asset_id,
+        "angle": angle,
+        "pitch_type": pitch,
+        "game_date": game.get("gameDate") or game.get("date") or "",
+        "league": league.get("nameAbbrev") or league.get("name") or "",
+        "event_id": str(ev.get("id") or ""),
+        "result": str(ev.get("plateAppearanceResult") or (ev.get("pitch") or {}).get("pitchResult") or ""),
+        "kind": "clip",
+    }
+
+
 def best_clip(ev: dict) -> dict | None:
     best = None
     for track in ((ev.get("videoGroup") or {}).get("videoTracks")) or []:
@@ -247,20 +301,32 @@ def best_clip(ev: dict) -> dict | None:
                 break
     if not best:
         return None
-    game = ev.get("game") or {}
-    league = game.get("league") or {}
-    pitch = norm_pitch(ev)
-    return {
-        "url": best["url"],
-        "asset_id": best["asset_id"],
-        "angle": best["angle"],
-        "pitch_type": pitch,
-        "game_date": game.get("gameDate") or game.get("date") or "",
-        "league": league.get("nameAbbrev") or league.get("name") or "",
-        "event_id": str(ev.get("id") or ""),
-        "result": str(ev.get("plateAppearanceResult") or (ev.get("pitch") or {}).get("pitchResult") or ""),
-        "kind": "clip",
-    }
+    return _clip_meta(ev, best["url"], best["asset_id"], best["angle"])
+
+
+def is_broadcast_angle(angle: str) -> bool:
+    a = (angle or "").strip().lower().replace(" ", "")
+    return a.startswith("broadcast") or a == "tv"
+
+
+def angle_clips_from_event(ev: dict) -> dict[str, dict]:
+    """Playable short clips from one event keyed by family: LH / HH / CF / BC."""
+    out: dict[str, dict] = {}
+    for track in ((ev.get("videoGroup") or {}).get("videoTracks")) or []:
+        angle = str(track.get("videoCameraAngle") or track.get("cameraAngle") or "").strip()
+        url, asset_id = track_playable(track)
+        if not url or not is_short_clip_url(url):
+            continue
+        clip = _clip_meta(ev, url, asset_id, angle)
+        if is_lowhome_angle(angle) and "LH" not in out:
+            out["LH"] = clip
+        elif is_highhome_angle(angle) and "HH" not in out:
+            out["HH"] = clip
+        elif is_cf_angle(angle) and "CF" not in out:
+            out["CF"] = clip
+        elif is_broadcast_angle(angle) and "BC" not in out:
+            out["BC"] = clip
+    return out
 
 
 def synergy_id_for(token: str, name: str, mlb_id: int | None) -> str | None:
@@ -287,7 +353,49 @@ def save_ckpt(ckpt: dict) -> None:
     CKPT.write_text(json.dumps(ckpt, indent=2) + "\n")
 
 
-def pick_pitcher_clips(events: list[dict]) -> list[dict]:
+def pick_release_clips(events: list[dict]) -> tuple[dict | None, dict | None]:
+    """One LowHome (or HighHome fallback) + one CF (or Broadcast fallback) for release pics."""
+    lh = None
+    cf = None
+    hh_fallback = None
+    bc_fallback = None
+    for ev in events:
+        by = angle_clips_from_event(ev)
+        if lh is None and by.get("LH"):
+            lh = {
+                **by["LH"],
+                "slot": "LH",
+                "label": f"LowHome · front · {by['LH'].get('pitch_type') or 'pitch'}",
+            }
+        if hh_fallback is None and by.get("HH"):
+            hh_fallback = by["HH"]
+        if cf is None and by.get("CF"):
+            cf = {
+                **by["CF"],
+                "slot": "CF",
+                "label": f"CF · {by['CF'].get('pitch_type') or 'pitch'}",
+            }
+        if bc_fallback is None and by.get("BC"):
+            bc_fallback = by["BC"]
+        if lh and cf:
+            break
+    if lh is None and hh_fallback is not None:
+        lh = {
+            **hh_fallback,
+            "slot": "LH",
+            "label": f"HighHome · front fallback · {hh_fallback.get('pitch_type') or 'pitch'}",
+        }
+    if cf is None and bc_fallback is not None:
+        cf = {
+            **bc_fallback,
+            "slot": "CF",
+            "label": f"Broadcast · CF fallback · {bc_fallback.get('pitch_type') or 'pitch'}",
+        }
+    return lh, cf
+
+
+def pick_timing_clips(events: list[dict]) -> tuple[dict | None, dict | None]:
+    """Runner-on-1B fastball + offspeed for time-to-home timing."""
     fb = None
     os_ = None
     for ev in events:
@@ -303,7 +411,6 @@ def pick_pitcher_clips(events: list[dict]) -> list[dict]:
             os_ = {**clip, "slot": "OS", "label": "Offspeed · R1"}
         if fb and os_:
             break
-    # fallback: any R1 with video if typed buckets empty
     if not fb or not os_:
         for ev in events:
             if not runner_on_1b(ev):
@@ -317,32 +424,87 @@ def pick_pitcher_clips(events: list[dict]) -> list[dict]:
                 os_ = {**clip, "slot": "OS", "label": "Offspeed · R1 (best available)"}
             if fb and os_:
                 break
-    out = []
-    if fb:
-        out.append(fb)
-    if os_:
-        out.append(os_)
+    return fb, os_
+
+
+def pick_pitcher_clips(events: list[dict]) -> list[dict]:
+    """FB + OS (timing) and LH + CF (release)."""
+    fb, os_ = pick_timing_clips(events)
+    lh, cf = pick_release_clips(events)
+    out: list[dict] = []
+    for clip in (fb, os_, lh, cf):
+        if clip:
+            out.append(clip)
     return out
 
 
-def fetch_pitcher_until_clips(token: str, sid: str) -> tuple[list[dict], int]:
-    """Page pitcher events and stop as soon as FB+OS R1 clips are found."""
+def pitcher_slots(clips: list[dict] | None) -> set[str]:
+    return {str(c.get("slot") or "") for c in (clips or []) if c and c.get("url")}
+
+
+def pitcher_cache_complete(clips: list[dict] | None) -> bool:
+    slots = pitcher_slots(clips)
+    # Release views are the new requirement; keep timing when available.
+    return "LH" in slots and "CF" in slots
+
+
+def merge_pitcher_clips(prior: list[dict] | None, fresh: list[dict] | None) -> list[dict]:
+    """Prefer fresh slots; keep prior FB/OS/LH/CF when fresh lacks them."""
+    by_slot: dict[str, dict] = {}
+    for src in (prior or [], fresh or []):
+        for clip in src:
+            if not clip or not clip.get("url"):
+                continue
+            slot = str(clip.get("slot") or "")
+            if not slot:
+                continue
+            # Fresh pass overwrites; first list is prior so second wins when both present.
+            by_slot[slot] = clip
+    # Rebuild in stable order
+    out: list[dict] = []
+    for slot in ("FB", "OS", "LH", "CF"):
+        if slot in by_slot:
+            out.append(by_slot[slot])
+    return out
+
+
+def _events_have_release_angles(events: list[dict]) -> bool:
+    """True if any event has LowHome / HighHome / CF short clips."""
+    for ev in events:
+        by = angle_clips_from_event(ev)
+        if by.get("LH") or by.get("HH") or by.get("CF"):
+            return True
+    return False
+
+
+def _fetch_pitcher_pages(
+    token: str,
+    sid: str,
+    *,
+    cap: int,
+    league_ids: list[str] | None = None,
+    label: str = "",
+    early_stop_no_angles: bool = True,
+) -> tuple[list[dict], int]:
+    """Page pitcher events; return (clips, scanned)."""
     page = 200
-    cap = MAX_EVENTS_P
     out: list[dict] = []
     skip = 0
     scanned = 0
+    tag = f"{label} " if label else ""
     while scanned < cap:
-        body = {
+        body: dict[str, Any] = {
             "loggingPhases": [bas.LOGGING_PHASE_PITCH],
             "skip": skip,
             "take": page,
             "pitcherId": sid,
         }
+        if league_ids:
+            body["leagueIds"] = league_ids
         try:
             doc = bas.api_post(bas.EVENTS_FILTER_URL, token, body, timeout_s=120)
         except Exception as exc:
-            print(f"    page fail skip={skip}: {exc}", flush=True)
+            print(f"    {tag}page fail skip={skip}: {exc}", flush=True)
             break
         rows = doc.get("result") if isinstance(doc, dict) else None
         if not isinstance(rows, list) or not rows:
@@ -350,15 +512,58 @@ def fetch_pitcher_until_clips(token: str, sid: str) -> tuple[list[dict], int]:
         out.extend(rows)
         scanned += len(rows)
         skip += len(rows)
-        print(f"  fetched {len(out)} kept / {scanned} scanned (page)", flush=True)
         clips = pick_pitcher_clips(out)
-        if len(clips) >= 2:
+        slots = pitcher_slots(clips)
+        print(
+            f"  {tag}fetched {len(out)} kept / {scanned} scanned · slots={sorted(slots)}",
+            flush=True,
+        )
+        if "LH" in slots and "CF" in slots and "FB" in slots and "OS" in slots:
+            return clips, scanned
+        if "LH" in slots and "CF" in slots and scanned >= min(cap, 400):
+            return clips, scanned
+        # MiLB AsLogged-only: no home/CF after 400 → don't burn the full cap.
+        if (
+            early_stop_no_angles
+            and scanned >= min(cap, 400)
+            and "LH" not in slots
+            and "CF" not in slots
+            and not _events_have_release_angles(out)
+        ):
+            print(f"    {tag}no LowHome/CF angles in scan — stop early", flush=True)
             return clips, scanned
         total = int((doc or {}).get("totalRecords") or 0)
         if skip >= total or len(rows) < page:
             break
         time.sleep(0.08)
     return pick_pitcher_clips(out), scanned
+
+
+def fetch_pitcher_until_clips(token: str, sid: str) -> tuple[list[dict], int]:
+    """Prefer LBPRC (multi-angle), then fall back to all-league scan."""
+    # Winter LBPRC almost always has LowHome + CF when the arm pitched there.
+    lbprc_cap = min(400, MAX_EVENTS_P)
+    clips, scanned = _fetch_pitcher_pages(
+        token,
+        sid,
+        cap=lbprc_cap,
+        league_ids=[bas.LEAGUE_LBPRC],
+        label="LBPRC",
+        early_stop_no_angles=False,
+    )
+    slots = pitcher_slots(clips)
+    if "LH" in slots and "CF" in slots:
+        return clips, scanned
+    # All leagues (newest-first) — early-stop if still AsLogged-only.
+    more, scanned2 = _fetch_pitcher_pages(
+        token,
+        sid,
+        cap=MAX_EVENTS_P,
+        league_ids=None,
+        label="",
+        early_stop_no_angles=True,
+    )
+    return merge_pitcher_clips(clips, more), scanned + scanned2
 
 
 def steal_result_label(move: dict | None) -> str:
@@ -599,6 +804,7 @@ def write_catalog(teams: list[dict], *, preserve_other_teams: bool = True) -> No
     doc = {
         "updated": now(),
         "note": "Short Synergy clip URLs only (signed /clip/.../clip.mp4) — not full-game HLS. "
+        "Pitchers: FB+OS (R1 timing) + LowHome+CF (release). "
         f"Catchers: up to {CATCHER_CLIPS} SB/CS of 2B via catcherId (any league).",
         "teams": merged,
     }
@@ -625,6 +831,12 @@ def existing_team_pitchers(abbr: str) -> list[dict]:
     """Reuse pitcher rows from the last catalog when PI_CATCHERS_ONLY=1."""
     pack = existing_team_pack(abbr)
     return list((pack or {}).get("pitchers") or [])
+
+
+def existing_team_catchers(abbr: str) -> list[dict]:
+    """Reuse catcher rows from the last catalog when PI_PITCHERS_ONLY=1."""
+    pack = existing_team_pack(abbr)
+    return list((pack or {}).get("catchers") or [])
 
 
 def existing_team_catcher_seeds(abbr: str) -> list[dict]:
@@ -658,7 +870,9 @@ def main() -> None:
     print("Synergy login ok", flush=True)
     print(
         f"catcher target={CATCHER_CLIPS} clips · catcherId scan≤{MAX_SCAN_CATCHER} "
-        f"· catchers_only={CATCHERS_ONLY} · cache_v={CATCHER_CACHE_V} "
+        f"· catchers_only={CATCHERS_ONLY} · pitchers_only={PITCHERS_ONLY} "
+        f"· release_fill={RELEASE_FILL} · pitcher_cache_v={PITCHER_CACHE_V} "
+        f"· catcher_cache_v={CATCHER_CACHE_V} "
         f"· baseline_teams={[t.get('abbrev') for t in _CATALOG_BASELINE]}",
         flush=True,
     )
@@ -726,37 +940,100 @@ def main() -> None:
                     "clips": [],
                 }
                 cached = ckpt.get("pitchers", {}).get(key)
-                if cached and cached.get("clips") is not None and cached.get("done"):
+                prior_clips = list((cached or {}).get("clips") or [])
+                # Also keep catalog clips for this pitcher when merging release slots.
+                for prev_p in existing_team_pitchers(abbr):
+                    if (
+                        (mid and str(prev_p.get("mlb_id") or prev_p.get("id")) == str(mid))
+                        or names_match(prev_p.get("name") or "", name)
+                    ):
+                        prior_clips = merge_pitcher_clips(prior_clips, prev_p.get("clips") or [])
+                        if not row.get("synergy_id") and prev_p.get("synergy_id"):
+                            row["synergy_id"] = prev_p.get("synergy_id")
+                        break
+                cache_ok = (
+                    cached
+                    and cached.get("done")
+                    and cached.get("clips") is not None
+                    and cached.get("v") == PITCHER_CACHE_V
+                    and pitcher_cache_complete(cached.get("clips"))
+                )
+                # RELEASE_FILL: skip pitchers that already have LH+CF (even old cache v).
+                if RELEASE_FILL and pitcher_cache_complete(prior_clips):
+                    row["synergy_id"] = (cached or {}).get("synergy_id") or row.get("synergy_id")
+                    row["clips"] = prior_clips
+                    print(
+                        f"  [P {i}/{len(pitchers)}] {name} release ok "
+                        f"slots={sorted(pitcher_slots(prior_clips))}",
+                        flush=True,
+                    )
+                elif RELEASE_FILL and cached and cached.get("release_exhausted") and not pitcher_cache_complete(prior_clips):
+                    # Already scanned with no LowHome/CF available in Synergy.
+                    row["synergy_id"] = cached.get("synergy_id") or row.get("synergy_id")
+                    row["clips"] = prior_clips or list(cached.get("clips") or [])
+                    print(
+                        f"  [P {i}/{len(pitchers)}] {name} release exhausted "
+                        f"slots={sorted(pitcher_slots(row['clips']))}",
+                        flush=True,
+                    )
+                elif cache_ok:
                     row.update({k: cached[k] for k in ("synergy_id", "clips") if k in cached})
-                    print(f"  [P {i}/{len(pitchers)}] {name} cached clips={len(row['clips'])}", flush=True)
+                    print(
+                        f"  [P {i}/{len(pitchers)}] {name} cached "
+                        f"slots={sorted(pitcher_slots(row['clips']))}",
+                        flush=True,
+                    )
                 else:
                     try:
-                        sid = synergy_id_for(token, name, mid)
+                        sid = row.get("synergy_id") or synergy_id_for(token, name, mid)
                         row["synergy_id"] = sid
                         if not sid:
                             print(f"  [P {i}/{len(pitchers)}] {name} UNRESOLVED", flush=True)
+                            row["clips"] = prior_clips
                         else:
                             print(f"  [P {i}/{len(pitchers)}] {name} sid={sid}", flush=True)
                             clips, scanned = fetch_pitcher_until_clips(token, sid)
-                            row["clips"] = clips
-                            print(f"    scanned={scanned} clips={len(clips)}", flush=True)
+                            row["clips"] = merge_pitcher_clips(prior_clips, clips)
+                            print(
+                                f"    scanned={scanned} clips={len(row['clips'])} "
+                                f"slots={sorted(pitcher_slots(row['clips']))}",
+                                flush=True,
+                            )
                     except Exception as exc:
                         print(f"  [P {i}/{len(pitchers)}] {name} ERROR: {exc}", flush=True)
+                        row["clips"] = prior_clips
+                    complete = pitcher_cache_complete(row["clips"])
                     ckpt.setdefault("pitchers", {})[key] = {
                         "synergy_id": row["synergy_id"],
                         "clips": row["clips"],
                         "done": True,
+                        "v": PITCHER_CACHE_V,
+                        "complete": complete,
+                        # Mark exhausted when we scanned but Synergy has no LH+CF.
+                        "release_exhausted": (not complete) and bool(row.get("synergy_id")),
                     }
                     save_ckpt(ckpt)
                     # publish partial team so site updates during long runs
                     preview = teams_out + [{
                         **team_row,
                         "pitchers": team_row["pitchers"] + [row],
-                        "catchers": team_row["catchers"],
+                        "catchers": team_row["catchers"] or existing_team_catchers(abbr),
                     }]
                     write_catalog(preview)
                     time.sleep(0.05)
                 team_row["pitchers"].append(row)
+
+        if PITCHERS_ONLY:
+            reused_c = existing_team_catchers(abbr)
+            team_row["catchers"] = reused_c
+            teams_out.append(team_row)
+            write_catalog(teams_out)
+            print(
+                f"=== {abbr} DONE pitchers={len(team_row['pitchers'])} "
+                f"(reused {len(reused_c)} catchers) ===",
+                flush=True,
+            )
+            continue
 
         # Team steal scan discovers field catchers + tops up clips. Skip on
         # catchers-only rebuilds (reuse prior catalog catcher list; catcherId is enough).

@@ -41,7 +41,11 @@ h2 { margin: 0 0 8px; font-size: 13px; letter-spacing: .08em; text-transform: up
 .stage { padding: 16px 20px 120px; }
 .empty { color: var(--muted); padding: 40px 0; }
 .player-head { margin-bottom: 14px; }
-.clip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+.clip-grid { display: flex; flex-direction: column; gap: 18px; }
+.clip-section-title {
+  margin: 0 0 8px; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+}
+.clip-grid-inner { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
 .clip-card {
   background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
   padding: 12px; cursor: pointer;

@@ -112,9 +112,11 @@
         String(a.last || a.name).localeCompare(String(b.last || b.name))
       );
       $('pitcher-list').innerHTML = pitchers.map((p) => {
-        const n = (p.clips || []).filter((c) => c && c.url).length;
+        const slots = new Set((p.clips || []).filter((c) => c && c.url).map((c) => c.slot));
+        const release = (slots.has('LH') ? 1 : 0) + (slots.has('CF') ? 1 : 0);
+        const timing = (slots.has('FB') ? 1 : 0) + (slots.has('OS') ? 1 : 0);
         return `<button type="button" data-kind="pitcher" data-id="${p.id}" data-team="${state.team}" class="${state.kind==='pitcher'&&String(state.playerId)===String(p.id)?'active':''}">
-          ${esc(p.name)}<span class="badge">${n}/2</span></button>`;
+          ${esc(p.name)}<span class="badge">rel ${release}/2 · tth ${timing}/2</span></button>`;
       }).join('') || `<div class="muted">No pitchers</div>`;
       $('catcher-list').innerHTML = catchers.map((p) => catcherButton(p, state.team)).join('')
         || `<div class="muted">No catchers</div>`;
@@ -156,27 +158,46 @@
       ? `${p.name} · ${teamLabel}`
       : p.name;
     $('player-sub').textContent = kind === 'pitcher'
-      ? `${teamLabel} · runner on 1B · one fastball + one offspeed`
+      ? `${teamLabel} · release: LowHome + CF · timing: R1 FB + OS`
       : `${teamLabel} · catcher throw down to 2B (SB / CS) · ${p.name}`;
     const clips = p.clips || [];
     if (kind === 'pitcher') {
-      const slots = [
+      const releaseSlots = [
+        { key: 'LH', label: 'LowHome · front (release)' },
+        { key: 'CF', label: 'CF · centerfield (release)' },
+      ];
+      const timingSlots = [
         { key: 'FB', label: 'Fastball · R1' },
         { key: 'OS', label: 'Offspeed · R1' },
       ];
-      $('clip-grid').innerHTML = slots.map((s) => {
+      const releaseHtml = releaseSlots.map((s) => {
         const clip = clips.find((c) => c && c.slot === s.key) || null;
         return clipCard(s.label, clip);
       }).join('');
+      const timingHtml = timingSlots.map((s) => {
+        const clip = clips.find((c) => c && c.slot === s.key) || null;
+        return clipCard(s.label, clip);
+      }).join('');
+      $('clip-grid').innerHTML = `
+        <div class="clip-section">
+          <h3 class="clip-section-title">Release pics</h3>
+          <div class="clip-grid-inner">${releaseHtml}</div>
+        </div>
+        <div class="clip-section">
+          <h3 class="clip-section-title">Time to home · R1</h3>
+          <div class="clip-grid-inner">${timingHtml}</div>
+        </div>`;
     } else {
+      let cards;
       if (!clips.length) {
-        $('clip-grid').innerHTML = clipCard(`${p.name} · Throw to 2B`, null);
+        cards = clipCard(`${p.name} · Throw to 2B`, null);
       } else {
-        $('clip-grid').innerHTML = clips.map((c, i) => {
+        cards = clips.map((c) => {
           const title = c.label || `${c.catcher_name || p.name} · Throw 2B · ${c.steal_result || c.result || 'SB/CS'}`;
           return clipCard(title, c);
         }).join('');
       }
+      $('clip-grid').innerHTML = `<div class="clip-section"><div class="clip-grid-inner">${cards}</div></div>`;
     }
     document.querySelectorAll('.clip-card[data-url]').forEach((card) => {
       card.onclick = () => play(card.dataset.url, card.dataset.title, card.dataset.detail);
